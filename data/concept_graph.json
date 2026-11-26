@@ -1,0 +1,1145 @@
+{
+  "num_concepts": 45,
+  "num_edges": 74,
+  "is_dag": true,
+  "topological_order": [
+    "variables",
+    "data_types",
+    "type_casting",
+    "arithmetic_ops",
+    "input_output",
+    "comparison_ops",
+    "range_function",
+    "string_formatting",
+    "boolean_logic",
+    "if_elif_else",
+    "nested_conditionals",
+    "while_loops",
+    "for_loops",
+    "break_continue",
+    "lists",
+    "functions_def",
+    "nested_loops",
+    "list_indexing_slicing",
+    "list_methods",
+    "sets",
+    "return_values",
+    "exceptions_try_except",
+    "string_methods",
+    "mutability",
+    "set_operations",
+    "variable_scope",
+    "lambda_functions",
+    "raising_exceptions",
+    "file_io",
+    "tuples",
+    "parameters_defaults",
+    "recursion",
+    "context_managers",
+    "dictionaries",
+    "dict_methods",
+    "hashing_concepts",
+    "args_kwargs",
+    "classes_objects",
+    "nested_structures",
+    "list_comprehensions",
+    "time_complexity",
+    "init_self",
+    "generators",
+    "inheritance",
+    "encapsulation"
+  ],
+  "nodes": [
+    {
+      "id": "variables",
+      "name": "Variables & Assignment",
+      "week": 1,
+      "lesson_id": "L01",
+      "tier": "Foundations",
+      "question_ids": [
+        "Q001",
+        "Q002",
+        "Q003",
+        "Q004",
+        "Q005"
+      ],
+      "prerequisites": []
+    },
+    {
+      "id": "data_types",
+      "name": "Primitive Data Types",
+      "week": 1,
+      "lesson_id": "L01",
+      "tier": "Foundations",
+      "question_ids": [
+        "Q006",
+        "Q007",
+        "Q008",
+        "Q009",
+        "Q010"
+      ],
+      "prerequisites": [
+        "variables"
+      ]
+    },
+    {
+      "id": "type_casting",
+      "name": "Type Casting",
+      "week": 1,
+      "lesson_id": "L01",
+      "tier": "Foundations",
+      "question_ids": [
+        "Q011",
+        "Q012",
+        "Q013",
+        "Q014",
+        "Q015"
+      ],
+      "prerequisites": [
+        "data_types"
+      ]
+    },
+    {
+      "id": "arithmetic_ops",
+      "name": "Arithmetic & Modulo",
+      "week": 1,
+      "lesson_id": "L02",
+      "tier": "Foundations",
+      "question_ids": [
+        "Q026",
+        "Q027",
+        "Q028",
+        "Q029",
+        "Q030"
+      ],
+      "prerequisites": [
+        "data_types"
+      ]
+    },
+    {
+      "id": "input_output",
+      "name": "Console I/O",
+      "week": 1,
+      "lesson_id": "L01",
+      "tier": "Foundations",
+      "question_ids": [
+        "Q016",
+        "Q017",
+        "Q018",
+        "Q019",
+        "Q020"
+      ],
+      "prerequisites": [
+        "variables",
+        "type_casting"
+      ]
+    },
+    {
+      "id": "comparison_ops",
+      "name": "Comparison Operators",
+      "week": 1,
+      "lesson_id": "L02",
+      "tier": "Control Flow",
+      "question_ids": [
+        "Q031",
+        "Q032",
+        "Q033",
+        "Q034",
+        "Q035"
+      ],
+      "prerequisites": [
+        "data_types",
+        "arithmetic_ops"
+      ]
+    },
+    {
+      "id": "range_function",
+      "name": "range() Function",
+      "week": 2,
+      "lesson_id": "L03",
+      "tier": "Iteration",
+      "question_ids": [
+        "Q056",
+        "Q057",
+        "Q058",
+        "Q059",
+        "Q060"
+      ],
+      "prerequisites": [
+        "arithmetic_ops"
+      ]
+    },
+    {
+      "id": "string_formatting",
+      "name": "String Formatting (f-strings)",
+      "week": 1,
+      "lesson_id": "L01",
+      "tier": "Foundations",
+      "question_ids": [
+        "Q021",
+        "Q022",
+        "Q023",
+        "Q024",
+        "Q025"
+      ],
+      "prerequisites": [
+        "data_types",
+        "input_output"
+      ]
+    },
+    {
+      "id": "boolean_logic",
+      "name": "Boolean Logic (and/or/not)",
+      "week": 1,
+      "lesson_id": "L02",
+      "tier": "Control Flow",
+      "question_ids": [
+        "Q036",
+        "Q037",
+        "Q038",
+        "Q039",
+        "Q040"
+      ],
+      "prerequisites": [
+        "comparison_ops"
+      ]
+    },
+    {
+      "id": "if_elif_else",
+      "name": "If / Elif / Else",
+      "week": 1,
+      "lesson_id": "L02",
+      "tier": "Control Flow",
+      "question_ids": [
+        "Q041",
+        "Q042",
+        "Q043",
+        "Q044",
+        "Q045"
+      ],
+      "prerequisites": [
+        "boolean_logic"
+      ]
+    },
+    {
+      "id": "nested_conditionals",
+      "name": "Nested Conditionals",
+      "week": 1,
+      "lesson_id": "L02",
+      "tier": "Control Flow",
+      "question_ids": [
+        "Q046",
+        "Q047",
+        "Q048",
+        "Q049",
+        "Q050"
+      ],
+      "prerequisites": [
+        "if_elif_else"
+      ]
+    },
+    {
+      "id": "while_loops",
+      "name": "While Loops",
+      "week": 2,
+      "lesson_id": "L03",
+      "tier": "Iteration",
+      "question_ids": [
+        "Q051",
+        "Q052",
+        "Q053",
+        "Q054",
+        "Q055"
+      ],
+      "prerequisites": [
+        "boolean_logic",
+        "if_elif_else"
+      ]
+    },
+    {
+      "id": "for_loops",
+      "name": "For Loops",
+      "week": 2,
+      "lesson_id": "L03",
+      "tier": "Iteration",
+      "question_ids": [
+        "Q061",
+        "Q062",
+        "Q063",
+        "Q064",
+        "Q065"
+      ],
+      "prerequisites": [
+        "range_function",
+        "if_elif_else"
+      ]
+    },
+    {
+      "id": "break_continue",
+      "name": "Break & Continue",
+      "week": 2,
+      "lesson_id": "L03",
+      "tier": "Iteration",
+      "question_ids": [
+        "Q066",
+        "Q067",
+        "Q068",
+        "Q069",
+        "Q070"
+      ],
+      "prerequisites": [
+        "while_loops",
+        "for_loops"
+      ]
+    },
+    {
+      "id": "lists",
+      "name": "Lists Creation & Basics",
+      "week": 2,
+      "lesson_id": "L04",
+      "tier": "Data Structures",
+      "question_ids": [
+        "Q076",
+        "Q077",
+        "Q078",
+        "Q079",
+        "Q080"
+      ],
+      "prerequisites": [
+        "data_types",
+        "for_loops"
+      ]
+    },
+    {
+      "id": "functions_def",
+      "name": "Function Definition & Calls",
+      "week": 4,
+      "lesson_id": "L06",
+      "tier": "Functions",
+      "question_ids": [
+        "Q136",
+        "Q137",
+        "Q138",
+        "Q139",
+        "Q140"
+      ],
+      "prerequisites": [
+        "if_elif_else",
+        "for_loops"
+      ]
+    },
+    {
+      "id": "nested_loops",
+      "name": "Nested Loops",
+      "week": 2,
+      "lesson_id": "L03",
+      "tier": "Iteration",
+      "question_ids": [
+        "Q071",
+        "Q072",
+        "Q073",
+        "Q074",
+        "Q075"
+      ],
+      "prerequisites": [
+        "for_loops",
+        "break_continue"
+      ]
+    },
+    {
+      "id": "list_indexing_slicing",
+      "name": "Indexing & Slicing",
+      "week": 2,
+      "lesson_id": "L04",
+      "tier": "Data Structures",
+      "question_ids": [
+        "Q081",
+        "Q082",
+        "Q083",
+        "Q084",
+        "Q085"
+      ],
+      "prerequisites": [
+        "lists"
+      ]
+    },
+    {
+      "id": "list_methods",
+      "name": "List Methods",
+      "week": 2,
+      "lesson_id": "L04",
+      "tier": "Data Structures",
+      "question_ids": [
+        "Q086",
+        "Q087",
+        "Q088",
+        "Q089",
+        "Q090"
+      ],
+      "prerequisites": [
+        "lists"
+      ]
+    },
+    {
+      "id": "sets",
+      "name": "Sets & Uniqueness",
+      "week": 3,
+      "lesson_id": "L05",
+      "tier": "Data Structures",
+      "question_ids": [
+        "Q121",
+        "Q122",
+        "Q123",
+        "Q124",
+        "Q125"
+      ],
+      "prerequisites": [
+        "lists"
+      ]
+    },
+    {
+      "id": "return_values",
+      "name": "Return Values vs Print",
+      "week": 4,
+      "lesson_id": "L06",
+      "tier": "Functions",
+      "question_ids": [
+        "Q146",
+        "Q147",
+        "Q148",
+        "Q149",
+        "Q150"
+      ],
+      "prerequisites": [
+        "functions_def"
+      ]
+    },
+    {
+      "id": "exceptions_try_except",
+      "name": "Try / Except / Finally",
+      "week": 5,
+      "lesson_id": "L07",
+      "tier": "Robust Python",
+      "question_ids": [
+        "Q171",
+        "Q172",
+        "Q173",
+        "Q174",
+        "Q175"
+      ],
+      "prerequisites": [
+        "if_elif_else",
+        "functions_def"
+      ]
+    },
+    {
+      "id": "string_methods",
+      "name": "String Methods",
+      "week": 3,
+      "lesson_id": "L05",
+      "tier": "Data Structures",
+      "question_ids": [
+        "Q101",
+        "Q102",
+        "Q103",
+        "Q104",
+        "Q105"
+      ],
+      "prerequisites": [
+        "string_formatting",
+        "list_indexing_slicing"
+      ]
+    },
+    {
+      "id": "mutability",
+      "name": "Mutability & Aliasing",
+      "week": 2,
+      "lesson_id": "L04",
+      "tier": "Data Structures",
+      "question_ids": [
+        "Q091",
+        "Q092",
+        "Q093",
+        "Q094",
+        "Q095"
+      ],
+      "prerequisites": [
+        "lists",
+        "list_methods"
+      ]
+    },
+    {
+      "id": "set_operations",
+      "name": "Set Operations",
+      "week": 3,
+      "lesson_id": "L05",
+      "tier": "Data Structures",
+      "question_ids": [
+        "Q126",
+        "Q127",
+        "Q128",
+        "Q129",
+        "Q130"
+      ],
+      "prerequisites": [
+        "sets"
+      ]
+    },
+    {
+      "id": "variable_scope",
+      "name": "Variable Scope (LEGB)",
+      "week": 4,
+      "lesson_id": "L06",
+      "tier": "Functions",
+      "question_ids": [
+        "Q151",
+        "Q152",
+        "Q153",
+        "Q154",
+        "Q155"
+      ],
+      "prerequisites": [
+        "return_values"
+      ]
+    },
+    {
+      "id": "lambda_functions",
+      "name": "Lambda & Higher-Order Funcs",
+      "week": 4,
+      "lesson_id": "L06",
+      "tier": "Functions",
+      "question_ids": [
+        "Q161",
+        "Q162",
+        "Q163",
+        "Q164",
+        "Q165"
+      ],
+      "prerequisites": [
+        "return_values"
+      ]
+    },
+    {
+      "id": "raising_exceptions",
+      "name": "Raising & Custom Exceptions",
+      "week": 5,
+      "lesson_id": "L07",
+      "tier": "Robust Python",
+      "question_ids": [
+        "Q176",
+        "Q177",
+        "Q178",
+        "Q179",
+        "Q180"
+      ],
+      "prerequisites": [
+        "exceptions_try_except"
+      ]
+    },
+    {
+      "id": "file_io",
+      "name": "File Reading & Writing",
+      "week": 5,
+      "lesson_id": "L07",
+      "tier": "Robust Python",
+      "question_ids": [
+        "Q181",
+        "Q182",
+        "Q183",
+        "Q184",
+        "Q185"
+      ],
+      "prerequisites": [
+        "string_methods",
+        "exceptions_try_except"
+      ]
+    },
+    {
+      "id": "tuples",
+      "name": "Tuples & Unpacking",
+      "week": 2,
+      "lesson_id": "L04",
+      "tier": "Data Structures",
+      "question_ids": [
+        "Q096",
+        "Q097",
+        "Q098",
+        "Q099",
+        "Q100"
+      ],
+      "prerequisites": [
+        "list_indexing_slicing",
+        "mutability"
+      ]
+    },
+    {
+      "id": "parameters_defaults",
+      "name": "Parameters & Default Args",
+      "week": 4,
+      "lesson_id": "L06",
+      "tier": "Functions",
+      "question_ids": [
+        "Q141",
+        "Q142",
+        "Q143",
+        "Q144",
+        "Q145"
+      ],
+      "prerequisites": [
+        "functions_def",
+        "mutability"
+      ]
+    },
+    {
+      "id": "recursion",
+      "name": "Recursion & Base Cases",
+      "week": 4,
+      "lesson_id": "L06",
+      "tier": "Functions",
+      "question_ids": [
+        "Q166",
+        "Q167",
+        "Q168",
+        "Q169",
+        "Q170"
+      ],
+      "prerequisites": [
+        "return_values",
+        "variable_scope"
+      ]
+    },
+    {
+      "id": "context_managers",
+      "name": "Context Managers (with)",
+      "week": 5,
+      "lesson_id": "L07",
+      "tier": "Robust Python",
+      "question_ids": [
+        "Q186",
+        "Q187",
+        "Q188",
+        "Q189",
+        "Q190"
+      ],
+      "prerequisites": [
+        "file_io"
+      ]
+    },
+    {
+      "id": "dictionaries",
+      "name": "Dictionaries (Key-Value)",
+      "week": 3,
+      "lesson_id": "L05",
+      "tier": "Data Structures",
+      "question_ids": [
+        "Q106",
+        "Q107",
+        "Q108",
+        "Q109",
+        "Q110"
+      ],
+      "prerequisites": [
+        "lists",
+        "tuples"
+      ]
+    },
+    {
+      "id": "dict_methods",
+      "name": "Dictionary Methods & Iteration",
+      "week": 3,
+      "lesson_id": "L05",
+      "tier": "Data Structures",
+      "question_ids": [
+        "Q111",
+        "Q112",
+        "Q113",
+        "Q114",
+        "Q115"
+      ],
+      "prerequisites": [
+        "dictionaries",
+        "for_loops"
+      ]
+    },
+    {
+      "id": "hashing_concepts",
+      "name": "Hashability & O(1) Lookup",
+      "week": 3,
+      "lesson_id": "L05",
+      "tier": "Data Structures",
+      "question_ids": [
+        "Q131",
+        "Q132",
+        "Q133",
+        "Q134",
+        "Q135"
+      ],
+      "prerequisites": [
+        "dictionaries",
+        "sets",
+        "mutability"
+      ]
+    },
+    {
+      "id": "args_kwargs",
+      "name": "*args & **kwargs",
+      "week": 4,
+      "lesson_id": "L06",
+      "tier": "Functions",
+      "question_ids": [
+        "Q156",
+        "Q157",
+        "Q158",
+        "Q159",
+        "Q160"
+      ],
+      "prerequisites": [
+        "parameters_defaults",
+        "tuples",
+        "dictionaries"
+      ]
+    },
+    {
+      "id": "classes_objects",
+      "name": "Classes & Objects",
+      "week": 6,
+      "lesson_id": "L08",
+      "tier": "OOP & Algorithms",
+      "question_ids": [
+        "Q201",
+        "Q202",
+        "Q203",
+        "Q204",
+        "Q205"
+      ],
+      "prerequisites": [
+        "functions_def",
+        "dictionaries"
+      ]
+    },
+    {
+      "id": "nested_structures",
+      "name": "Nested Lists & Dicts",
+      "week": 3,
+      "lesson_id": "L05",
+      "tier": "Data Structures",
+      "question_ids": [
+        "Q116",
+        "Q117",
+        "Q118",
+        "Q119",
+        "Q120"
+      ],
+      "prerequisites": [
+        "dict_methods",
+        "nested_loops"
+      ]
+    },
+    {
+      "id": "list_comprehensions",
+      "name": "List & Dict Comprehensions",
+      "week": 5,
+      "lesson_id": "L07",
+      "tier": "Robust Python",
+      "question_ids": [
+        "Q191",
+        "Q192",
+        "Q193",
+        "Q194",
+        "Q195"
+      ],
+      "prerequisites": [
+        "for_loops",
+        "lists",
+        "dict_methods"
+      ]
+    },
+    {
+      "id": "time_complexity",
+      "name": "Big-O & Search/Sort",
+      "week": 6,
+      "lesson_id": "L08",
+      "tier": "OOP & Algorithms",
+      "question_ids": [
+        "Q221",
+        "Q222",
+        "Q223",
+        "Q224",
+        "Q225"
+      ],
+      "prerequisites": [
+        "nested_loops",
+        "recursion",
+        "hashing_concepts"
+      ]
+    },
+    {
+      "id": "init_self",
+      "name": "__init__, self & Methods",
+      "week": 6,
+      "lesson_id": "L08",
+      "tier": "OOP & Algorithms",
+      "question_ids": [
+        "Q206",
+        "Q207",
+        "Q208",
+        "Q209",
+        "Q210"
+      ],
+      "prerequisites": [
+        "classes_objects",
+        "variable_scope"
+      ]
+    },
+    {
+      "id": "generators",
+      "name": "Generators & yield",
+      "week": 5,
+      "lesson_id": "L07",
+      "tier": "Robust Python",
+      "question_ids": [
+        "Q196",
+        "Q197",
+        "Q198",
+        "Q199",
+        "Q200"
+      ],
+      "prerequisites": [
+        "list_comprehensions",
+        "functions_def"
+      ]
+    },
+    {
+      "id": "inheritance",
+      "name": "Inheritance & super()",
+      "week": 6,
+      "lesson_id": "L08",
+      "tier": "OOP & Algorithms",
+      "question_ids": [
+        "Q211",
+        "Q212",
+        "Q213",
+        "Q214",
+        "Q215"
+      ],
+      "prerequisites": [
+        "init_self"
+      ]
+    },
+    {
+      "id": "encapsulation",
+      "name": "Encapsulation & Polymorphism",
+      "week": 6,
+      "lesson_id": "L08",
+      "tier": "OOP & Algorithms",
+      "question_ids": [
+        "Q216",
+        "Q217",
+        "Q218",
+        "Q219",
+        "Q220"
+      ],
+      "prerequisites": [
+        "inheritance"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "variables",
+      "target": "data_types"
+    },
+    {
+      "source": "variables",
+      "target": "input_output"
+    },
+    {
+      "source": "data_types",
+      "target": "type_casting"
+    },
+    {
+      "source": "data_types",
+      "target": "string_formatting"
+    },
+    {
+      "source": "data_types",
+      "target": "arithmetic_ops"
+    },
+    {
+      "source": "data_types",
+      "target": "comparison_ops"
+    },
+    {
+      "source": "data_types",
+      "target": "lists"
+    },
+    {
+      "source": "type_casting",
+      "target": "input_output"
+    },
+    {
+      "source": "input_output",
+      "target": "string_formatting"
+    },
+    {
+      "source": "string_formatting",
+      "target": "string_methods"
+    },
+    {
+      "source": "arithmetic_ops",
+      "target": "comparison_ops"
+    },
+    {
+      "source": "arithmetic_ops",
+      "target": "range_function"
+    },
+    {
+      "source": "comparison_ops",
+      "target": "boolean_logic"
+    },
+    {
+      "source": "boolean_logic",
+      "target": "if_elif_else"
+    },
+    {
+      "source": "boolean_logic",
+      "target": "while_loops"
+    },
+    {
+      "source": "if_elif_else",
+      "target": "nested_conditionals"
+    },
+    {
+      "source": "if_elif_else",
+      "target": "while_loops"
+    },
+    {
+      "source": "if_elif_else",
+      "target": "for_loops"
+    },
+    {
+      "source": "if_elif_else",
+      "target": "functions_def"
+    },
+    {
+      "source": "if_elif_else",
+      "target": "exceptions_try_except"
+    },
+    {
+      "source": "while_loops",
+      "target": "break_continue"
+    },
+    {
+      "source": "range_function",
+      "target": "for_loops"
+    },
+    {
+      "source": "for_loops",
+      "target": "break_continue"
+    },
+    {
+      "source": "for_loops",
+      "target": "nested_loops"
+    },
+    {
+      "source": "for_loops",
+      "target": "lists"
+    },
+    {
+      "source": "for_loops",
+      "target": "dict_methods"
+    },
+    {
+      "source": "for_loops",
+      "target": "functions_def"
+    },
+    {
+      "source": "for_loops",
+      "target": "list_comprehensions"
+    },
+    {
+      "source": "break_continue",
+      "target": "nested_loops"
+    },
+    {
+      "source": "nested_loops",
+      "target": "nested_structures"
+    },
+    {
+      "source": "nested_loops",
+      "target": "time_complexity"
+    },
+    {
+      "source": "lists",
+      "target": "list_indexing_slicing"
+    },
+    {
+      "source": "lists",
+      "target": "list_methods"
+    },
+    {
+      "source": "lists",
+      "target": "mutability"
+    },
+    {
+      "source": "lists",
+      "target": "dictionaries"
+    },
+    {
+      "source": "lists",
+      "target": "sets"
+    },
+    {
+      "source": "lists",
+      "target": "list_comprehensions"
+    },
+    {
+      "source": "list_indexing_slicing",
+      "target": "tuples"
+    },
+    {
+      "source": "list_indexing_slicing",
+      "target": "string_methods"
+    },
+    {
+      "source": "list_methods",
+      "target": "mutability"
+    },
+    {
+      "source": "mutability",
+      "target": "tuples"
+    },
+    {
+      "source": "mutability",
+      "target": "hashing_concepts"
+    },
+    {
+      "source": "mutability",
+      "target": "parameters_defaults"
+    },
+    {
+      "source": "tuples",
+      "target": "dictionaries"
+    },
+    {
+      "source": "tuples",
+      "target": "args_kwargs"
+    },
+    {
+      "source": "string_methods",
+      "target": "file_io"
+    },
+    {
+      "source": "dictionaries",
+      "target": "dict_methods"
+    },
+    {
+      "source": "dictionaries",
+      "target": "hashing_concepts"
+    },
+    {
+      "source": "dictionaries",
+      "target": "args_kwargs"
+    },
+    {
+      "source": "dictionaries",
+      "target": "classes_objects"
+    },
+    {
+      "source": "dict_methods",
+      "target": "nested_structures"
+    },
+    {
+      "source": "dict_methods",
+      "target": "list_comprehensions"
+    },
+    {
+      "source": "sets",
+      "target": "set_operations"
+    },
+    {
+      "source": "sets",
+      "target": "hashing_concepts"
+    },
+    {
+      "source": "hashing_concepts",
+      "target": "time_complexity"
+    },
+    {
+      "source": "functions_def",
+      "target": "parameters_defaults"
+    },
+    {
+      "source": "functions_def",
+      "target": "return_values"
+    },
+    {
+      "source": "functions_def",
+      "target": "exceptions_try_except"
+    },
+    {
+      "source": "functions_def",
+      "target": "generators"
+    },
+    {
+      "source": "functions_def",
+      "target": "classes_objects"
+    },
+    {
+      "source": "parameters_defaults",
+      "target": "args_kwargs"
+    },
+    {
+      "source": "return_values",
+      "target": "variable_scope"
+    },
+    {
+      "source": "return_values",
+      "target": "lambda_functions"
+    },
+    {
+      "source": "return_values",
+      "target": "recursion"
+    },
+    {
+      "source": "variable_scope",
+      "target": "recursion"
+    },
+    {
+      "source": "variable_scope",
+      "target": "init_self"
+    },
+    {
+      "source": "recursion",
+      "target": "time_complexity"
+    },
+    {
+      "source": "exceptions_try_except",
+      "target": "raising_exceptions"
+    },
+    {
+      "source": "exceptions_try_except",
+      "target": "file_io"
+    },
+    {
+      "source": "file_io",
+      "target": "context_managers"
+    },
+    {
+      "source": "list_comprehensions",
+      "target": "generators"
+    },
+    {
+      "source": "classes_objects",
+      "target": "init_self"
+    },
+    {
+      "source": "init_self",
+      "target": "inheritance"
+    },
+    {
+      "source": "inheritance",
+      "target": "encapsulation"
+    }
+  ]
+}

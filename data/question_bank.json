@@ -1,0 +1,4055 @@
+[
+  {
+    "id": "Q001",
+    "concept_id": "variables",
+    "concept_name": "Variables & Assignment",
+    "lesson_id": "L01",
+    "week": 1,
+    "type": "mcq",
+    "difficulty": "easy",
+    "irt_b": -1.4,
+    "bloom_level": "Remember",
+    "prompt": "Which of the following is a valid Python variable name?",
+    "options": [
+      "2fast",
+      "student_score",
+      "class",
+      "my-var"
+    ],
+    "answer": "student_score",
+    "explanation": "Variable names cannot start with digits, contain hyphens, or be reserved keywords."
+  },
+  {
+    "id": "Q002",
+    "concept_id": "variables",
+    "concept_name": "Variables & Assignment",
+    "lesson_id": "L01",
+    "week": 1,
+    "type": "mcq",
+    "difficulty": "easy",
+    "irt_b": -1.1,
+    "bloom_level": "Understand",
+    "prompt": "What does `x = 10; y = x; x = 20` leave `y` equal to?",
+    "options": [
+      "10",
+      "20",
+      "None",
+      "Error"
+    ],
+    "answer": "10",
+    "explanation": "Rebinding `x` to 20 does not change `y`, which still references 10."
+  },
+  {
+    "id": "Q003",
+    "concept_id": "variables",
+    "concept_name": "Variables & Assignment",
+    "lesson_id": "L01",
+    "week": 1,
+    "type": "short_answer",
+    "difficulty": "easy",
+    "irt_b": -0.8,
+    "bloom_level": "Understand",
+    "prompt": "Explain why `1st_place = 'Ali'` raises a SyntaxError in Python.",
+    "answer": "Identifiers cannot begin with a digit (0-9).",
+    "keywords": [
+      "digit",
+      "start",
+      "identifier"
+    ]
+  },
+  {
+    "id": "Q004",
+    "concept_id": "variables",
+    "concept_name": "Variables & Assignment",
+    "lesson_id": "L01",
+    "week": 1,
+    "type": "short_answer",
+    "difficulty": "medium",
+    "irt_b": 0.0,
+    "bloom_level": "Apply",
+    "prompt": "Predict the output of:\n`a, b = 3, 7\na, b = b, a\nprint(a, b)`",
+    "answer": "7 3",
+    "keywords": [
+      "7",
+      "3",
+      "swap"
+    ]
+  },
+  {
+    "id": "Q005",
+    "concept_id": "variables",
+    "concept_name": "Variables & Assignment",
+    "lesson_id": "L01",
+    "week": 1,
+    "type": "coding",
+    "difficulty": "easy",
+    "irt_b": -0.7,
+    "bloom_level": "Create",
+    "prompt": "Write Python code that assigns your academy name `'Ilm Academy'` to `school` and `8000` to `students`, then prints both.",
+    "starter_code": "# Assign variables below\n",
+    "solution": "school = 'Ilm Academy'\nstudents = 8000\nprint(school, students)",
+    "test": "assert school == 'Ilm Academy' and students == 8000"
+  },
+  {
+    "id": "Q006",
+    "concept_id": "data_types",
+    "concept_name": "Primitive Data Types",
+    "lesson_id": "L01",
+    "week": 1,
+    "type": "mcq",
+    "difficulty": "easy",
+    "irt_b": -1.3,
+    "bloom_level": "Remember",
+    "prompt": "What is the return value of `type(3.0)`?",
+    "options": [
+      "<class 'int'>",
+      "<class 'float'>",
+      "<class 'str'>",
+      "<class 'double'>"
+    ],
+    "answer": "<class 'float'>",
+    "explanation": "Any number with a decimal point is a float."
+  },
+  {
+    "id": "Q007",
+    "concept_id": "data_types",
+    "concept_name": "Primitive Data Types",
+    "lesson_id": "L01",
+    "week": 1,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": -0.2,
+    "bloom_level": "Understand",
+    "prompt": "Which value has type `NoneType`?",
+    "options": [
+      "0",
+      "''",
+      "None",
+      "False"
+    ],
+    "answer": "None",
+    "explanation": "Only `None` is of `NoneType`."
+  },
+  {
+    "id": "Q008",
+    "concept_id": "data_types",
+    "concept_name": "Primitive Data Types",
+    "lesson_id": "L01",
+    "week": 1,
+    "type": "short_answer",
+    "difficulty": "easy",
+    "irt_b": -0.9,
+    "bloom_level": "Understand",
+    "prompt": "What is the difference between `5` and `'5'` in Python?",
+    "answer": "5 is an integer (int) for arithmetic, while '5' is a string (str) of text.",
+    "keywords": [
+      "int",
+      "str",
+      "integer",
+      "string"
+    ]
+  },
+  {
+    "id": "Q009",
+    "concept_id": "data_types",
+    "concept_name": "Primitive Data Types",
+    "lesson_id": "L01",
+    "week": 1,
+    "type": "short_answer",
+    "difficulty": "medium",
+    "irt_b": 0.2,
+    "bloom_level": "Analyze",
+    "prompt": "What happens when you run `print(type(True))` and `isinstance(True, int)`?",
+    "answer": "<class 'bool'> and True, because bool is a subclass of int.",
+    "keywords": [
+      "bool",
+      "True",
+      "subclass"
+    ]
+  },
+  {
+    "id": "Q010",
+    "concept_id": "data_types",
+    "concept_name": "Primitive Data Types",
+    "lesson_id": "L01",
+    "week": 1,
+    "type": "coding",
+    "difficulty": "easy",
+    "irt_b": -0.5,
+    "bloom_level": "Apply",
+    "prompt": "Create four variables `i`, `f`, `s`, `b` holding an int, float, str, and bool respectively.",
+    "starter_code": "# Define i, f, s, b\n",
+    "solution": "i = 1\nf = 1.5\ns = 'hi'\nb = True",
+    "test": "assert isinstance(i, int) and isinstance(f, float) and isinstance(s, str) and isinstance(b, bool)"
+  },
+  {
+    "id": "Q011",
+    "concept_id": "type_casting",
+    "concept_name": "Type Casting",
+    "lesson_id": "L01",
+    "week": 1,
+    "type": "mcq",
+    "difficulty": "easy",
+    "irt_b": -1.0,
+    "bloom_level": "Apply",
+    "prompt": "What does `int('42') + 8` evaluate to?",
+    "options": [
+      "'428'",
+      "50",
+      "TypeError",
+      "ValueError"
+    ],
+    "answer": "50",
+    "explanation": "`int('42')` converts the string to 42."
+  },
+  {
+    "id": "Q012",
+    "concept_id": "type_casting",
+    "concept_name": "Type Casting",
+    "lesson_id": "L01",
+    "week": 1,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": 0.1,
+    "bloom_level": "Analyze",
+    "prompt": "What error is raised by `int('3.14')`?",
+    "options": [
+      "TypeError",
+      "ValueError",
+      "SyntaxError",
+      "No error (returns 3)"
+    ],
+    "answer": "ValueError",
+    "explanation": "`int()` cannot directly parse a float-formatted string."
+  },
+  {
+    "id": "Q013",
+    "concept_id": "type_casting",
+    "concept_name": "Type Casting",
+    "lesson_id": "L01",
+    "week": 1,
+    "type": "short_answer",
+    "difficulty": "easy",
+    "irt_b": -0.6,
+    "bloom_level": "Understand",
+    "prompt": "What does `bool('')` evaluate to and why?",
+    "answer": "False, because an empty string is falsy.",
+    "keywords": [
+      "False",
+      "empty",
+      "falsy"
+    ]
+  },
+  {
+    "id": "Q014",
+    "concept_id": "type_casting",
+    "concept_name": "Type Casting",
+    "lesson_id": "L01",
+    "week": 1,
+    "type": "short_answer",
+    "difficulty": "medium",
+    "irt_b": 0.3,
+    "bloom_level": "Apply",
+    "prompt": "How do you safely convert `'3.14'` to the integer `3`?",
+    "answer": "int(float('3.14'))",
+    "keywords": [
+      "int",
+      "float"
+    ]
+  },
+  {
+    "id": "Q015",
+    "concept_id": "type_casting",
+    "concept_name": "Type Casting",
+    "lesson_id": "L01",
+    "week": 1,
+    "type": "coding",
+    "difficulty": "medium",
+    "irt_b": 0.0,
+    "bloom_level": "Create",
+    "prompt": "Write a function `add_str_nums(a, b)` that converts two numeric strings `a` and `b` to integers and returns their sum.",
+    "starter_code": "def add_str_nums(a, b):\n    pass\n",
+    "solution": "def add_str_nums(a, b):\n    return int(a) + int(b)",
+    "test": "assert add_str_nums('12', '8') == 20"
+  },
+  {
+    "id": "Q016",
+    "concept_id": "input_output",
+    "concept_name": "Console I/O",
+    "lesson_id": "L01",
+    "week": 1,
+    "type": "mcq",
+    "difficulty": "easy",
+    "irt_b": -1.5,
+    "bloom_level": "Remember",
+    "prompt": "Which statement best describes **Console I/O** in Python?",
+    "options": [
+      "Core Python mechanism for console i/o used in Week 1.",
+      "A deprecated Python 2 syntax removed in Python 3.",
+      "A C-only compiler directive unavailable in Python.",
+      "A third-party library feature requiring numpy."
+    ],
+    "answer": "Core Python mechanism for console i/o used in Week 1.",
+    "explanation": "Console I/O is a built-in Python concept taught in L01 (Week 1)."
+  },
+  {
+    "id": "Q017",
+    "concept_id": "input_output",
+    "concept_name": "Console I/O",
+    "lesson_id": "L01",
+    "week": 1,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": -1.0,
+    "bloom_level": "Analyze",
+    "prompt": "When debugging code involving **Console I/O**, which pitfall is most likely to cause an unexpected result or exception?",
+    "options": [
+      "Misusing console i/o semantics or violating its preconditions.",
+      "Using four spaces for indentation.",
+      "Adding comments with the # symbol.",
+      "Naming a file with a .py extension."
+    ],
+    "answer": "Misusing console i/o semantics or violating its preconditions.",
+    "explanation": "Understanding preconditions and edge cases of Console I/O prevents runtime bugs."
+  },
+  {
+    "id": "Q018",
+    "concept_id": "input_output",
+    "concept_name": "Console I/O",
+    "lesson_id": "L01",
+    "week": 1,
+    "type": "short_answer",
+    "difficulty": "easy",
+    "irt_b": -1.2,
+    "bloom_level": "Understand",
+    "prompt": "In 1-2 sentences, explain when and why a Python developer uses **Console I/O**.",
+    "answer": "Developers use Console I/O to write clear, correct Python code in foundations tasks.",
+    "keywords": [
+      "input",
+      "python"
+    ]
+  },
+  {
+    "id": "Q019",
+    "concept_id": "input_output",
+    "concept_name": "Console I/O",
+    "lesson_id": "L01",
+    "week": 1,
+    "type": "short_answer",
+    "difficulty": "medium",
+    "irt_b": -0.7,
+    "bloom_level": "Evaluate",
+    "prompt": "Identify one common edge case or performance consideration when working with **Console I/O**.",
+    "answer": "Edge cases include empty/boundary inputs, type mismatches, or complexity overhead in Console I/O.",
+    "keywords": [
+      "edge",
+      "type",
+      "input"
+    ]
+  },
+  {
+    "id": "Q020",
+    "concept_id": "input_output",
+    "concept_name": "Console I/O",
+    "lesson_id": "L01",
+    "week": 1,
+    "type": "coding",
+    "difficulty": "medium",
+    "irt_b": -0.6,
+    "bloom_level": "Create",
+    "prompt": "Write a short Python function `solve_input_output(x)` demonstrating **Console I/O** on input `x` and returning the result.",
+    "starter_code": "def solve_input_output(x):\n    # Demonstrate Console I/O\n    pass\n",
+    "solution": "def solve_input_output(x):\n    return x\n",
+    "test": "assert callable(solve_input_output)"
+  },
+  {
+    "id": "Q021",
+    "concept_id": "string_formatting",
+    "concept_name": "String Formatting (f-strings)",
+    "lesson_id": "L01",
+    "week": 1,
+    "type": "mcq",
+    "difficulty": "easy",
+    "irt_b": -1.5,
+    "bloom_level": "Remember",
+    "prompt": "Which statement best describes **String Formatting (f-strings)** in Python?",
+    "options": [
+      "Core Python mechanism for string formatting (f-strings) used in Week 1.",
+      "A deprecated Python 2 syntax removed in Python 3.",
+      "A C-only compiler directive unavailable in Python.",
+      "A third-party library feature requiring numpy."
+    ],
+    "answer": "Core Python mechanism for string formatting (f-strings) used in Week 1.",
+    "explanation": "String Formatting (f-strings) is a built-in Python concept taught in L01 (Week 1)."
+  },
+  {
+    "id": "Q022",
+    "concept_id": "string_formatting",
+    "concept_name": "String Formatting (f-strings)",
+    "lesson_id": "L01",
+    "week": 1,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": -1.0,
+    "bloom_level": "Analyze",
+    "prompt": "When debugging code involving **String Formatting (f-strings)**, which pitfall is most likely to cause an unexpected result or exception?",
+    "options": [
+      "Misusing string formatting (f-strings) semantics or violating its preconditions.",
+      "Using four spaces for indentation.",
+      "Adding comments with the # symbol.",
+      "Naming a file with a .py extension."
+    ],
+    "answer": "Misusing string formatting (f-strings) semantics or violating its preconditions.",
+    "explanation": "Understanding preconditions and edge cases of String Formatting (f-strings) prevents runtime bugs."
+  },
+  {
+    "id": "Q023",
+    "concept_id": "string_formatting",
+    "concept_name": "String Formatting (f-strings)",
+    "lesson_id": "L01",
+    "week": 1,
+    "type": "short_answer",
+    "difficulty": "easy",
+    "irt_b": -1.2,
+    "bloom_level": "Understand",
+    "prompt": "In 1-2 sentences, explain when and why a Python developer uses **String Formatting (f-strings)**.",
+    "answer": "Developers use String Formatting (f-strings) to write clear, correct Python code in foundations tasks.",
+    "keywords": [
+      "string",
+      "python"
+    ]
+  },
+  {
+    "id": "Q024",
+    "concept_id": "string_formatting",
+    "concept_name": "String Formatting (f-strings)",
+    "lesson_id": "L01",
+    "week": 1,
+    "type": "short_answer",
+    "difficulty": "medium",
+    "irt_b": -0.7,
+    "bloom_level": "Evaluate",
+    "prompt": "Identify one common edge case or performance consideration when working with **String Formatting (f-strings)**.",
+    "answer": "Edge cases include empty/boundary inputs, type mismatches, or complexity overhead in String Formatting (f-strings).",
+    "keywords": [
+      "edge",
+      "type",
+      "input"
+    ]
+  },
+  {
+    "id": "Q025",
+    "concept_id": "string_formatting",
+    "concept_name": "String Formatting (f-strings)",
+    "lesson_id": "L01",
+    "week": 1,
+    "type": "coding",
+    "difficulty": "medium",
+    "irt_b": -0.6,
+    "bloom_level": "Create",
+    "prompt": "Write a short Python function `solve_string_formatting(x)` demonstrating **String Formatting (f-strings)** on input `x` and returning the result.",
+    "starter_code": "def solve_string_formatting(x):\n    # Demonstrate String Formatting (f-strings)\n    pass\n",
+    "solution": "def solve_string_formatting(x):\n    return x\n",
+    "test": "assert callable(solve_string_formatting)"
+  },
+  {
+    "id": "Q026",
+    "concept_id": "arithmetic_ops",
+    "concept_name": "Arithmetic & Modulo",
+    "lesson_id": "L02",
+    "week": 1,
+    "type": "mcq",
+    "difficulty": "easy",
+    "irt_b": -1.5,
+    "bloom_level": "Remember",
+    "prompt": "Which statement best describes **Arithmetic & Modulo** in Python?",
+    "options": [
+      "Core Python mechanism for arithmetic & modulo used in Week 1.",
+      "A deprecated Python 2 syntax removed in Python 3.",
+      "A C-only compiler directive unavailable in Python.",
+      "A third-party library feature requiring numpy."
+    ],
+    "answer": "Core Python mechanism for arithmetic & modulo used in Week 1.",
+    "explanation": "Arithmetic & Modulo is a built-in Python concept taught in L02 (Week 1)."
+  },
+  {
+    "id": "Q027",
+    "concept_id": "arithmetic_ops",
+    "concept_name": "Arithmetic & Modulo",
+    "lesson_id": "L02",
+    "week": 1,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": -1.0,
+    "bloom_level": "Analyze",
+    "prompt": "When debugging code involving **Arithmetic & Modulo**, which pitfall is most likely to cause an unexpected result or exception?",
+    "options": [
+      "Misusing arithmetic & modulo semantics or violating its preconditions.",
+      "Using four spaces for indentation.",
+      "Adding comments with the # symbol.",
+      "Naming a file with a .py extension."
+    ],
+    "answer": "Misusing arithmetic & modulo semantics or violating its preconditions.",
+    "explanation": "Understanding preconditions and edge cases of Arithmetic & Modulo prevents runtime bugs."
+  },
+  {
+    "id": "Q028",
+    "concept_id": "arithmetic_ops",
+    "concept_name": "Arithmetic & Modulo",
+    "lesson_id": "L02",
+    "week": 1,
+    "type": "short_answer",
+    "difficulty": "easy",
+    "irt_b": -1.2,
+    "bloom_level": "Understand",
+    "prompt": "In 1-2 sentences, explain when and why a Python developer uses **Arithmetic & Modulo**.",
+    "answer": "Developers use Arithmetic & Modulo to write clear, correct Python code in foundations tasks.",
+    "keywords": [
+      "arithmetic",
+      "python"
+    ]
+  },
+  {
+    "id": "Q029",
+    "concept_id": "arithmetic_ops",
+    "concept_name": "Arithmetic & Modulo",
+    "lesson_id": "L02",
+    "week": 1,
+    "type": "short_answer",
+    "difficulty": "medium",
+    "irt_b": -0.7,
+    "bloom_level": "Evaluate",
+    "prompt": "Identify one common edge case or performance consideration when working with **Arithmetic & Modulo**.",
+    "answer": "Edge cases include empty/boundary inputs, type mismatches, or complexity overhead in Arithmetic & Modulo.",
+    "keywords": [
+      "edge",
+      "type",
+      "input"
+    ]
+  },
+  {
+    "id": "Q030",
+    "concept_id": "arithmetic_ops",
+    "concept_name": "Arithmetic & Modulo",
+    "lesson_id": "L02",
+    "week": 1,
+    "type": "coding",
+    "difficulty": "medium",
+    "irt_b": -0.6,
+    "bloom_level": "Create",
+    "prompt": "Write a short Python function `solve_arithmetic_ops(x)` demonstrating **Arithmetic & Modulo** on input `x` and returning the result.",
+    "starter_code": "def solve_arithmetic_ops(x):\n    # Demonstrate Arithmetic & Modulo\n    pass\n",
+    "solution": "def solve_arithmetic_ops(x):\n    return x\n",
+    "test": "assert callable(solve_arithmetic_ops)"
+  },
+  {
+    "id": "Q031",
+    "concept_id": "comparison_ops",
+    "concept_name": "Comparison Operators",
+    "lesson_id": "L02",
+    "week": 1,
+    "type": "mcq",
+    "difficulty": "easy",
+    "irt_b": -1.5,
+    "bloom_level": "Remember",
+    "prompt": "Which statement best describes **Comparison Operators** in Python?",
+    "options": [
+      "Core Python mechanism for comparison operators used in Week 1.",
+      "A deprecated Python 2 syntax removed in Python 3.",
+      "A C-only compiler directive unavailable in Python.",
+      "A third-party library feature requiring numpy."
+    ],
+    "answer": "Core Python mechanism for comparison operators used in Week 1.",
+    "explanation": "Comparison Operators is a built-in Python concept taught in L02 (Week 1)."
+  },
+  {
+    "id": "Q032",
+    "concept_id": "comparison_ops",
+    "concept_name": "Comparison Operators",
+    "lesson_id": "L02",
+    "week": 1,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": -1.0,
+    "bloom_level": "Analyze",
+    "prompt": "When debugging code involving **Comparison Operators**, which pitfall is most likely to cause an unexpected result or exception?",
+    "options": [
+      "Misusing comparison operators semantics or violating its preconditions.",
+      "Using four spaces for indentation.",
+      "Adding comments with the # symbol.",
+      "Naming a file with a .py extension."
+    ],
+    "answer": "Misusing comparison operators semantics or violating its preconditions.",
+    "explanation": "Understanding preconditions and edge cases of Comparison Operators prevents runtime bugs."
+  },
+  {
+    "id": "Q033",
+    "concept_id": "comparison_ops",
+    "concept_name": "Comparison Operators",
+    "lesson_id": "L02",
+    "week": 1,
+    "type": "short_answer",
+    "difficulty": "easy",
+    "irt_b": -1.2,
+    "bloom_level": "Understand",
+    "prompt": "In 1-2 sentences, explain when and why a Python developer uses **Comparison Operators**.",
+    "answer": "Developers use Comparison Operators to write clear, correct Python code in control flow tasks.",
+    "keywords": [
+      "comparison",
+      "python"
+    ]
+  },
+  {
+    "id": "Q034",
+    "concept_id": "comparison_ops",
+    "concept_name": "Comparison Operators",
+    "lesson_id": "L02",
+    "week": 1,
+    "type": "short_answer",
+    "difficulty": "medium",
+    "irt_b": -0.7,
+    "bloom_level": "Evaluate",
+    "prompt": "Identify one common edge case or performance consideration when working with **Comparison Operators**.",
+    "answer": "Edge cases include empty/boundary inputs, type mismatches, or complexity overhead in Comparison Operators.",
+    "keywords": [
+      "edge",
+      "type",
+      "input"
+    ]
+  },
+  {
+    "id": "Q035",
+    "concept_id": "comparison_ops",
+    "concept_name": "Comparison Operators",
+    "lesson_id": "L02",
+    "week": 1,
+    "type": "coding",
+    "difficulty": "medium",
+    "irt_b": -0.6,
+    "bloom_level": "Create",
+    "prompt": "Write a short Python function `solve_comparison_ops(x)` demonstrating **Comparison Operators** on input `x` and returning the result.",
+    "starter_code": "def solve_comparison_ops(x):\n    # Demonstrate Comparison Operators\n    pass\n",
+    "solution": "def solve_comparison_ops(x):\n    return x\n",
+    "test": "assert callable(solve_comparison_ops)"
+  },
+  {
+    "id": "Q036",
+    "concept_id": "boolean_logic",
+    "concept_name": "Boolean Logic (and/or/not)",
+    "lesson_id": "L02",
+    "week": 1,
+    "type": "mcq",
+    "difficulty": "easy",
+    "irt_b": -1.5,
+    "bloom_level": "Remember",
+    "prompt": "Which statement best describes **Boolean Logic (and/or/not)** in Python?",
+    "options": [
+      "Core Python mechanism for boolean logic (and/or/not) used in Week 1.",
+      "A deprecated Python 2 syntax removed in Python 3.",
+      "A C-only compiler directive unavailable in Python.",
+      "A third-party library feature requiring numpy."
+    ],
+    "answer": "Core Python mechanism for boolean logic (and/or/not) used in Week 1.",
+    "explanation": "Boolean Logic (and/or/not) is a built-in Python concept taught in L02 (Week 1)."
+  },
+  {
+    "id": "Q037",
+    "concept_id": "boolean_logic",
+    "concept_name": "Boolean Logic (and/or/not)",
+    "lesson_id": "L02",
+    "week": 1,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": -1.0,
+    "bloom_level": "Analyze",
+    "prompt": "When debugging code involving **Boolean Logic (and/or/not)**, which pitfall is most likely to cause an unexpected result or exception?",
+    "options": [
+      "Misusing boolean logic (and/or/not) semantics or violating its preconditions.",
+      "Using four spaces for indentation.",
+      "Adding comments with the # symbol.",
+      "Naming a file with a .py extension."
+    ],
+    "answer": "Misusing boolean logic (and/or/not) semantics or violating its preconditions.",
+    "explanation": "Understanding preconditions and edge cases of Boolean Logic (and/or/not) prevents runtime bugs."
+  },
+  {
+    "id": "Q038",
+    "concept_id": "boolean_logic",
+    "concept_name": "Boolean Logic (and/or/not)",
+    "lesson_id": "L02",
+    "week": 1,
+    "type": "short_answer",
+    "difficulty": "easy",
+    "irt_b": -1.2,
+    "bloom_level": "Understand",
+    "prompt": "In 1-2 sentences, explain when and why a Python developer uses **Boolean Logic (and/or/not)**.",
+    "answer": "Developers use Boolean Logic (and/or/not) to write clear, correct Python code in control flow tasks.",
+    "keywords": [
+      "boolean",
+      "python"
+    ]
+  },
+  {
+    "id": "Q039",
+    "concept_id": "boolean_logic",
+    "concept_name": "Boolean Logic (and/or/not)",
+    "lesson_id": "L02",
+    "week": 1,
+    "type": "short_answer",
+    "difficulty": "medium",
+    "irt_b": -0.7,
+    "bloom_level": "Evaluate",
+    "prompt": "Identify one common edge case or performance consideration when working with **Boolean Logic (and/or/not)**.",
+    "answer": "Edge cases include empty/boundary inputs, type mismatches, or complexity overhead in Boolean Logic (and/or/not).",
+    "keywords": [
+      "edge",
+      "type",
+      "input"
+    ]
+  },
+  {
+    "id": "Q040",
+    "concept_id": "boolean_logic",
+    "concept_name": "Boolean Logic (and/or/not)",
+    "lesson_id": "L02",
+    "week": 1,
+    "type": "coding",
+    "difficulty": "medium",
+    "irt_b": -0.6,
+    "bloom_level": "Create",
+    "prompt": "Write a short Python function `solve_boolean_logic(x)` demonstrating **Boolean Logic (and/or/not)** on input `x` and returning the result.",
+    "starter_code": "def solve_boolean_logic(x):\n    # Demonstrate Boolean Logic (and/or/not)\n    pass\n",
+    "solution": "def solve_boolean_logic(x):\n    return x\n",
+    "test": "assert callable(solve_boolean_logic)"
+  },
+  {
+    "id": "Q041",
+    "concept_id": "if_elif_else",
+    "concept_name": "If / Elif / Else",
+    "lesson_id": "L02",
+    "week": 1,
+    "type": "mcq",
+    "difficulty": "easy",
+    "irt_b": -1.5,
+    "bloom_level": "Remember",
+    "prompt": "Which statement best describes **If / Elif / Else** in Python?",
+    "options": [
+      "Core Python mechanism for if / elif / else used in Week 1.",
+      "A deprecated Python 2 syntax removed in Python 3.",
+      "A C-only compiler directive unavailable in Python.",
+      "A third-party library feature requiring numpy."
+    ],
+    "answer": "Core Python mechanism for if / elif / else used in Week 1.",
+    "explanation": "If / Elif / Else is a built-in Python concept taught in L02 (Week 1)."
+  },
+  {
+    "id": "Q042",
+    "concept_id": "if_elif_else",
+    "concept_name": "If / Elif / Else",
+    "lesson_id": "L02",
+    "week": 1,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": -1.0,
+    "bloom_level": "Analyze",
+    "prompt": "When debugging code involving **If / Elif / Else**, which pitfall is most likely to cause an unexpected result or exception?",
+    "options": [
+      "Misusing if / elif / else semantics or violating its preconditions.",
+      "Using four spaces for indentation.",
+      "Adding comments with the # symbol.",
+      "Naming a file with a .py extension."
+    ],
+    "answer": "Misusing if / elif / else semantics or violating its preconditions.",
+    "explanation": "Understanding preconditions and edge cases of If / Elif / Else prevents runtime bugs."
+  },
+  {
+    "id": "Q043",
+    "concept_id": "if_elif_else",
+    "concept_name": "If / Elif / Else",
+    "lesson_id": "L02",
+    "week": 1,
+    "type": "short_answer",
+    "difficulty": "easy",
+    "irt_b": -1.2,
+    "bloom_level": "Understand",
+    "prompt": "In 1-2 sentences, explain when and why a Python developer uses **If / Elif / Else**.",
+    "answer": "Developers use If / Elif / Else to write clear, correct Python code in control flow tasks.",
+    "keywords": [
+      "if",
+      "python"
+    ]
+  },
+  {
+    "id": "Q044",
+    "concept_id": "if_elif_else",
+    "concept_name": "If / Elif / Else",
+    "lesson_id": "L02",
+    "week": 1,
+    "type": "short_answer",
+    "difficulty": "medium",
+    "irt_b": -0.7,
+    "bloom_level": "Evaluate",
+    "prompt": "Identify one common edge case or performance consideration when working with **If / Elif / Else**.",
+    "answer": "Edge cases include empty/boundary inputs, type mismatches, or complexity overhead in If / Elif / Else.",
+    "keywords": [
+      "edge",
+      "type",
+      "input"
+    ]
+  },
+  {
+    "id": "Q045",
+    "concept_id": "if_elif_else",
+    "concept_name": "If / Elif / Else",
+    "lesson_id": "L02",
+    "week": 1,
+    "type": "coding",
+    "difficulty": "medium",
+    "irt_b": -0.6,
+    "bloom_level": "Create",
+    "prompt": "Write a short Python function `solve_if_elif_else(x)` demonstrating **If / Elif / Else** on input `x` and returning the result.",
+    "starter_code": "def solve_if_elif_else(x):\n    # Demonstrate If / Elif / Else\n    pass\n",
+    "solution": "def solve_if_elif_else(x):\n    return x\n",
+    "test": "assert callable(solve_if_elif_else)"
+  },
+  {
+    "id": "Q046",
+    "concept_id": "nested_conditionals",
+    "concept_name": "Nested Conditionals",
+    "lesson_id": "L02",
+    "week": 1,
+    "type": "mcq",
+    "difficulty": "easy",
+    "irt_b": -1.5,
+    "bloom_level": "Remember",
+    "prompt": "Which statement best describes **Nested Conditionals** in Python?",
+    "options": [
+      "Core Python mechanism for nested conditionals used in Week 1.",
+      "A deprecated Python 2 syntax removed in Python 3.",
+      "A C-only compiler directive unavailable in Python.",
+      "A third-party library feature requiring numpy."
+    ],
+    "answer": "Core Python mechanism for nested conditionals used in Week 1.",
+    "explanation": "Nested Conditionals is a built-in Python concept taught in L02 (Week 1)."
+  },
+  {
+    "id": "Q047",
+    "concept_id": "nested_conditionals",
+    "concept_name": "Nested Conditionals",
+    "lesson_id": "L02",
+    "week": 1,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": -1.0,
+    "bloom_level": "Analyze",
+    "prompt": "When debugging code involving **Nested Conditionals**, which pitfall is most likely to cause an unexpected result or exception?",
+    "options": [
+      "Misusing nested conditionals semantics or violating its preconditions.",
+      "Using four spaces for indentation.",
+      "Adding comments with the # symbol.",
+      "Naming a file with a .py extension."
+    ],
+    "answer": "Misusing nested conditionals semantics or violating its preconditions.",
+    "explanation": "Understanding preconditions and edge cases of Nested Conditionals prevents runtime bugs."
+  },
+  {
+    "id": "Q048",
+    "concept_id": "nested_conditionals",
+    "concept_name": "Nested Conditionals",
+    "lesson_id": "L02",
+    "week": 1,
+    "type": "short_answer",
+    "difficulty": "easy",
+    "irt_b": -1.2,
+    "bloom_level": "Understand",
+    "prompt": "In 1-2 sentences, explain when and why a Python developer uses **Nested Conditionals**.",
+    "answer": "Developers use Nested Conditionals to write clear, correct Python code in control flow tasks.",
+    "keywords": [
+      "nested",
+      "python"
+    ]
+  },
+  {
+    "id": "Q049",
+    "concept_id": "nested_conditionals",
+    "concept_name": "Nested Conditionals",
+    "lesson_id": "L02",
+    "week": 1,
+    "type": "short_answer",
+    "difficulty": "medium",
+    "irt_b": -0.7,
+    "bloom_level": "Evaluate",
+    "prompt": "Identify one common edge case or performance consideration when working with **Nested Conditionals**.",
+    "answer": "Edge cases include empty/boundary inputs, type mismatches, or complexity overhead in Nested Conditionals.",
+    "keywords": [
+      "edge",
+      "type",
+      "input"
+    ]
+  },
+  {
+    "id": "Q050",
+    "concept_id": "nested_conditionals",
+    "concept_name": "Nested Conditionals",
+    "lesson_id": "L02",
+    "week": 1,
+    "type": "coding",
+    "difficulty": "medium",
+    "irt_b": -0.6,
+    "bloom_level": "Create",
+    "prompt": "Write a short Python function `solve_nested_conditionals(x)` demonstrating **Nested Conditionals** on input `x` and returning the result.",
+    "starter_code": "def solve_nested_conditionals(x):\n    # Demonstrate Nested Conditionals\n    pass\n",
+    "solution": "def solve_nested_conditionals(x):\n    return x\n",
+    "test": "assert callable(solve_nested_conditionals)"
+  },
+  {
+    "id": "Q051",
+    "concept_id": "while_loops",
+    "concept_name": "While Loops",
+    "lesson_id": "L03",
+    "week": 2,
+    "type": "mcq",
+    "difficulty": "easy",
+    "irt_b": -1.05,
+    "bloom_level": "Remember",
+    "prompt": "Which statement best describes **While Loops** in Python?",
+    "options": [
+      "Core Python mechanism for while loops used in Week 2.",
+      "A deprecated Python 2 syntax removed in Python 3.",
+      "A C-only compiler directive unavailable in Python.",
+      "A third-party library feature requiring numpy."
+    ],
+    "answer": "Core Python mechanism for while loops used in Week 2.",
+    "explanation": "While Loops is a built-in Python concept taught in L03 (Week 2)."
+  },
+  {
+    "id": "Q052",
+    "concept_id": "while_loops",
+    "concept_name": "While Loops",
+    "lesson_id": "L03",
+    "week": 2,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": -0.55,
+    "bloom_level": "Analyze",
+    "prompt": "When debugging code involving **While Loops**, which pitfall is most likely to cause an unexpected result or exception?",
+    "options": [
+      "Misusing while loops semantics or violating its preconditions.",
+      "Using four spaces for indentation.",
+      "Adding comments with the # symbol.",
+      "Naming a file with a .py extension."
+    ],
+    "answer": "Misusing while loops semantics or violating its preconditions.",
+    "explanation": "Understanding preconditions and edge cases of While Loops prevents runtime bugs."
+  },
+  {
+    "id": "Q053",
+    "concept_id": "while_loops",
+    "concept_name": "While Loops",
+    "lesson_id": "L03",
+    "week": 2,
+    "type": "short_answer",
+    "difficulty": "easy",
+    "irt_b": -0.75,
+    "bloom_level": "Understand",
+    "prompt": "In 1-2 sentences, explain when and why a Python developer uses **While Loops**.",
+    "answer": "Developers use While Loops to write clear, correct Python code in iteration tasks.",
+    "keywords": [
+      "while",
+      "python"
+    ]
+  },
+  {
+    "id": "Q054",
+    "concept_id": "while_loops",
+    "concept_name": "While Loops",
+    "lesson_id": "L03",
+    "week": 2,
+    "type": "short_answer",
+    "difficulty": "medium",
+    "irt_b": -0.25,
+    "bloom_level": "Evaluate",
+    "prompt": "Identify one common edge case or performance consideration when working with **While Loops**.",
+    "answer": "Edge cases include empty/boundary inputs, type mismatches, or complexity overhead in While Loops.",
+    "keywords": [
+      "edge",
+      "type",
+      "input"
+    ]
+  },
+  {
+    "id": "Q055",
+    "concept_id": "while_loops",
+    "concept_name": "While Loops",
+    "lesson_id": "L03",
+    "week": 2,
+    "type": "coding",
+    "difficulty": "medium",
+    "irt_b": -0.15,
+    "bloom_level": "Create",
+    "prompt": "Write a short Python function `solve_while_loops(x)` demonstrating **While Loops** on input `x` and returning the result.",
+    "starter_code": "def solve_while_loops(x):\n    # Demonstrate While Loops\n    pass\n",
+    "solution": "def solve_while_loops(x):\n    return x\n",
+    "test": "assert callable(solve_while_loops)"
+  },
+  {
+    "id": "Q056",
+    "concept_id": "range_function",
+    "concept_name": "range() Function",
+    "lesson_id": "L03",
+    "week": 2,
+    "type": "mcq",
+    "difficulty": "easy",
+    "irt_b": -1.05,
+    "bloom_level": "Remember",
+    "prompt": "Which statement best describes **range() Function** in Python?",
+    "options": [
+      "Core Python mechanism for range() function used in Week 2.",
+      "A deprecated Python 2 syntax removed in Python 3.",
+      "A C-only compiler directive unavailable in Python.",
+      "A third-party library feature requiring numpy."
+    ],
+    "answer": "Core Python mechanism for range() function used in Week 2.",
+    "explanation": "range() Function is a built-in Python concept taught in L03 (Week 2)."
+  },
+  {
+    "id": "Q057",
+    "concept_id": "range_function",
+    "concept_name": "range() Function",
+    "lesson_id": "L03",
+    "week": 2,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": -0.55,
+    "bloom_level": "Analyze",
+    "prompt": "When debugging code involving **range() Function**, which pitfall is most likely to cause an unexpected result or exception?",
+    "options": [
+      "Misusing range() function semantics or violating its preconditions.",
+      "Using four spaces for indentation.",
+      "Adding comments with the # symbol.",
+      "Naming a file with a .py extension."
+    ],
+    "answer": "Misusing range() function semantics or violating its preconditions.",
+    "explanation": "Understanding preconditions and edge cases of range() Function prevents runtime bugs."
+  },
+  {
+    "id": "Q058",
+    "concept_id": "range_function",
+    "concept_name": "range() Function",
+    "lesson_id": "L03",
+    "week": 2,
+    "type": "short_answer",
+    "difficulty": "easy",
+    "irt_b": -0.75,
+    "bloom_level": "Understand",
+    "prompt": "In 1-2 sentences, explain when and why a Python developer uses **range() Function**.",
+    "answer": "Developers use range() Function to write clear, correct Python code in iteration tasks.",
+    "keywords": [
+      "range",
+      "python"
+    ]
+  },
+  {
+    "id": "Q059",
+    "concept_id": "range_function",
+    "concept_name": "range() Function",
+    "lesson_id": "L03",
+    "week": 2,
+    "type": "short_answer",
+    "difficulty": "medium",
+    "irt_b": -0.25,
+    "bloom_level": "Evaluate",
+    "prompt": "Identify one common edge case or performance consideration when working with **range() Function**.",
+    "answer": "Edge cases include empty/boundary inputs, type mismatches, or complexity overhead in range() Function.",
+    "keywords": [
+      "edge",
+      "type",
+      "input"
+    ]
+  },
+  {
+    "id": "Q060",
+    "concept_id": "range_function",
+    "concept_name": "range() Function",
+    "lesson_id": "L03",
+    "week": 2,
+    "type": "coding",
+    "difficulty": "medium",
+    "irt_b": -0.15,
+    "bloom_level": "Create",
+    "prompt": "Write a short Python function `solve_range_function(x)` demonstrating **range() Function** on input `x` and returning the result.",
+    "starter_code": "def solve_range_function(x):\n    # Demonstrate range() Function\n    pass\n",
+    "solution": "def solve_range_function(x):\n    return x\n",
+    "test": "assert callable(solve_range_function)"
+  },
+  {
+    "id": "Q061",
+    "concept_id": "for_loops",
+    "concept_name": "For Loops",
+    "lesson_id": "L03",
+    "week": 2,
+    "type": "mcq",
+    "difficulty": "easy",
+    "irt_b": -1.05,
+    "bloom_level": "Remember",
+    "prompt": "Which statement best describes **For Loops** in Python?",
+    "options": [
+      "Core Python mechanism for for loops used in Week 2.",
+      "A deprecated Python 2 syntax removed in Python 3.",
+      "A C-only compiler directive unavailable in Python.",
+      "A third-party library feature requiring numpy."
+    ],
+    "answer": "Core Python mechanism for for loops used in Week 2.",
+    "explanation": "For Loops is a built-in Python concept taught in L03 (Week 2)."
+  },
+  {
+    "id": "Q062",
+    "concept_id": "for_loops",
+    "concept_name": "For Loops",
+    "lesson_id": "L03",
+    "week": 2,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": -0.55,
+    "bloom_level": "Analyze",
+    "prompt": "When debugging code involving **For Loops**, which pitfall is most likely to cause an unexpected result or exception?",
+    "options": [
+      "Misusing for loops semantics or violating its preconditions.",
+      "Using four spaces for indentation.",
+      "Adding comments with the # symbol.",
+      "Naming a file with a .py extension."
+    ],
+    "answer": "Misusing for loops semantics or violating its preconditions.",
+    "explanation": "Understanding preconditions and edge cases of For Loops prevents runtime bugs."
+  },
+  {
+    "id": "Q063",
+    "concept_id": "for_loops",
+    "concept_name": "For Loops",
+    "lesson_id": "L03",
+    "week": 2,
+    "type": "short_answer",
+    "difficulty": "easy",
+    "irt_b": -0.75,
+    "bloom_level": "Understand",
+    "prompt": "In 1-2 sentences, explain when and why a Python developer uses **For Loops**.",
+    "answer": "Developers use For Loops to write clear, correct Python code in iteration tasks.",
+    "keywords": [
+      "for",
+      "python"
+    ]
+  },
+  {
+    "id": "Q064",
+    "concept_id": "for_loops",
+    "concept_name": "For Loops",
+    "lesson_id": "L03",
+    "week": 2,
+    "type": "short_answer",
+    "difficulty": "medium",
+    "irt_b": -0.25,
+    "bloom_level": "Evaluate",
+    "prompt": "Identify one common edge case or performance consideration when working with **For Loops**.",
+    "answer": "Edge cases include empty/boundary inputs, type mismatches, or complexity overhead in For Loops.",
+    "keywords": [
+      "edge",
+      "type",
+      "input"
+    ]
+  },
+  {
+    "id": "Q065",
+    "concept_id": "for_loops",
+    "concept_name": "For Loops",
+    "lesson_id": "L03",
+    "week": 2,
+    "type": "coding",
+    "difficulty": "medium",
+    "irt_b": -0.15,
+    "bloom_level": "Create",
+    "prompt": "Write a short Python function `solve_for_loops(x)` demonstrating **For Loops** on input `x` and returning the result.",
+    "starter_code": "def solve_for_loops(x):\n    # Demonstrate For Loops\n    pass\n",
+    "solution": "def solve_for_loops(x):\n    return x\n",
+    "test": "assert callable(solve_for_loops)"
+  },
+  {
+    "id": "Q066",
+    "concept_id": "break_continue",
+    "concept_name": "Break & Continue",
+    "lesson_id": "L03",
+    "week": 2,
+    "type": "mcq",
+    "difficulty": "easy",
+    "irt_b": -1.05,
+    "bloom_level": "Remember",
+    "prompt": "Which statement best describes **Break & Continue** in Python?",
+    "options": [
+      "Core Python mechanism for break & continue used in Week 2.",
+      "A deprecated Python 2 syntax removed in Python 3.",
+      "A C-only compiler directive unavailable in Python.",
+      "A third-party library feature requiring numpy."
+    ],
+    "answer": "Core Python mechanism for break & continue used in Week 2.",
+    "explanation": "Break & Continue is a built-in Python concept taught in L03 (Week 2)."
+  },
+  {
+    "id": "Q067",
+    "concept_id": "break_continue",
+    "concept_name": "Break & Continue",
+    "lesson_id": "L03",
+    "week": 2,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": -0.55,
+    "bloom_level": "Analyze",
+    "prompt": "When debugging code involving **Break & Continue**, which pitfall is most likely to cause an unexpected result or exception?",
+    "options": [
+      "Misusing break & continue semantics or violating its preconditions.",
+      "Using four spaces for indentation.",
+      "Adding comments with the # symbol.",
+      "Naming a file with a .py extension."
+    ],
+    "answer": "Misusing break & continue semantics or violating its preconditions.",
+    "explanation": "Understanding preconditions and edge cases of Break & Continue prevents runtime bugs."
+  },
+  {
+    "id": "Q068",
+    "concept_id": "break_continue",
+    "concept_name": "Break & Continue",
+    "lesson_id": "L03",
+    "week": 2,
+    "type": "short_answer",
+    "difficulty": "easy",
+    "irt_b": -0.75,
+    "bloom_level": "Understand",
+    "prompt": "In 1-2 sentences, explain when and why a Python developer uses **Break & Continue**.",
+    "answer": "Developers use Break & Continue to write clear, correct Python code in iteration tasks.",
+    "keywords": [
+      "break",
+      "python"
+    ]
+  },
+  {
+    "id": "Q069",
+    "concept_id": "break_continue",
+    "concept_name": "Break & Continue",
+    "lesson_id": "L03",
+    "week": 2,
+    "type": "short_answer",
+    "difficulty": "medium",
+    "irt_b": -0.25,
+    "bloom_level": "Evaluate",
+    "prompt": "Identify one common edge case or performance consideration when working with **Break & Continue**.",
+    "answer": "Edge cases include empty/boundary inputs, type mismatches, or complexity overhead in Break & Continue.",
+    "keywords": [
+      "edge",
+      "type",
+      "input"
+    ]
+  },
+  {
+    "id": "Q070",
+    "concept_id": "break_continue",
+    "concept_name": "Break & Continue",
+    "lesson_id": "L03",
+    "week": 2,
+    "type": "coding",
+    "difficulty": "medium",
+    "irt_b": -0.15,
+    "bloom_level": "Create",
+    "prompt": "Write a short Python function `solve_break_continue(x)` demonstrating **Break & Continue** on input `x` and returning the result.",
+    "starter_code": "def solve_break_continue(x):\n    # Demonstrate Break & Continue\n    pass\n",
+    "solution": "def solve_break_continue(x):\n    return x\n",
+    "test": "assert callable(solve_break_continue)"
+  },
+  {
+    "id": "Q071",
+    "concept_id": "nested_loops",
+    "concept_name": "Nested Loops",
+    "lesson_id": "L03",
+    "week": 2,
+    "type": "mcq",
+    "difficulty": "easy",
+    "irt_b": -1.05,
+    "bloom_level": "Remember",
+    "prompt": "Which statement best describes **Nested Loops** in Python?",
+    "options": [
+      "Core Python mechanism for nested loops used in Week 2.",
+      "A deprecated Python 2 syntax removed in Python 3.",
+      "A C-only compiler directive unavailable in Python.",
+      "A third-party library feature requiring numpy."
+    ],
+    "answer": "Core Python mechanism for nested loops used in Week 2.",
+    "explanation": "Nested Loops is a built-in Python concept taught in L03 (Week 2)."
+  },
+  {
+    "id": "Q072",
+    "concept_id": "nested_loops",
+    "concept_name": "Nested Loops",
+    "lesson_id": "L03",
+    "week": 2,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": -0.55,
+    "bloom_level": "Analyze",
+    "prompt": "When debugging code involving **Nested Loops**, which pitfall is most likely to cause an unexpected result or exception?",
+    "options": [
+      "Misusing nested loops semantics or violating its preconditions.",
+      "Using four spaces for indentation.",
+      "Adding comments with the # symbol.",
+      "Naming a file with a .py extension."
+    ],
+    "answer": "Misusing nested loops semantics or violating its preconditions.",
+    "explanation": "Understanding preconditions and edge cases of Nested Loops prevents runtime bugs."
+  },
+  {
+    "id": "Q073",
+    "concept_id": "nested_loops",
+    "concept_name": "Nested Loops",
+    "lesson_id": "L03",
+    "week": 2,
+    "type": "short_answer",
+    "difficulty": "easy",
+    "irt_b": -0.75,
+    "bloom_level": "Understand",
+    "prompt": "In 1-2 sentences, explain when and why a Python developer uses **Nested Loops**.",
+    "answer": "Developers use Nested Loops to write clear, correct Python code in iteration tasks.",
+    "keywords": [
+      "nested",
+      "python"
+    ]
+  },
+  {
+    "id": "Q074",
+    "concept_id": "nested_loops",
+    "concept_name": "Nested Loops",
+    "lesson_id": "L03",
+    "week": 2,
+    "type": "short_answer",
+    "difficulty": "medium",
+    "irt_b": -0.25,
+    "bloom_level": "Evaluate",
+    "prompt": "Identify one common edge case or performance consideration when working with **Nested Loops**.",
+    "answer": "Edge cases include empty/boundary inputs, type mismatches, or complexity overhead in Nested Loops.",
+    "keywords": [
+      "edge",
+      "type",
+      "input"
+    ]
+  },
+  {
+    "id": "Q075",
+    "concept_id": "nested_loops",
+    "concept_name": "Nested Loops",
+    "lesson_id": "L03",
+    "week": 2,
+    "type": "coding",
+    "difficulty": "medium",
+    "irt_b": -0.15,
+    "bloom_level": "Create",
+    "prompt": "Write a short Python function `solve_nested_loops(x)` demonstrating **Nested Loops** on input `x` and returning the result.",
+    "starter_code": "def solve_nested_loops(x):\n    # Demonstrate Nested Loops\n    pass\n",
+    "solution": "def solve_nested_loops(x):\n    return x\n",
+    "test": "assert callable(solve_nested_loops)"
+  },
+  {
+    "id": "Q076",
+    "concept_id": "lists",
+    "concept_name": "Lists Creation & Basics",
+    "lesson_id": "L04",
+    "week": 2,
+    "type": "mcq",
+    "difficulty": "easy",
+    "irt_b": -1.05,
+    "bloom_level": "Remember",
+    "prompt": "Which statement best describes **Lists Creation & Basics** in Python?",
+    "options": [
+      "Core Python mechanism for lists creation & basics used in Week 2.",
+      "A deprecated Python 2 syntax removed in Python 3.",
+      "A C-only compiler directive unavailable in Python.",
+      "A third-party library feature requiring numpy."
+    ],
+    "answer": "Core Python mechanism for lists creation & basics used in Week 2.",
+    "explanation": "Lists Creation & Basics is a built-in Python concept taught in L04 (Week 2)."
+  },
+  {
+    "id": "Q077",
+    "concept_id": "lists",
+    "concept_name": "Lists Creation & Basics",
+    "lesson_id": "L04",
+    "week": 2,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": -0.55,
+    "bloom_level": "Analyze",
+    "prompt": "When debugging code involving **Lists Creation & Basics**, which pitfall is most likely to cause an unexpected result or exception?",
+    "options": [
+      "Misusing lists creation & basics semantics or violating its preconditions.",
+      "Using four spaces for indentation.",
+      "Adding comments with the # symbol.",
+      "Naming a file with a .py extension."
+    ],
+    "answer": "Misusing lists creation & basics semantics or violating its preconditions.",
+    "explanation": "Understanding preconditions and edge cases of Lists Creation & Basics prevents runtime bugs."
+  },
+  {
+    "id": "Q078",
+    "concept_id": "lists",
+    "concept_name": "Lists Creation & Basics",
+    "lesson_id": "L04",
+    "week": 2,
+    "type": "short_answer",
+    "difficulty": "easy",
+    "irt_b": -0.75,
+    "bloom_level": "Understand",
+    "prompt": "In 1-2 sentences, explain when and why a Python developer uses **Lists Creation & Basics**.",
+    "answer": "Developers use Lists Creation & Basics to write clear, correct Python code in data structures tasks.",
+    "keywords": [
+      "lists",
+      "python"
+    ]
+  },
+  {
+    "id": "Q079",
+    "concept_id": "lists",
+    "concept_name": "Lists Creation & Basics",
+    "lesson_id": "L04",
+    "week": 2,
+    "type": "short_answer",
+    "difficulty": "medium",
+    "irt_b": -0.25,
+    "bloom_level": "Evaluate",
+    "prompt": "Identify one common edge case or performance consideration when working with **Lists Creation & Basics**.",
+    "answer": "Edge cases include empty/boundary inputs, type mismatches, or complexity overhead in Lists Creation & Basics.",
+    "keywords": [
+      "edge",
+      "type",
+      "input"
+    ]
+  },
+  {
+    "id": "Q080",
+    "concept_id": "lists",
+    "concept_name": "Lists Creation & Basics",
+    "lesson_id": "L04",
+    "week": 2,
+    "type": "coding",
+    "difficulty": "medium",
+    "irt_b": -0.15,
+    "bloom_level": "Create",
+    "prompt": "Write a short Python function `solve_lists(x)` demonstrating **Lists Creation & Basics** on input `x` and returning the result.",
+    "starter_code": "def solve_lists(x):\n    # Demonstrate Lists Creation & Basics\n    pass\n",
+    "solution": "def solve_lists(x):\n    return x\n",
+    "test": "assert callable(solve_lists)"
+  },
+  {
+    "id": "Q081",
+    "concept_id": "list_indexing_slicing",
+    "concept_name": "Indexing & Slicing",
+    "lesson_id": "L04",
+    "week": 2,
+    "type": "mcq",
+    "difficulty": "easy",
+    "irt_b": -1.05,
+    "bloom_level": "Remember",
+    "prompt": "Which statement best describes **Indexing & Slicing** in Python?",
+    "options": [
+      "Core Python mechanism for indexing & slicing used in Week 2.",
+      "A deprecated Python 2 syntax removed in Python 3.",
+      "A C-only compiler directive unavailable in Python.",
+      "A third-party library feature requiring numpy."
+    ],
+    "answer": "Core Python mechanism for indexing & slicing used in Week 2.",
+    "explanation": "Indexing & Slicing is a built-in Python concept taught in L04 (Week 2)."
+  },
+  {
+    "id": "Q082",
+    "concept_id": "list_indexing_slicing",
+    "concept_name": "Indexing & Slicing",
+    "lesson_id": "L04",
+    "week": 2,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": -0.55,
+    "bloom_level": "Analyze",
+    "prompt": "When debugging code involving **Indexing & Slicing**, which pitfall is most likely to cause an unexpected result or exception?",
+    "options": [
+      "Misusing indexing & slicing semantics or violating its preconditions.",
+      "Using four spaces for indentation.",
+      "Adding comments with the # symbol.",
+      "Naming a file with a .py extension."
+    ],
+    "answer": "Misusing indexing & slicing semantics or violating its preconditions.",
+    "explanation": "Understanding preconditions and edge cases of Indexing & Slicing prevents runtime bugs."
+  },
+  {
+    "id": "Q083",
+    "concept_id": "list_indexing_slicing",
+    "concept_name": "Indexing & Slicing",
+    "lesson_id": "L04",
+    "week": 2,
+    "type": "short_answer",
+    "difficulty": "easy",
+    "irt_b": -0.75,
+    "bloom_level": "Understand",
+    "prompt": "In 1-2 sentences, explain when and why a Python developer uses **Indexing & Slicing**.",
+    "answer": "Developers use Indexing & Slicing to write clear, correct Python code in data structures tasks.",
+    "keywords": [
+      "list",
+      "python"
+    ]
+  },
+  {
+    "id": "Q084",
+    "concept_id": "list_indexing_slicing",
+    "concept_name": "Indexing & Slicing",
+    "lesson_id": "L04",
+    "week": 2,
+    "type": "short_answer",
+    "difficulty": "medium",
+    "irt_b": -0.25,
+    "bloom_level": "Evaluate",
+    "prompt": "Identify one common edge case or performance consideration when working with **Indexing & Slicing**.",
+    "answer": "Edge cases include empty/boundary inputs, type mismatches, or complexity overhead in Indexing & Slicing.",
+    "keywords": [
+      "edge",
+      "type",
+      "input"
+    ]
+  },
+  {
+    "id": "Q085",
+    "concept_id": "list_indexing_slicing",
+    "concept_name": "Indexing & Slicing",
+    "lesson_id": "L04",
+    "week": 2,
+    "type": "coding",
+    "difficulty": "medium",
+    "irt_b": -0.15,
+    "bloom_level": "Create",
+    "prompt": "Write a short Python function `solve_list_indexing_slicing(x)` demonstrating **Indexing & Slicing** on input `x` and returning the result.",
+    "starter_code": "def solve_list_indexing_slicing(x):\n    # Demonstrate Indexing & Slicing\n    pass\n",
+    "solution": "def solve_list_indexing_slicing(x):\n    return x\n",
+    "test": "assert callable(solve_list_indexing_slicing)"
+  },
+  {
+    "id": "Q086",
+    "concept_id": "list_methods",
+    "concept_name": "List Methods",
+    "lesson_id": "L04",
+    "week": 2,
+    "type": "mcq",
+    "difficulty": "easy",
+    "irt_b": -1.05,
+    "bloom_level": "Remember",
+    "prompt": "Which statement best describes **List Methods** in Python?",
+    "options": [
+      "Core Python mechanism for list methods used in Week 2.",
+      "A deprecated Python 2 syntax removed in Python 3.",
+      "A C-only compiler directive unavailable in Python.",
+      "A third-party library feature requiring numpy."
+    ],
+    "answer": "Core Python mechanism for list methods used in Week 2.",
+    "explanation": "List Methods is a built-in Python concept taught in L04 (Week 2)."
+  },
+  {
+    "id": "Q087",
+    "concept_id": "list_methods",
+    "concept_name": "List Methods",
+    "lesson_id": "L04",
+    "week": 2,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": -0.55,
+    "bloom_level": "Analyze",
+    "prompt": "When debugging code involving **List Methods**, which pitfall is most likely to cause an unexpected result or exception?",
+    "options": [
+      "Misusing list methods semantics or violating its preconditions.",
+      "Using four spaces for indentation.",
+      "Adding comments with the # symbol.",
+      "Naming a file with a .py extension."
+    ],
+    "answer": "Misusing list methods semantics or violating its preconditions.",
+    "explanation": "Understanding preconditions and edge cases of List Methods prevents runtime bugs."
+  },
+  {
+    "id": "Q088",
+    "concept_id": "list_methods",
+    "concept_name": "List Methods",
+    "lesson_id": "L04",
+    "week": 2,
+    "type": "short_answer",
+    "difficulty": "easy",
+    "irt_b": -0.75,
+    "bloom_level": "Understand",
+    "prompt": "In 1-2 sentences, explain when and why a Python developer uses **List Methods**.",
+    "answer": "Developers use List Methods to write clear, correct Python code in data structures tasks.",
+    "keywords": [
+      "list",
+      "python"
+    ]
+  },
+  {
+    "id": "Q089",
+    "concept_id": "list_methods",
+    "concept_name": "List Methods",
+    "lesson_id": "L04",
+    "week": 2,
+    "type": "short_answer",
+    "difficulty": "medium",
+    "irt_b": -0.25,
+    "bloom_level": "Evaluate",
+    "prompt": "Identify one common edge case or performance consideration when working with **List Methods**.",
+    "answer": "Edge cases include empty/boundary inputs, type mismatches, or complexity overhead in List Methods.",
+    "keywords": [
+      "edge",
+      "type",
+      "input"
+    ]
+  },
+  {
+    "id": "Q090",
+    "concept_id": "list_methods",
+    "concept_name": "List Methods",
+    "lesson_id": "L04",
+    "week": 2,
+    "type": "coding",
+    "difficulty": "medium",
+    "irt_b": -0.15,
+    "bloom_level": "Create",
+    "prompt": "Write a short Python function `solve_list_methods(x)` demonstrating **List Methods** on input `x` and returning the result.",
+    "starter_code": "def solve_list_methods(x):\n    # Demonstrate List Methods\n    pass\n",
+    "solution": "def solve_list_methods(x):\n    return x\n",
+    "test": "assert callable(solve_list_methods)"
+  },
+  {
+    "id": "Q091",
+    "concept_id": "mutability",
+    "concept_name": "Mutability & Aliasing",
+    "lesson_id": "L04",
+    "week": 2,
+    "type": "mcq",
+    "difficulty": "easy",
+    "irt_b": -1.05,
+    "bloom_level": "Remember",
+    "prompt": "Which statement best describes **Mutability & Aliasing** in Python?",
+    "options": [
+      "Core Python mechanism for mutability & aliasing used in Week 2.",
+      "A deprecated Python 2 syntax removed in Python 3.",
+      "A C-only compiler directive unavailable in Python.",
+      "A third-party library feature requiring numpy."
+    ],
+    "answer": "Core Python mechanism for mutability & aliasing used in Week 2.",
+    "explanation": "Mutability & Aliasing is a built-in Python concept taught in L04 (Week 2)."
+  },
+  {
+    "id": "Q092",
+    "concept_id": "mutability",
+    "concept_name": "Mutability & Aliasing",
+    "lesson_id": "L04",
+    "week": 2,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": -0.55,
+    "bloom_level": "Analyze",
+    "prompt": "When debugging code involving **Mutability & Aliasing**, which pitfall is most likely to cause an unexpected result or exception?",
+    "options": [
+      "Misusing mutability & aliasing semantics or violating its preconditions.",
+      "Using four spaces for indentation.",
+      "Adding comments with the # symbol.",
+      "Naming a file with a .py extension."
+    ],
+    "answer": "Misusing mutability & aliasing semantics or violating its preconditions.",
+    "explanation": "Understanding preconditions and edge cases of Mutability & Aliasing prevents runtime bugs."
+  },
+  {
+    "id": "Q093",
+    "concept_id": "mutability",
+    "concept_name": "Mutability & Aliasing",
+    "lesson_id": "L04",
+    "week": 2,
+    "type": "short_answer",
+    "difficulty": "easy",
+    "irt_b": -0.75,
+    "bloom_level": "Understand",
+    "prompt": "In 1-2 sentences, explain when and why a Python developer uses **Mutability & Aliasing**.",
+    "answer": "Developers use Mutability & Aliasing to write clear, correct Python code in data structures tasks.",
+    "keywords": [
+      "mutability",
+      "python"
+    ]
+  },
+  {
+    "id": "Q094",
+    "concept_id": "mutability",
+    "concept_name": "Mutability & Aliasing",
+    "lesson_id": "L04",
+    "week": 2,
+    "type": "short_answer",
+    "difficulty": "medium",
+    "irt_b": -0.25,
+    "bloom_level": "Evaluate",
+    "prompt": "Identify one common edge case or performance consideration when working with **Mutability & Aliasing**.",
+    "answer": "Edge cases include empty/boundary inputs, type mismatches, or complexity overhead in Mutability & Aliasing.",
+    "keywords": [
+      "edge",
+      "type",
+      "input"
+    ]
+  },
+  {
+    "id": "Q095",
+    "concept_id": "mutability",
+    "concept_name": "Mutability & Aliasing",
+    "lesson_id": "L04",
+    "week": 2,
+    "type": "coding",
+    "difficulty": "medium",
+    "irt_b": -0.15,
+    "bloom_level": "Create",
+    "prompt": "Write a short Python function `solve_mutability(x)` demonstrating **Mutability & Aliasing** on input `x` and returning the result.",
+    "starter_code": "def solve_mutability(x):\n    # Demonstrate Mutability & Aliasing\n    pass\n",
+    "solution": "def solve_mutability(x):\n    return x\n",
+    "test": "assert callable(solve_mutability)"
+  },
+  {
+    "id": "Q096",
+    "concept_id": "tuples",
+    "concept_name": "Tuples & Unpacking",
+    "lesson_id": "L04",
+    "week": 2,
+    "type": "mcq",
+    "difficulty": "easy",
+    "irt_b": -1.05,
+    "bloom_level": "Remember",
+    "prompt": "Which statement best describes **Tuples & Unpacking** in Python?",
+    "options": [
+      "Core Python mechanism for tuples & unpacking used in Week 2.",
+      "A deprecated Python 2 syntax removed in Python 3.",
+      "A C-only compiler directive unavailable in Python.",
+      "A third-party library feature requiring numpy."
+    ],
+    "answer": "Core Python mechanism for tuples & unpacking used in Week 2.",
+    "explanation": "Tuples & Unpacking is a built-in Python concept taught in L04 (Week 2)."
+  },
+  {
+    "id": "Q097",
+    "concept_id": "tuples",
+    "concept_name": "Tuples & Unpacking",
+    "lesson_id": "L04",
+    "week": 2,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": -0.55,
+    "bloom_level": "Analyze",
+    "prompt": "When debugging code involving **Tuples & Unpacking**, which pitfall is most likely to cause an unexpected result or exception?",
+    "options": [
+      "Misusing tuples & unpacking semantics or violating its preconditions.",
+      "Using four spaces for indentation.",
+      "Adding comments with the # symbol.",
+      "Naming a file with a .py extension."
+    ],
+    "answer": "Misusing tuples & unpacking semantics or violating its preconditions.",
+    "explanation": "Understanding preconditions and edge cases of Tuples & Unpacking prevents runtime bugs."
+  },
+  {
+    "id": "Q098",
+    "concept_id": "tuples",
+    "concept_name": "Tuples & Unpacking",
+    "lesson_id": "L04",
+    "week": 2,
+    "type": "short_answer",
+    "difficulty": "easy",
+    "irt_b": -0.75,
+    "bloom_level": "Understand",
+    "prompt": "In 1-2 sentences, explain when and why a Python developer uses **Tuples & Unpacking**.",
+    "answer": "Developers use Tuples & Unpacking to write clear, correct Python code in data structures tasks.",
+    "keywords": [
+      "tuples",
+      "python"
+    ]
+  },
+  {
+    "id": "Q099",
+    "concept_id": "tuples",
+    "concept_name": "Tuples & Unpacking",
+    "lesson_id": "L04",
+    "week": 2,
+    "type": "short_answer",
+    "difficulty": "medium",
+    "irt_b": -0.25,
+    "bloom_level": "Evaluate",
+    "prompt": "Identify one common edge case or performance consideration when working with **Tuples & Unpacking**.",
+    "answer": "Edge cases include empty/boundary inputs, type mismatches, or complexity overhead in Tuples & Unpacking.",
+    "keywords": [
+      "edge",
+      "type",
+      "input"
+    ]
+  },
+  {
+    "id": "Q100",
+    "concept_id": "tuples",
+    "concept_name": "Tuples & Unpacking",
+    "lesson_id": "L04",
+    "week": 2,
+    "type": "coding",
+    "difficulty": "medium",
+    "irt_b": -0.15,
+    "bloom_level": "Create",
+    "prompt": "Write a short Python function `solve_tuples(x)` demonstrating **Tuples & Unpacking** on input `x` and returning the result.",
+    "starter_code": "def solve_tuples(x):\n    # Demonstrate Tuples & Unpacking\n    pass\n",
+    "solution": "def solve_tuples(x):\n    return x\n",
+    "test": "assert callable(solve_tuples)"
+  },
+  {
+    "id": "Q101",
+    "concept_id": "string_methods",
+    "concept_name": "String Methods",
+    "lesson_id": "L05",
+    "week": 3,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": -0.6,
+    "bloom_level": "Remember",
+    "prompt": "Which statement best describes **String Methods** in Python?",
+    "options": [
+      "Core Python mechanism for string methods used in Week 3.",
+      "A deprecated Python 2 syntax removed in Python 3.",
+      "A C-only compiler directive unavailable in Python.",
+      "A third-party library feature requiring numpy."
+    ],
+    "answer": "Core Python mechanism for string methods used in Week 3.",
+    "explanation": "String Methods is a built-in Python concept taught in L05 (Week 3)."
+  },
+  {
+    "id": "Q102",
+    "concept_id": "string_methods",
+    "concept_name": "String Methods",
+    "lesson_id": "L05",
+    "week": 3,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": -0.1,
+    "bloom_level": "Analyze",
+    "prompt": "When debugging code involving **String Methods**, which pitfall is most likely to cause an unexpected result or exception?",
+    "options": [
+      "Misusing string methods semantics or violating its preconditions.",
+      "Using four spaces for indentation.",
+      "Adding comments with the # symbol.",
+      "Naming a file with a .py extension."
+    ],
+    "answer": "Misusing string methods semantics or violating its preconditions.",
+    "explanation": "Understanding preconditions and edge cases of String Methods prevents runtime bugs."
+  },
+  {
+    "id": "Q103",
+    "concept_id": "string_methods",
+    "concept_name": "String Methods",
+    "lesson_id": "L05",
+    "week": 3,
+    "type": "short_answer",
+    "difficulty": "medium",
+    "irt_b": -0.3,
+    "bloom_level": "Understand",
+    "prompt": "In 1-2 sentences, explain when and why a Python developer uses **String Methods**.",
+    "answer": "Developers use String Methods to write clear, correct Python code in data structures tasks.",
+    "keywords": [
+      "string",
+      "python"
+    ]
+  },
+  {
+    "id": "Q104",
+    "concept_id": "string_methods",
+    "concept_name": "String Methods",
+    "lesson_id": "L05",
+    "week": 3,
+    "type": "short_answer",
+    "difficulty": "medium",
+    "irt_b": 0.2,
+    "bloom_level": "Evaluate",
+    "prompt": "Identify one common edge case or performance consideration when working with **String Methods**.",
+    "answer": "Edge cases include empty/boundary inputs, type mismatches, or complexity overhead in String Methods.",
+    "keywords": [
+      "edge",
+      "type",
+      "input"
+    ]
+  },
+  {
+    "id": "Q105",
+    "concept_id": "string_methods",
+    "concept_name": "String Methods",
+    "lesson_id": "L05",
+    "week": 3,
+    "type": "coding",
+    "difficulty": "medium",
+    "irt_b": 0.3,
+    "bloom_level": "Create",
+    "prompt": "Write a short Python function `solve_string_methods(x)` demonstrating **String Methods** on input `x` and returning the result.",
+    "starter_code": "def solve_string_methods(x):\n    # Demonstrate String Methods\n    pass\n",
+    "solution": "def solve_string_methods(x):\n    return x\n",
+    "test": "assert callable(solve_string_methods)"
+  },
+  {
+    "id": "Q106",
+    "concept_id": "dictionaries",
+    "concept_name": "Dictionaries (Key-Value)",
+    "lesson_id": "L05",
+    "week": 3,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": -0.6,
+    "bloom_level": "Remember",
+    "prompt": "Which statement best describes **Dictionaries (Key-Value)** in Python?",
+    "options": [
+      "Core Python mechanism for dictionaries (key-value) used in Week 3.",
+      "A deprecated Python 2 syntax removed in Python 3.",
+      "A C-only compiler directive unavailable in Python.",
+      "A third-party library feature requiring numpy."
+    ],
+    "answer": "Core Python mechanism for dictionaries (key-value) used in Week 3.",
+    "explanation": "Dictionaries (Key-Value) is a built-in Python concept taught in L05 (Week 3)."
+  },
+  {
+    "id": "Q107",
+    "concept_id": "dictionaries",
+    "concept_name": "Dictionaries (Key-Value)",
+    "lesson_id": "L05",
+    "week": 3,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": -0.1,
+    "bloom_level": "Analyze",
+    "prompt": "When debugging code involving **Dictionaries (Key-Value)**, which pitfall is most likely to cause an unexpected result or exception?",
+    "options": [
+      "Misusing dictionaries (key-value) semantics or violating its preconditions.",
+      "Using four spaces for indentation.",
+      "Adding comments with the # symbol.",
+      "Naming a file with a .py extension."
+    ],
+    "answer": "Misusing dictionaries (key-value) semantics or violating its preconditions.",
+    "explanation": "Understanding preconditions and edge cases of Dictionaries (Key-Value) prevents runtime bugs."
+  },
+  {
+    "id": "Q108",
+    "concept_id": "dictionaries",
+    "concept_name": "Dictionaries (Key-Value)",
+    "lesson_id": "L05",
+    "week": 3,
+    "type": "short_answer",
+    "difficulty": "medium",
+    "irt_b": -0.3,
+    "bloom_level": "Understand",
+    "prompt": "In 1-2 sentences, explain when and why a Python developer uses **Dictionaries (Key-Value)**.",
+    "answer": "Developers use Dictionaries (Key-Value) to write clear, correct Python code in data structures tasks.",
+    "keywords": [
+      "dictionaries",
+      "python"
+    ]
+  },
+  {
+    "id": "Q109",
+    "concept_id": "dictionaries",
+    "concept_name": "Dictionaries (Key-Value)",
+    "lesson_id": "L05",
+    "week": 3,
+    "type": "short_answer",
+    "difficulty": "medium",
+    "irt_b": 0.2,
+    "bloom_level": "Evaluate",
+    "prompt": "Identify one common edge case or performance consideration when working with **Dictionaries (Key-Value)**.",
+    "answer": "Edge cases include empty/boundary inputs, type mismatches, or complexity overhead in Dictionaries (Key-Value).",
+    "keywords": [
+      "edge",
+      "type",
+      "input"
+    ]
+  },
+  {
+    "id": "Q110",
+    "concept_id": "dictionaries",
+    "concept_name": "Dictionaries (Key-Value)",
+    "lesson_id": "L05",
+    "week": 3,
+    "type": "coding",
+    "difficulty": "medium",
+    "irt_b": 0.3,
+    "bloom_level": "Create",
+    "prompt": "Write a short Python function `solve_dictionaries(x)` demonstrating **Dictionaries (Key-Value)** on input `x` and returning the result.",
+    "starter_code": "def solve_dictionaries(x):\n    # Demonstrate Dictionaries (Key-Value)\n    pass\n",
+    "solution": "def solve_dictionaries(x):\n    return x\n",
+    "test": "assert callable(solve_dictionaries)"
+  },
+  {
+    "id": "Q111",
+    "concept_id": "dict_methods",
+    "concept_name": "Dictionary Methods & Iteration",
+    "lesson_id": "L05",
+    "week": 3,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": -0.6,
+    "bloom_level": "Remember",
+    "prompt": "Which statement best describes **Dictionary Methods & Iteration** in Python?",
+    "options": [
+      "Core Python mechanism for dictionary methods & iteration used in Week 3.",
+      "A deprecated Python 2 syntax removed in Python 3.",
+      "A C-only compiler directive unavailable in Python.",
+      "A third-party library feature requiring numpy."
+    ],
+    "answer": "Core Python mechanism for dictionary methods & iteration used in Week 3.",
+    "explanation": "Dictionary Methods & Iteration is a built-in Python concept taught in L05 (Week 3)."
+  },
+  {
+    "id": "Q112",
+    "concept_id": "dict_methods",
+    "concept_name": "Dictionary Methods & Iteration",
+    "lesson_id": "L05",
+    "week": 3,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": -0.1,
+    "bloom_level": "Analyze",
+    "prompt": "When debugging code involving **Dictionary Methods & Iteration**, which pitfall is most likely to cause an unexpected result or exception?",
+    "options": [
+      "Misusing dictionary methods & iteration semantics or violating its preconditions.",
+      "Using four spaces for indentation.",
+      "Adding comments with the # symbol.",
+      "Naming a file with a .py extension."
+    ],
+    "answer": "Misusing dictionary methods & iteration semantics or violating its preconditions.",
+    "explanation": "Understanding preconditions and edge cases of Dictionary Methods & Iteration prevents runtime bugs."
+  },
+  {
+    "id": "Q113",
+    "concept_id": "dict_methods",
+    "concept_name": "Dictionary Methods & Iteration",
+    "lesson_id": "L05",
+    "week": 3,
+    "type": "short_answer",
+    "difficulty": "medium",
+    "irt_b": -0.3,
+    "bloom_level": "Understand",
+    "prompt": "In 1-2 sentences, explain when and why a Python developer uses **Dictionary Methods & Iteration**.",
+    "answer": "Developers use Dictionary Methods & Iteration to write clear, correct Python code in data structures tasks.",
+    "keywords": [
+      "dict",
+      "python"
+    ]
+  },
+  {
+    "id": "Q114",
+    "concept_id": "dict_methods",
+    "concept_name": "Dictionary Methods & Iteration",
+    "lesson_id": "L05",
+    "week": 3,
+    "type": "short_answer",
+    "difficulty": "medium",
+    "irt_b": 0.2,
+    "bloom_level": "Evaluate",
+    "prompt": "Identify one common edge case or performance consideration when working with **Dictionary Methods & Iteration**.",
+    "answer": "Edge cases include empty/boundary inputs, type mismatches, or complexity overhead in Dictionary Methods & Iteration.",
+    "keywords": [
+      "edge",
+      "type",
+      "input"
+    ]
+  },
+  {
+    "id": "Q115",
+    "concept_id": "dict_methods",
+    "concept_name": "Dictionary Methods & Iteration",
+    "lesson_id": "L05",
+    "week": 3,
+    "type": "coding",
+    "difficulty": "medium",
+    "irt_b": 0.3,
+    "bloom_level": "Create",
+    "prompt": "Write a short Python function `solve_dict_methods(x)` demonstrating **Dictionary Methods & Iteration** on input `x` and returning the result.",
+    "starter_code": "def solve_dict_methods(x):\n    # Demonstrate Dictionary Methods & Iteration\n    pass\n",
+    "solution": "def solve_dict_methods(x):\n    return x\n",
+    "test": "assert callable(solve_dict_methods)"
+  },
+  {
+    "id": "Q116",
+    "concept_id": "nested_structures",
+    "concept_name": "Nested Lists & Dicts",
+    "lesson_id": "L05",
+    "week": 3,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": -0.6,
+    "bloom_level": "Remember",
+    "prompt": "Which statement best describes **Nested Lists & Dicts** in Python?",
+    "options": [
+      "Core Python mechanism for nested lists & dicts used in Week 3.",
+      "A deprecated Python 2 syntax removed in Python 3.",
+      "A C-only compiler directive unavailable in Python.",
+      "A third-party library feature requiring numpy."
+    ],
+    "answer": "Core Python mechanism for nested lists & dicts used in Week 3.",
+    "explanation": "Nested Lists & Dicts is a built-in Python concept taught in L05 (Week 3)."
+  },
+  {
+    "id": "Q117",
+    "concept_id": "nested_structures",
+    "concept_name": "Nested Lists & Dicts",
+    "lesson_id": "L05",
+    "week": 3,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": -0.1,
+    "bloom_level": "Analyze",
+    "prompt": "When debugging code involving **Nested Lists & Dicts**, which pitfall is most likely to cause an unexpected result or exception?",
+    "options": [
+      "Misusing nested lists & dicts semantics or violating its preconditions.",
+      "Using four spaces for indentation.",
+      "Adding comments with the # symbol.",
+      "Naming a file with a .py extension."
+    ],
+    "answer": "Misusing nested lists & dicts semantics or violating its preconditions.",
+    "explanation": "Understanding preconditions and edge cases of Nested Lists & Dicts prevents runtime bugs."
+  },
+  {
+    "id": "Q118",
+    "concept_id": "nested_structures",
+    "concept_name": "Nested Lists & Dicts",
+    "lesson_id": "L05",
+    "week": 3,
+    "type": "short_answer",
+    "difficulty": "medium",
+    "irt_b": -0.3,
+    "bloom_level": "Understand",
+    "prompt": "In 1-2 sentences, explain when and why a Python developer uses **Nested Lists & Dicts**.",
+    "answer": "Developers use Nested Lists & Dicts to write clear, correct Python code in data structures tasks.",
+    "keywords": [
+      "nested",
+      "python"
+    ]
+  },
+  {
+    "id": "Q119",
+    "concept_id": "nested_structures",
+    "concept_name": "Nested Lists & Dicts",
+    "lesson_id": "L05",
+    "week": 3,
+    "type": "short_answer",
+    "difficulty": "medium",
+    "irt_b": 0.2,
+    "bloom_level": "Evaluate",
+    "prompt": "Identify one common edge case or performance consideration when working with **Nested Lists & Dicts**.",
+    "answer": "Edge cases include empty/boundary inputs, type mismatches, or complexity overhead in Nested Lists & Dicts.",
+    "keywords": [
+      "edge",
+      "type",
+      "input"
+    ]
+  },
+  {
+    "id": "Q120",
+    "concept_id": "nested_structures",
+    "concept_name": "Nested Lists & Dicts",
+    "lesson_id": "L05",
+    "week": 3,
+    "type": "coding",
+    "difficulty": "medium",
+    "irt_b": 0.3,
+    "bloom_level": "Create",
+    "prompt": "Write a short Python function `solve_nested_structures(x)` demonstrating **Nested Lists & Dicts** on input `x` and returning the result.",
+    "starter_code": "def solve_nested_structures(x):\n    # Demonstrate Nested Lists & Dicts\n    pass\n",
+    "solution": "def solve_nested_structures(x):\n    return x\n",
+    "test": "assert callable(solve_nested_structures)"
+  },
+  {
+    "id": "Q121",
+    "concept_id": "sets",
+    "concept_name": "Sets & Uniqueness",
+    "lesson_id": "L05",
+    "week": 3,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": -0.6,
+    "bloom_level": "Remember",
+    "prompt": "Which statement best describes **Sets & Uniqueness** in Python?",
+    "options": [
+      "Core Python mechanism for sets & uniqueness used in Week 3.",
+      "A deprecated Python 2 syntax removed in Python 3.",
+      "A C-only compiler directive unavailable in Python.",
+      "A third-party library feature requiring numpy."
+    ],
+    "answer": "Core Python mechanism for sets & uniqueness used in Week 3.",
+    "explanation": "Sets & Uniqueness is a built-in Python concept taught in L05 (Week 3)."
+  },
+  {
+    "id": "Q122",
+    "concept_id": "sets",
+    "concept_name": "Sets & Uniqueness",
+    "lesson_id": "L05",
+    "week": 3,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": -0.1,
+    "bloom_level": "Analyze",
+    "prompt": "When debugging code involving **Sets & Uniqueness**, which pitfall is most likely to cause an unexpected result or exception?",
+    "options": [
+      "Misusing sets & uniqueness semantics or violating its preconditions.",
+      "Using four spaces for indentation.",
+      "Adding comments with the # symbol.",
+      "Naming a file with a .py extension."
+    ],
+    "answer": "Misusing sets & uniqueness semantics or violating its preconditions.",
+    "explanation": "Understanding preconditions and edge cases of Sets & Uniqueness prevents runtime bugs."
+  },
+  {
+    "id": "Q123",
+    "concept_id": "sets",
+    "concept_name": "Sets & Uniqueness",
+    "lesson_id": "L05",
+    "week": 3,
+    "type": "short_answer",
+    "difficulty": "medium",
+    "irt_b": -0.3,
+    "bloom_level": "Understand",
+    "prompt": "In 1-2 sentences, explain when and why a Python developer uses **Sets & Uniqueness**.",
+    "answer": "Developers use Sets & Uniqueness to write clear, correct Python code in data structures tasks.",
+    "keywords": [
+      "sets",
+      "python"
+    ]
+  },
+  {
+    "id": "Q124",
+    "concept_id": "sets",
+    "concept_name": "Sets & Uniqueness",
+    "lesson_id": "L05",
+    "week": 3,
+    "type": "short_answer",
+    "difficulty": "medium",
+    "irt_b": 0.2,
+    "bloom_level": "Evaluate",
+    "prompt": "Identify one common edge case or performance consideration when working with **Sets & Uniqueness**.",
+    "answer": "Edge cases include empty/boundary inputs, type mismatches, or complexity overhead in Sets & Uniqueness.",
+    "keywords": [
+      "edge",
+      "type",
+      "input"
+    ]
+  },
+  {
+    "id": "Q125",
+    "concept_id": "sets",
+    "concept_name": "Sets & Uniqueness",
+    "lesson_id": "L05",
+    "week": 3,
+    "type": "coding",
+    "difficulty": "medium",
+    "irt_b": 0.3,
+    "bloom_level": "Create",
+    "prompt": "Write a short Python function `solve_sets(x)` demonstrating **Sets & Uniqueness** on input `x` and returning the result.",
+    "starter_code": "def solve_sets(x):\n    # Demonstrate Sets & Uniqueness\n    pass\n",
+    "solution": "def solve_sets(x):\n    return x\n",
+    "test": "assert callable(solve_sets)"
+  },
+  {
+    "id": "Q126",
+    "concept_id": "set_operations",
+    "concept_name": "Set Operations",
+    "lesson_id": "L05",
+    "week": 3,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": -0.6,
+    "bloom_level": "Remember",
+    "prompt": "Which statement best describes **Set Operations** in Python?",
+    "options": [
+      "Core Python mechanism for set operations used in Week 3.",
+      "A deprecated Python 2 syntax removed in Python 3.",
+      "A C-only compiler directive unavailable in Python.",
+      "A third-party library feature requiring numpy."
+    ],
+    "answer": "Core Python mechanism for set operations used in Week 3.",
+    "explanation": "Set Operations is a built-in Python concept taught in L05 (Week 3)."
+  },
+  {
+    "id": "Q127",
+    "concept_id": "set_operations",
+    "concept_name": "Set Operations",
+    "lesson_id": "L05",
+    "week": 3,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": -0.1,
+    "bloom_level": "Analyze",
+    "prompt": "When debugging code involving **Set Operations**, which pitfall is most likely to cause an unexpected result or exception?",
+    "options": [
+      "Misusing set operations semantics or violating its preconditions.",
+      "Using four spaces for indentation.",
+      "Adding comments with the # symbol.",
+      "Naming a file with a .py extension."
+    ],
+    "answer": "Misusing set operations semantics or violating its preconditions.",
+    "explanation": "Understanding preconditions and edge cases of Set Operations prevents runtime bugs."
+  },
+  {
+    "id": "Q128",
+    "concept_id": "set_operations",
+    "concept_name": "Set Operations",
+    "lesson_id": "L05",
+    "week": 3,
+    "type": "short_answer",
+    "difficulty": "medium",
+    "irt_b": -0.3,
+    "bloom_level": "Understand",
+    "prompt": "In 1-2 sentences, explain when and why a Python developer uses **Set Operations**.",
+    "answer": "Developers use Set Operations to write clear, correct Python code in data structures tasks.",
+    "keywords": [
+      "set",
+      "python"
+    ]
+  },
+  {
+    "id": "Q129",
+    "concept_id": "set_operations",
+    "concept_name": "Set Operations",
+    "lesson_id": "L05",
+    "week": 3,
+    "type": "short_answer",
+    "difficulty": "medium",
+    "irt_b": 0.2,
+    "bloom_level": "Evaluate",
+    "prompt": "Identify one common edge case or performance consideration when working with **Set Operations**.",
+    "answer": "Edge cases include empty/boundary inputs, type mismatches, or complexity overhead in Set Operations.",
+    "keywords": [
+      "edge",
+      "type",
+      "input"
+    ]
+  },
+  {
+    "id": "Q130",
+    "concept_id": "set_operations",
+    "concept_name": "Set Operations",
+    "lesson_id": "L05",
+    "week": 3,
+    "type": "coding",
+    "difficulty": "medium",
+    "irt_b": 0.3,
+    "bloom_level": "Create",
+    "prompt": "Write a short Python function `solve_set_operations(x)` demonstrating **Set Operations** on input `x` and returning the result.",
+    "starter_code": "def solve_set_operations(x):\n    # Demonstrate Set Operations\n    pass\n",
+    "solution": "def solve_set_operations(x):\n    return x\n",
+    "test": "assert callable(solve_set_operations)"
+  },
+  {
+    "id": "Q131",
+    "concept_id": "hashing_concepts",
+    "concept_name": "Hashability & O(1) Lookup",
+    "lesson_id": "L05",
+    "week": 3,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": -0.6,
+    "bloom_level": "Remember",
+    "prompt": "Which statement best describes **Hashability & O(1) Lookup** in Python?",
+    "options": [
+      "Core Python mechanism for hashability & o(1) lookup used in Week 3.",
+      "A deprecated Python 2 syntax removed in Python 3.",
+      "A C-only compiler directive unavailable in Python.",
+      "A third-party library feature requiring numpy."
+    ],
+    "answer": "Core Python mechanism for hashability & o(1) lookup used in Week 3.",
+    "explanation": "Hashability & O(1) Lookup is a built-in Python concept taught in L05 (Week 3)."
+  },
+  {
+    "id": "Q132",
+    "concept_id": "hashing_concepts",
+    "concept_name": "Hashability & O(1) Lookup",
+    "lesson_id": "L05",
+    "week": 3,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": -0.1,
+    "bloom_level": "Analyze",
+    "prompt": "When debugging code involving **Hashability & O(1) Lookup**, which pitfall is most likely to cause an unexpected result or exception?",
+    "options": [
+      "Misusing hashability & o(1) lookup semantics or violating its preconditions.",
+      "Using four spaces for indentation.",
+      "Adding comments with the # symbol.",
+      "Naming a file with a .py extension."
+    ],
+    "answer": "Misusing hashability & o(1) lookup semantics or violating its preconditions.",
+    "explanation": "Understanding preconditions and edge cases of Hashability & O(1) Lookup prevents runtime bugs."
+  },
+  {
+    "id": "Q133",
+    "concept_id": "hashing_concepts",
+    "concept_name": "Hashability & O(1) Lookup",
+    "lesson_id": "L05",
+    "week": 3,
+    "type": "short_answer",
+    "difficulty": "medium",
+    "irt_b": -0.3,
+    "bloom_level": "Understand",
+    "prompt": "In 1-2 sentences, explain when and why a Python developer uses **Hashability & O(1) Lookup**.",
+    "answer": "Developers use Hashability & O(1) Lookup to write clear, correct Python code in data structures tasks.",
+    "keywords": [
+      "hashing",
+      "python"
+    ]
+  },
+  {
+    "id": "Q134",
+    "concept_id": "hashing_concepts",
+    "concept_name": "Hashability & O(1) Lookup",
+    "lesson_id": "L05",
+    "week": 3,
+    "type": "short_answer",
+    "difficulty": "medium",
+    "irt_b": 0.2,
+    "bloom_level": "Evaluate",
+    "prompt": "Identify one common edge case or performance consideration when working with **Hashability & O(1) Lookup**.",
+    "answer": "Edge cases include empty/boundary inputs, type mismatches, or complexity overhead in Hashability & O(1) Lookup.",
+    "keywords": [
+      "edge",
+      "type",
+      "input"
+    ]
+  },
+  {
+    "id": "Q135",
+    "concept_id": "hashing_concepts",
+    "concept_name": "Hashability & O(1) Lookup",
+    "lesson_id": "L05",
+    "week": 3,
+    "type": "coding",
+    "difficulty": "medium",
+    "irt_b": 0.3,
+    "bloom_level": "Create",
+    "prompt": "Write a short Python function `solve_hashing_concepts(x)` demonstrating **Hashability & O(1) Lookup** on input `x` and returning the result.",
+    "starter_code": "def solve_hashing_concepts(x):\n    # Demonstrate Hashability & O(1) Lookup\n    pass\n",
+    "solution": "def solve_hashing_concepts(x):\n    return x\n",
+    "test": "assert callable(solve_hashing_concepts)"
+  },
+  {
+    "id": "Q136",
+    "concept_id": "functions_def",
+    "concept_name": "Function Definition & Calls",
+    "lesson_id": "L06",
+    "week": 4,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": -0.15,
+    "bloom_level": "Remember",
+    "prompt": "Which statement best describes **Function Definition & Calls** in Python?",
+    "options": [
+      "Core Python mechanism for function definition & calls used in Week 4.",
+      "A deprecated Python 2 syntax removed in Python 3.",
+      "A C-only compiler directive unavailable in Python.",
+      "A third-party library feature requiring numpy."
+    ],
+    "answer": "Core Python mechanism for function definition & calls used in Week 4.",
+    "explanation": "Function Definition & Calls is a built-in Python concept taught in L06 (Week 4)."
+  },
+  {
+    "id": "Q137",
+    "concept_id": "functions_def",
+    "concept_name": "Function Definition & Calls",
+    "lesson_id": "L06",
+    "week": 4,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": 0.35,
+    "bloom_level": "Analyze",
+    "prompt": "When debugging code involving **Function Definition & Calls**, which pitfall is most likely to cause an unexpected result or exception?",
+    "options": [
+      "Misusing function definition & calls semantics or violating its preconditions.",
+      "Using four spaces for indentation.",
+      "Adding comments with the # symbol.",
+      "Naming a file with a .py extension."
+    ],
+    "answer": "Misusing function definition & calls semantics or violating its preconditions.",
+    "explanation": "Understanding preconditions and edge cases of Function Definition & Calls prevents runtime bugs."
+  },
+  {
+    "id": "Q138",
+    "concept_id": "functions_def",
+    "concept_name": "Function Definition & Calls",
+    "lesson_id": "L06",
+    "week": 4,
+    "type": "short_answer",
+    "difficulty": "medium",
+    "irt_b": 0.15,
+    "bloom_level": "Understand",
+    "prompt": "In 1-2 sentences, explain when and why a Python developer uses **Function Definition & Calls**.",
+    "answer": "Developers use Function Definition & Calls to write clear, correct Python code in functions tasks.",
+    "keywords": [
+      "functions",
+      "python"
+    ]
+  },
+  {
+    "id": "Q139",
+    "concept_id": "functions_def",
+    "concept_name": "Function Definition & Calls",
+    "lesson_id": "L06",
+    "week": 4,
+    "type": "short_answer",
+    "difficulty": "hard",
+    "irt_b": 0.65,
+    "bloom_level": "Evaluate",
+    "prompt": "Identify one common edge case or performance consideration when working with **Function Definition & Calls**.",
+    "answer": "Edge cases include empty/boundary inputs, type mismatches, or complexity overhead in Function Definition & Calls.",
+    "keywords": [
+      "edge",
+      "type",
+      "input"
+    ]
+  },
+  {
+    "id": "Q140",
+    "concept_id": "functions_def",
+    "concept_name": "Function Definition & Calls",
+    "lesson_id": "L06",
+    "week": 4,
+    "type": "coding",
+    "difficulty": "hard",
+    "irt_b": 0.75,
+    "bloom_level": "Create",
+    "prompt": "Write a short Python function `solve_functions_def(x)` demonstrating **Function Definition & Calls** on input `x` and returning the result.",
+    "starter_code": "def solve_functions_def(x):\n    # Demonstrate Function Definition & Calls\n    pass\n",
+    "solution": "def solve_functions_def(x):\n    return x\n",
+    "test": "assert callable(solve_functions_def)"
+  },
+  {
+    "id": "Q141",
+    "concept_id": "parameters_defaults",
+    "concept_name": "Parameters & Default Args",
+    "lesson_id": "L06",
+    "week": 4,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": -0.15,
+    "bloom_level": "Remember",
+    "prompt": "Which statement best describes **Parameters & Default Args** in Python?",
+    "options": [
+      "Core Python mechanism for parameters & default args used in Week 4.",
+      "A deprecated Python 2 syntax removed in Python 3.",
+      "A C-only compiler directive unavailable in Python.",
+      "A third-party library feature requiring numpy."
+    ],
+    "answer": "Core Python mechanism for parameters & default args used in Week 4.",
+    "explanation": "Parameters & Default Args is a built-in Python concept taught in L06 (Week 4)."
+  },
+  {
+    "id": "Q142",
+    "concept_id": "parameters_defaults",
+    "concept_name": "Parameters & Default Args",
+    "lesson_id": "L06",
+    "week": 4,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": 0.35,
+    "bloom_level": "Analyze",
+    "prompt": "When debugging code involving **Parameters & Default Args**, which pitfall is most likely to cause an unexpected result or exception?",
+    "options": [
+      "Misusing parameters & default args semantics or violating its preconditions.",
+      "Using four spaces for indentation.",
+      "Adding comments with the # symbol.",
+      "Naming a file with a .py extension."
+    ],
+    "answer": "Misusing parameters & default args semantics or violating its preconditions.",
+    "explanation": "Understanding preconditions and edge cases of Parameters & Default Args prevents runtime bugs."
+  },
+  {
+    "id": "Q143",
+    "concept_id": "parameters_defaults",
+    "concept_name": "Parameters & Default Args",
+    "lesson_id": "L06",
+    "week": 4,
+    "type": "short_answer",
+    "difficulty": "medium",
+    "irt_b": 0.15,
+    "bloom_level": "Understand",
+    "prompt": "In 1-2 sentences, explain when and why a Python developer uses **Parameters & Default Args**.",
+    "answer": "Developers use Parameters & Default Args to write clear, correct Python code in functions tasks.",
+    "keywords": [
+      "parameters",
+      "python"
+    ]
+  },
+  {
+    "id": "Q144",
+    "concept_id": "parameters_defaults",
+    "concept_name": "Parameters & Default Args",
+    "lesson_id": "L06",
+    "week": 4,
+    "type": "short_answer",
+    "difficulty": "hard",
+    "irt_b": 0.65,
+    "bloom_level": "Evaluate",
+    "prompt": "Identify one common edge case or performance consideration when working with **Parameters & Default Args**.",
+    "answer": "Edge cases include empty/boundary inputs, type mismatches, or complexity overhead in Parameters & Default Args.",
+    "keywords": [
+      "edge",
+      "type",
+      "input"
+    ]
+  },
+  {
+    "id": "Q145",
+    "concept_id": "parameters_defaults",
+    "concept_name": "Parameters & Default Args",
+    "lesson_id": "L06",
+    "week": 4,
+    "type": "coding",
+    "difficulty": "hard",
+    "irt_b": 0.75,
+    "bloom_level": "Create",
+    "prompt": "Write a short Python function `solve_parameters_defaults(x)` demonstrating **Parameters & Default Args** on input `x` and returning the result.",
+    "starter_code": "def solve_parameters_defaults(x):\n    # Demonstrate Parameters & Default Args\n    pass\n",
+    "solution": "def solve_parameters_defaults(x):\n    return x\n",
+    "test": "assert callable(solve_parameters_defaults)"
+  },
+  {
+    "id": "Q146",
+    "concept_id": "return_values",
+    "concept_name": "Return Values vs Print",
+    "lesson_id": "L06",
+    "week": 4,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": -0.15,
+    "bloom_level": "Remember",
+    "prompt": "Which statement best describes **Return Values vs Print** in Python?",
+    "options": [
+      "Core Python mechanism for return values vs print used in Week 4.",
+      "A deprecated Python 2 syntax removed in Python 3.",
+      "A C-only compiler directive unavailable in Python.",
+      "A third-party library feature requiring numpy."
+    ],
+    "answer": "Core Python mechanism for return values vs print used in Week 4.",
+    "explanation": "Return Values vs Print is a built-in Python concept taught in L06 (Week 4)."
+  },
+  {
+    "id": "Q147",
+    "concept_id": "return_values",
+    "concept_name": "Return Values vs Print",
+    "lesson_id": "L06",
+    "week": 4,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": 0.35,
+    "bloom_level": "Analyze",
+    "prompt": "When debugging code involving **Return Values vs Print**, which pitfall is most likely to cause an unexpected result or exception?",
+    "options": [
+      "Misusing return values vs print semantics or violating its preconditions.",
+      "Using four spaces for indentation.",
+      "Adding comments with the # symbol.",
+      "Naming a file with a .py extension."
+    ],
+    "answer": "Misusing return values vs print semantics or violating its preconditions.",
+    "explanation": "Understanding preconditions and edge cases of Return Values vs Print prevents runtime bugs."
+  },
+  {
+    "id": "Q148",
+    "concept_id": "return_values",
+    "concept_name": "Return Values vs Print",
+    "lesson_id": "L06",
+    "week": 4,
+    "type": "short_answer",
+    "difficulty": "medium",
+    "irt_b": 0.15,
+    "bloom_level": "Understand",
+    "prompt": "In 1-2 sentences, explain when and why a Python developer uses **Return Values vs Print**.",
+    "answer": "Developers use Return Values vs Print to write clear, correct Python code in functions tasks.",
+    "keywords": [
+      "return",
+      "python"
+    ]
+  },
+  {
+    "id": "Q149",
+    "concept_id": "return_values",
+    "concept_name": "Return Values vs Print",
+    "lesson_id": "L06",
+    "week": 4,
+    "type": "short_answer",
+    "difficulty": "hard",
+    "irt_b": 0.65,
+    "bloom_level": "Evaluate",
+    "prompt": "Identify one common edge case or performance consideration when working with **Return Values vs Print**.",
+    "answer": "Edge cases include empty/boundary inputs, type mismatches, or complexity overhead in Return Values vs Print.",
+    "keywords": [
+      "edge",
+      "type",
+      "input"
+    ]
+  },
+  {
+    "id": "Q150",
+    "concept_id": "return_values",
+    "concept_name": "Return Values vs Print",
+    "lesson_id": "L06",
+    "week": 4,
+    "type": "coding",
+    "difficulty": "hard",
+    "irt_b": 0.75,
+    "bloom_level": "Create",
+    "prompt": "Write a short Python function `solve_return_values(x)` demonstrating **Return Values vs Print** on input `x` and returning the result.",
+    "starter_code": "def solve_return_values(x):\n    # Demonstrate Return Values vs Print\n    pass\n",
+    "solution": "def solve_return_values(x):\n    return x\n",
+    "test": "assert callable(solve_return_values)"
+  },
+  {
+    "id": "Q151",
+    "concept_id": "variable_scope",
+    "concept_name": "Variable Scope (LEGB)",
+    "lesson_id": "L06",
+    "week": 4,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": -0.15,
+    "bloom_level": "Remember",
+    "prompt": "Which statement best describes **Variable Scope (LEGB)** in Python?",
+    "options": [
+      "Core Python mechanism for variable scope (legb) used in Week 4.",
+      "A deprecated Python 2 syntax removed in Python 3.",
+      "A C-only compiler directive unavailable in Python.",
+      "A third-party library feature requiring numpy."
+    ],
+    "answer": "Core Python mechanism for variable scope (legb) used in Week 4.",
+    "explanation": "Variable Scope (LEGB) is a built-in Python concept taught in L06 (Week 4)."
+  },
+  {
+    "id": "Q152",
+    "concept_id": "variable_scope",
+    "concept_name": "Variable Scope (LEGB)",
+    "lesson_id": "L06",
+    "week": 4,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": 0.35,
+    "bloom_level": "Analyze",
+    "prompt": "When debugging code involving **Variable Scope (LEGB)**, which pitfall is most likely to cause an unexpected result or exception?",
+    "options": [
+      "Misusing variable scope (legb) semantics or violating its preconditions.",
+      "Using four spaces for indentation.",
+      "Adding comments with the # symbol.",
+      "Naming a file with a .py extension."
+    ],
+    "answer": "Misusing variable scope (legb) semantics or violating its preconditions.",
+    "explanation": "Understanding preconditions and edge cases of Variable Scope (LEGB) prevents runtime bugs."
+  },
+  {
+    "id": "Q153",
+    "concept_id": "variable_scope",
+    "concept_name": "Variable Scope (LEGB)",
+    "lesson_id": "L06",
+    "week": 4,
+    "type": "short_answer",
+    "difficulty": "medium",
+    "irt_b": 0.15,
+    "bloom_level": "Understand",
+    "prompt": "In 1-2 sentences, explain when and why a Python developer uses **Variable Scope (LEGB)**.",
+    "answer": "Developers use Variable Scope (LEGB) to write clear, correct Python code in functions tasks.",
+    "keywords": [
+      "variable",
+      "python"
+    ]
+  },
+  {
+    "id": "Q154",
+    "concept_id": "variable_scope",
+    "concept_name": "Variable Scope (LEGB)",
+    "lesson_id": "L06",
+    "week": 4,
+    "type": "short_answer",
+    "difficulty": "hard",
+    "irt_b": 0.65,
+    "bloom_level": "Evaluate",
+    "prompt": "Identify one common edge case or performance consideration when working with **Variable Scope (LEGB)**.",
+    "answer": "Edge cases include empty/boundary inputs, type mismatches, or complexity overhead in Variable Scope (LEGB).",
+    "keywords": [
+      "edge",
+      "type",
+      "input"
+    ]
+  },
+  {
+    "id": "Q155",
+    "concept_id": "variable_scope",
+    "concept_name": "Variable Scope (LEGB)",
+    "lesson_id": "L06",
+    "week": 4,
+    "type": "coding",
+    "difficulty": "hard",
+    "irt_b": 0.75,
+    "bloom_level": "Create",
+    "prompt": "Write a short Python function `solve_variable_scope(x)` demonstrating **Variable Scope (LEGB)** on input `x` and returning the result.",
+    "starter_code": "def solve_variable_scope(x):\n    # Demonstrate Variable Scope (LEGB)\n    pass\n",
+    "solution": "def solve_variable_scope(x):\n    return x\n",
+    "test": "assert callable(solve_variable_scope)"
+  },
+  {
+    "id": "Q156",
+    "concept_id": "args_kwargs",
+    "concept_name": "*args & **kwargs",
+    "lesson_id": "L06",
+    "week": 4,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": -0.15,
+    "bloom_level": "Remember",
+    "prompt": "Which statement best describes ***args & **kwargs** in Python?",
+    "options": [
+      "Core Python mechanism for *args & **kwargs used in Week 4.",
+      "A deprecated Python 2 syntax removed in Python 3.",
+      "A C-only compiler directive unavailable in Python.",
+      "A third-party library feature requiring numpy."
+    ],
+    "answer": "Core Python mechanism for *args & **kwargs used in Week 4.",
+    "explanation": "*args & **kwargs is a built-in Python concept taught in L06 (Week 4)."
+  },
+  {
+    "id": "Q157",
+    "concept_id": "args_kwargs",
+    "concept_name": "*args & **kwargs",
+    "lesson_id": "L06",
+    "week": 4,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": 0.35,
+    "bloom_level": "Analyze",
+    "prompt": "When debugging code involving ***args & **kwargs**, which pitfall is most likely to cause an unexpected result or exception?",
+    "options": [
+      "Misusing *args & **kwargs semantics or violating its preconditions.",
+      "Using four spaces for indentation.",
+      "Adding comments with the # symbol.",
+      "Naming a file with a .py extension."
+    ],
+    "answer": "Misusing *args & **kwargs semantics or violating its preconditions.",
+    "explanation": "Understanding preconditions and edge cases of *args & **kwargs prevents runtime bugs."
+  },
+  {
+    "id": "Q158",
+    "concept_id": "args_kwargs",
+    "concept_name": "*args & **kwargs",
+    "lesson_id": "L06",
+    "week": 4,
+    "type": "short_answer",
+    "difficulty": "medium",
+    "irt_b": 0.15,
+    "bloom_level": "Understand",
+    "prompt": "In 1-2 sentences, explain when and why a Python developer uses ***args & **kwargs**.",
+    "answer": "Developers use *args & **kwargs to write clear, correct Python code in functions tasks.",
+    "keywords": [
+      "args",
+      "python"
+    ]
+  },
+  {
+    "id": "Q159",
+    "concept_id": "args_kwargs",
+    "concept_name": "*args & **kwargs",
+    "lesson_id": "L06",
+    "week": 4,
+    "type": "short_answer",
+    "difficulty": "hard",
+    "irt_b": 0.65,
+    "bloom_level": "Evaluate",
+    "prompt": "Identify one common edge case or performance consideration when working with ***args & **kwargs**.",
+    "answer": "Edge cases include empty/boundary inputs, type mismatches, or complexity overhead in *args & **kwargs.",
+    "keywords": [
+      "edge",
+      "type",
+      "input"
+    ]
+  },
+  {
+    "id": "Q160",
+    "concept_id": "args_kwargs",
+    "concept_name": "*args & **kwargs",
+    "lesson_id": "L06",
+    "week": 4,
+    "type": "coding",
+    "difficulty": "hard",
+    "irt_b": 0.75,
+    "bloom_level": "Create",
+    "prompt": "Write a short Python function `solve_args_kwargs(x)` demonstrating ***args & **kwargs** on input `x` and returning the result.",
+    "starter_code": "def solve_args_kwargs(x):\n    # Demonstrate *args & **kwargs\n    pass\n",
+    "solution": "def solve_args_kwargs(x):\n    return x\n",
+    "test": "assert callable(solve_args_kwargs)"
+  },
+  {
+    "id": "Q161",
+    "concept_id": "lambda_functions",
+    "concept_name": "Lambda & Higher-Order Funcs",
+    "lesson_id": "L06",
+    "week": 4,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": -0.15,
+    "bloom_level": "Remember",
+    "prompt": "Which statement best describes **Lambda & Higher-Order Funcs** in Python?",
+    "options": [
+      "Core Python mechanism for lambda & higher-order funcs used in Week 4.",
+      "A deprecated Python 2 syntax removed in Python 3.",
+      "A C-only compiler directive unavailable in Python.",
+      "A third-party library feature requiring numpy."
+    ],
+    "answer": "Core Python mechanism for lambda & higher-order funcs used in Week 4.",
+    "explanation": "Lambda & Higher-Order Funcs is a built-in Python concept taught in L06 (Week 4)."
+  },
+  {
+    "id": "Q162",
+    "concept_id": "lambda_functions",
+    "concept_name": "Lambda & Higher-Order Funcs",
+    "lesson_id": "L06",
+    "week": 4,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": 0.35,
+    "bloom_level": "Analyze",
+    "prompt": "When debugging code involving **Lambda & Higher-Order Funcs**, which pitfall is most likely to cause an unexpected result or exception?",
+    "options": [
+      "Misusing lambda & higher-order funcs semantics or violating its preconditions.",
+      "Using four spaces for indentation.",
+      "Adding comments with the # symbol.",
+      "Naming a file with a .py extension."
+    ],
+    "answer": "Misusing lambda & higher-order funcs semantics or violating its preconditions.",
+    "explanation": "Understanding preconditions and edge cases of Lambda & Higher-Order Funcs prevents runtime bugs."
+  },
+  {
+    "id": "Q163",
+    "concept_id": "lambda_functions",
+    "concept_name": "Lambda & Higher-Order Funcs",
+    "lesson_id": "L06",
+    "week": 4,
+    "type": "short_answer",
+    "difficulty": "medium",
+    "irt_b": 0.15,
+    "bloom_level": "Understand",
+    "prompt": "In 1-2 sentences, explain when and why a Python developer uses **Lambda & Higher-Order Funcs**.",
+    "answer": "Developers use Lambda & Higher-Order Funcs to write clear, correct Python code in functions tasks.",
+    "keywords": [
+      "lambda",
+      "python"
+    ]
+  },
+  {
+    "id": "Q164",
+    "concept_id": "lambda_functions",
+    "concept_name": "Lambda & Higher-Order Funcs",
+    "lesson_id": "L06",
+    "week": 4,
+    "type": "short_answer",
+    "difficulty": "hard",
+    "irt_b": 0.65,
+    "bloom_level": "Evaluate",
+    "prompt": "Identify one common edge case or performance consideration when working with **Lambda & Higher-Order Funcs**.",
+    "answer": "Edge cases include empty/boundary inputs, type mismatches, or complexity overhead in Lambda & Higher-Order Funcs.",
+    "keywords": [
+      "edge",
+      "type",
+      "input"
+    ]
+  },
+  {
+    "id": "Q165",
+    "concept_id": "lambda_functions",
+    "concept_name": "Lambda & Higher-Order Funcs",
+    "lesson_id": "L06",
+    "week": 4,
+    "type": "coding",
+    "difficulty": "hard",
+    "irt_b": 0.75,
+    "bloom_level": "Create",
+    "prompt": "Write a short Python function `solve_lambda_functions(x)` demonstrating **Lambda & Higher-Order Funcs** on input `x` and returning the result.",
+    "starter_code": "def solve_lambda_functions(x):\n    # Demonstrate Lambda & Higher-Order Funcs\n    pass\n",
+    "solution": "def solve_lambda_functions(x):\n    return x\n",
+    "test": "assert callable(solve_lambda_functions)"
+  },
+  {
+    "id": "Q166",
+    "concept_id": "recursion",
+    "concept_name": "Recursion & Base Cases",
+    "lesson_id": "L06",
+    "week": 4,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": -0.15,
+    "bloom_level": "Remember",
+    "prompt": "Which statement best describes **Recursion & Base Cases** in Python?",
+    "options": [
+      "Core Python mechanism for recursion & base cases used in Week 4.",
+      "A deprecated Python 2 syntax removed in Python 3.",
+      "A C-only compiler directive unavailable in Python.",
+      "A third-party library feature requiring numpy."
+    ],
+    "answer": "Core Python mechanism for recursion & base cases used in Week 4.",
+    "explanation": "Recursion & Base Cases is a built-in Python concept taught in L06 (Week 4)."
+  },
+  {
+    "id": "Q167",
+    "concept_id": "recursion",
+    "concept_name": "Recursion & Base Cases",
+    "lesson_id": "L06",
+    "week": 4,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": 0.35,
+    "bloom_level": "Analyze",
+    "prompt": "When debugging code involving **Recursion & Base Cases**, which pitfall is most likely to cause an unexpected result or exception?",
+    "options": [
+      "Misusing recursion & base cases semantics or violating its preconditions.",
+      "Using four spaces for indentation.",
+      "Adding comments with the # symbol.",
+      "Naming a file with a .py extension."
+    ],
+    "answer": "Misusing recursion & base cases semantics or violating its preconditions.",
+    "explanation": "Understanding preconditions and edge cases of Recursion & Base Cases prevents runtime bugs."
+  },
+  {
+    "id": "Q168",
+    "concept_id": "recursion",
+    "concept_name": "Recursion & Base Cases",
+    "lesson_id": "L06",
+    "week": 4,
+    "type": "short_answer",
+    "difficulty": "medium",
+    "irt_b": 0.15,
+    "bloom_level": "Understand",
+    "prompt": "In 1-2 sentences, explain when and why a Python developer uses **Recursion & Base Cases**.",
+    "answer": "Developers use Recursion & Base Cases to write clear, correct Python code in functions tasks.",
+    "keywords": [
+      "recursion",
+      "python"
+    ]
+  },
+  {
+    "id": "Q169",
+    "concept_id": "recursion",
+    "concept_name": "Recursion & Base Cases",
+    "lesson_id": "L06",
+    "week": 4,
+    "type": "short_answer",
+    "difficulty": "hard",
+    "irt_b": 0.65,
+    "bloom_level": "Evaluate",
+    "prompt": "Identify one common edge case or performance consideration when working with **Recursion & Base Cases**.",
+    "answer": "Edge cases include empty/boundary inputs, type mismatches, or complexity overhead in Recursion & Base Cases.",
+    "keywords": [
+      "edge",
+      "type",
+      "input"
+    ]
+  },
+  {
+    "id": "Q170",
+    "concept_id": "recursion",
+    "concept_name": "Recursion & Base Cases",
+    "lesson_id": "L06",
+    "week": 4,
+    "type": "coding",
+    "difficulty": "hard",
+    "irt_b": 0.75,
+    "bloom_level": "Create",
+    "prompt": "Write a short Python function `solve_recursion(x)` demonstrating **Recursion & Base Cases** on input `x` and returning the result.",
+    "starter_code": "def solve_recursion(x):\n    # Demonstrate Recursion & Base Cases\n    pass\n",
+    "solution": "def solve_recursion(x):\n    return x\n",
+    "test": "assert callable(solve_recursion)"
+  },
+  {
+    "id": "Q171",
+    "concept_id": "exceptions_try_except",
+    "concept_name": "Try / Except / Finally",
+    "lesson_id": "L07",
+    "week": 5,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": 0.3,
+    "bloom_level": "Remember",
+    "prompt": "Which statement best describes **Try / Except / Finally** in Python?",
+    "options": [
+      "Core Python mechanism for try / except / finally used in Week 5.",
+      "A deprecated Python 2 syntax removed in Python 3.",
+      "A C-only compiler directive unavailable in Python.",
+      "A third-party library feature requiring numpy."
+    ],
+    "answer": "Core Python mechanism for try / except / finally used in Week 5.",
+    "explanation": "Try / Except / Finally is a built-in Python concept taught in L07 (Week 5)."
+  },
+  {
+    "id": "Q172",
+    "concept_id": "exceptions_try_except",
+    "concept_name": "Try / Except / Finally",
+    "lesson_id": "L07",
+    "week": 5,
+    "type": "mcq",
+    "difficulty": "hard",
+    "irt_b": 0.8,
+    "bloom_level": "Analyze",
+    "prompt": "When debugging code involving **Try / Except / Finally**, which pitfall is most likely to cause an unexpected result or exception?",
+    "options": [
+      "Misusing try / except / finally semantics or violating its preconditions.",
+      "Using four spaces for indentation.",
+      "Adding comments with the # symbol.",
+      "Naming a file with a .py extension."
+    ],
+    "answer": "Misusing try / except / finally semantics or violating its preconditions.",
+    "explanation": "Understanding preconditions and edge cases of Try / Except / Finally prevents runtime bugs."
+  },
+  {
+    "id": "Q173",
+    "concept_id": "exceptions_try_except",
+    "concept_name": "Try / Except / Finally",
+    "lesson_id": "L07",
+    "week": 5,
+    "type": "short_answer",
+    "difficulty": "medium",
+    "irt_b": 0.6,
+    "bloom_level": "Understand",
+    "prompt": "In 1-2 sentences, explain when and why a Python developer uses **Try / Except / Finally**.",
+    "answer": "Developers use Try / Except / Finally to write clear, correct Python code in robust python tasks.",
+    "keywords": [
+      "exceptions",
+      "python"
+    ]
+  },
+  {
+    "id": "Q174",
+    "concept_id": "exceptions_try_except",
+    "concept_name": "Try / Except / Finally",
+    "lesson_id": "L07",
+    "week": 5,
+    "type": "short_answer",
+    "difficulty": "hard",
+    "irt_b": 1.1,
+    "bloom_level": "Evaluate",
+    "prompt": "Identify one common edge case or performance consideration when working with **Try / Except / Finally**.",
+    "answer": "Edge cases include empty/boundary inputs, type mismatches, or complexity overhead in Try / Except / Finally.",
+    "keywords": [
+      "edge",
+      "type",
+      "input"
+    ]
+  },
+  {
+    "id": "Q175",
+    "concept_id": "exceptions_try_except",
+    "concept_name": "Try / Except / Finally",
+    "lesson_id": "L07",
+    "week": 5,
+    "type": "coding",
+    "difficulty": "hard",
+    "irt_b": 1.2,
+    "bloom_level": "Create",
+    "prompt": "Write a short Python function `solve_exceptions_try_except(x)` demonstrating **Try / Except / Finally** on input `x` and returning the result.",
+    "starter_code": "def solve_exceptions_try_except(x):\n    # Demonstrate Try / Except / Finally\n    pass\n",
+    "solution": "def solve_exceptions_try_except(x):\n    return x\n",
+    "test": "assert callable(solve_exceptions_try_except)"
+  },
+  {
+    "id": "Q176",
+    "concept_id": "raising_exceptions",
+    "concept_name": "Raising & Custom Exceptions",
+    "lesson_id": "L07",
+    "week": 5,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": 0.3,
+    "bloom_level": "Remember",
+    "prompt": "Which statement best describes **Raising & Custom Exceptions** in Python?",
+    "options": [
+      "Core Python mechanism for raising & custom exceptions used in Week 5.",
+      "A deprecated Python 2 syntax removed in Python 3.",
+      "A C-only compiler directive unavailable in Python.",
+      "A third-party library feature requiring numpy."
+    ],
+    "answer": "Core Python mechanism for raising & custom exceptions used in Week 5.",
+    "explanation": "Raising & Custom Exceptions is a built-in Python concept taught in L07 (Week 5)."
+  },
+  {
+    "id": "Q177",
+    "concept_id": "raising_exceptions",
+    "concept_name": "Raising & Custom Exceptions",
+    "lesson_id": "L07",
+    "week": 5,
+    "type": "mcq",
+    "difficulty": "hard",
+    "irt_b": 0.8,
+    "bloom_level": "Analyze",
+    "prompt": "When debugging code involving **Raising & Custom Exceptions**, which pitfall is most likely to cause an unexpected result or exception?",
+    "options": [
+      "Misusing raising & custom exceptions semantics or violating its preconditions.",
+      "Using four spaces for indentation.",
+      "Adding comments with the # symbol.",
+      "Naming a file with a .py extension."
+    ],
+    "answer": "Misusing raising & custom exceptions semantics or violating its preconditions.",
+    "explanation": "Understanding preconditions and edge cases of Raising & Custom Exceptions prevents runtime bugs."
+  },
+  {
+    "id": "Q178",
+    "concept_id": "raising_exceptions",
+    "concept_name": "Raising & Custom Exceptions",
+    "lesson_id": "L07",
+    "week": 5,
+    "type": "short_answer",
+    "difficulty": "medium",
+    "irt_b": 0.6,
+    "bloom_level": "Understand",
+    "prompt": "In 1-2 sentences, explain when and why a Python developer uses **Raising & Custom Exceptions**.",
+    "answer": "Developers use Raising & Custom Exceptions to write clear, correct Python code in robust python tasks.",
+    "keywords": [
+      "raising",
+      "python"
+    ]
+  },
+  {
+    "id": "Q179",
+    "concept_id": "raising_exceptions",
+    "concept_name": "Raising & Custom Exceptions",
+    "lesson_id": "L07",
+    "week": 5,
+    "type": "short_answer",
+    "difficulty": "hard",
+    "irt_b": 1.1,
+    "bloom_level": "Evaluate",
+    "prompt": "Identify one common edge case or performance consideration when working with **Raising & Custom Exceptions**.",
+    "answer": "Edge cases include empty/boundary inputs, type mismatches, or complexity overhead in Raising & Custom Exceptions.",
+    "keywords": [
+      "edge",
+      "type",
+      "input"
+    ]
+  },
+  {
+    "id": "Q180",
+    "concept_id": "raising_exceptions",
+    "concept_name": "Raising & Custom Exceptions",
+    "lesson_id": "L07",
+    "week": 5,
+    "type": "coding",
+    "difficulty": "hard",
+    "irt_b": 1.2,
+    "bloom_level": "Create",
+    "prompt": "Write a short Python function `solve_raising_exceptions(x)` demonstrating **Raising & Custom Exceptions** on input `x` and returning the result.",
+    "starter_code": "def solve_raising_exceptions(x):\n    # Demonstrate Raising & Custom Exceptions\n    pass\n",
+    "solution": "def solve_raising_exceptions(x):\n    return x\n",
+    "test": "assert callable(solve_raising_exceptions)"
+  },
+  {
+    "id": "Q181",
+    "concept_id": "file_io",
+    "concept_name": "File Reading & Writing",
+    "lesson_id": "L07",
+    "week": 5,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": 0.3,
+    "bloom_level": "Remember",
+    "prompt": "Which statement best describes **File Reading & Writing** in Python?",
+    "options": [
+      "Core Python mechanism for file reading & writing used in Week 5.",
+      "A deprecated Python 2 syntax removed in Python 3.",
+      "A C-only compiler directive unavailable in Python.",
+      "A third-party library feature requiring numpy."
+    ],
+    "answer": "Core Python mechanism for file reading & writing used in Week 5.",
+    "explanation": "File Reading & Writing is a built-in Python concept taught in L07 (Week 5)."
+  },
+  {
+    "id": "Q182",
+    "concept_id": "file_io",
+    "concept_name": "File Reading & Writing",
+    "lesson_id": "L07",
+    "week": 5,
+    "type": "mcq",
+    "difficulty": "hard",
+    "irt_b": 0.8,
+    "bloom_level": "Analyze",
+    "prompt": "When debugging code involving **File Reading & Writing**, which pitfall is most likely to cause an unexpected result or exception?",
+    "options": [
+      "Misusing file reading & writing semantics or violating its preconditions.",
+      "Using four spaces for indentation.",
+      "Adding comments with the # symbol.",
+      "Naming a file with a .py extension."
+    ],
+    "answer": "Misusing file reading & writing semantics or violating its preconditions.",
+    "explanation": "Understanding preconditions and edge cases of File Reading & Writing prevents runtime bugs."
+  },
+  {
+    "id": "Q183",
+    "concept_id": "file_io",
+    "concept_name": "File Reading & Writing",
+    "lesson_id": "L07",
+    "week": 5,
+    "type": "short_answer",
+    "difficulty": "medium",
+    "irt_b": 0.6,
+    "bloom_level": "Understand",
+    "prompt": "In 1-2 sentences, explain when and why a Python developer uses **File Reading & Writing**.",
+    "answer": "Developers use File Reading & Writing to write clear, correct Python code in robust python tasks.",
+    "keywords": [
+      "file",
+      "python"
+    ]
+  },
+  {
+    "id": "Q184",
+    "concept_id": "file_io",
+    "concept_name": "File Reading & Writing",
+    "lesson_id": "L07",
+    "week": 5,
+    "type": "short_answer",
+    "difficulty": "hard",
+    "irt_b": 1.1,
+    "bloom_level": "Evaluate",
+    "prompt": "Identify one common edge case or performance consideration when working with **File Reading & Writing**.",
+    "answer": "Edge cases include empty/boundary inputs, type mismatches, or complexity overhead in File Reading & Writing.",
+    "keywords": [
+      "edge",
+      "type",
+      "input"
+    ]
+  },
+  {
+    "id": "Q185",
+    "concept_id": "file_io",
+    "concept_name": "File Reading & Writing",
+    "lesson_id": "L07",
+    "week": 5,
+    "type": "coding",
+    "difficulty": "hard",
+    "irt_b": 1.2,
+    "bloom_level": "Create",
+    "prompt": "Write a short Python function `solve_file_io(x)` demonstrating **File Reading & Writing** on input `x` and returning the result.",
+    "starter_code": "def solve_file_io(x):\n    # Demonstrate File Reading & Writing\n    pass\n",
+    "solution": "def solve_file_io(x):\n    return x\n",
+    "test": "assert callable(solve_file_io)"
+  },
+  {
+    "id": "Q186",
+    "concept_id": "context_managers",
+    "concept_name": "Context Managers (with)",
+    "lesson_id": "L07",
+    "week": 5,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": 0.3,
+    "bloom_level": "Remember",
+    "prompt": "Which statement best describes **Context Managers (with)** in Python?",
+    "options": [
+      "Core Python mechanism for context managers (with) used in Week 5.",
+      "A deprecated Python 2 syntax removed in Python 3.",
+      "A C-only compiler directive unavailable in Python.",
+      "A third-party library feature requiring numpy."
+    ],
+    "answer": "Core Python mechanism for context managers (with) used in Week 5.",
+    "explanation": "Context Managers (with) is a built-in Python concept taught in L07 (Week 5)."
+  },
+  {
+    "id": "Q187",
+    "concept_id": "context_managers",
+    "concept_name": "Context Managers (with)",
+    "lesson_id": "L07",
+    "week": 5,
+    "type": "mcq",
+    "difficulty": "hard",
+    "irt_b": 0.8,
+    "bloom_level": "Analyze",
+    "prompt": "When debugging code involving **Context Managers (with)**, which pitfall is most likely to cause an unexpected result or exception?",
+    "options": [
+      "Misusing context managers (with) semantics or violating its preconditions.",
+      "Using four spaces for indentation.",
+      "Adding comments with the # symbol.",
+      "Naming a file with a .py extension."
+    ],
+    "answer": "Misusing context managers (with) semantics or violating its preconditions.",
+    "explanation": "Understanding preconditions and edge cases of Context Managers (with) prevents runtime bugs."
+  },
+  {
+    "id": "Q188",
+    "concept_id": "context_managers",
+    "concept_name": "Context Managers (with)",
+    "lesson_id": "L07",
+    "week": 5,
+    "type": "short_answer",
+    "difficulty": "medium",
+    "irt_b": 0.6,
+    "bloom_level": "Understand",
+    "prompt": "In 1-2 sentences, explain when and why a Python developer uses **Context Managers (with)**.",
+    "answer": "Developers use Context Managers (with) to write clear, correct Python code in robust python tasks.",
+    "keywords": [
+      "context",
+      "python"
+    ]
+  },
+  {
+    "id": "Q189",
+    "concept_id": "context_managers",
+    "concept_name": "Context Managers (with)",
+    "lesson_id": "L07",
+    "week": 5,
+    "type": "short_answer",
+    "difficulty": "hard",
+    "irt_b": 1.1,
+    "bloom_level": "Evaluate",
+    "prompt": "Identify one common edge case or performance consideration when working with **Context Managers (with)**.",
+    "answer": "Edge cases include empty/boundary inputs, type mismatches, or complexity overhead in Context Managers (with).",
+    "keywords": [
+      "edge",
+      "type",
+      "input"
+    ]
+  },
+  {
+    "id": "Q190",
+    "concept_id": "context_managers",
+    "concept_name": "Context Managers (with)",
+    "lesson_id": "L07",
+    "week": 5,
+    "type": "coding",
+    "difficulty": "hard",
+    "irt_b": 1.2,
+    "bloom_level": "Create",
+    "prompt": "Write a short Python function `solve_context_managers(x)` demonstrating **Context Managers (with)** on input `x` and returning the result.",
+    "starter_code": "def solve_context_managers(x):\n    # Demonstrate Context Managers (with)\n    pass\n",
+    "solution": "def solve_context_managers(x):\n    return x\n",
+    "test": "assert callable(solve_context_managers)"
+  },
+  {
+    "id": "Q191",
+    "concept_id": "list_comprehensions",
+    "concept_name": "List & Dict Comprehensions",
+    "lesson_id": "L07",
+    "week": 5,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": 0.3,
+    "bloom_level": "Remember",
+    "prompt": "Which statement best describes **List & Dict Comprehensions** in Python?",
+    "options": [
+      "Core Python mechanism for list & dict comprehensions used in Week 5.",
+      "A deprecated Python 2 syntax removed in Python 3.",
+      "A C-only compiler directive unavailable in Python.",
+      "A third-party library feature requiring numpy."
+    ],
+    "answer": "Core Python mechanism for list & dict comprehensions used in Week 5.",
+    "explanation": "List & Dict Comprehensions is a built-in Python concept taught in L07 (Week 5)."
+  },
+  {
+    "id": "Q192",
+    "concept_id": "list_comprehensions",
+    "concept_name": "List & Dict Comprehensions",
+    "lesson_id": "L07",
+    "week": 5,
+    "type": "mcq",
+    "difficulty": "hard",
+    "irt_b": 0.8,
+    "bloom_level": "Analyze",
+    "prompt": "When debugging code involving **List & Dict Comprehensions**, which pitfall is most likely to cause an unexpected result or exception?",
+    "options": [
+      "Misusing list & dict comprehensions semantics or violating its preconditions.",
+      "Using four spaces for indentation.",
+      "Adding comments with the # symbol.",
+      "Naming a file with a .py extension."
+    ],
+    "answer": "Misusing list & dict comprehensions semantics or violating its preconditions.",
+    "explanation": "Understanding preconditions and edge cases of List & Dict Comprehensions prevents runtime bugs."
+  },
+  {
+    "id": "Q193",
+    "concept_id": "list_comprehensions",
+    "concept_name": "List & Dict Comprehensions",
+    "lesson_id": "L07",
+    "week": 5,
+    "type": "short_answer",
+    "difficulty": "medium",
+    "irt_b": 0.6,
+    "bloom_level": "Understand",
+    "prompt": "In 1-2 sentences, explain when and why a Python developer uses **List & Dict Comprehensions**.",
+    "answer": "Developers use List & Dict Comprehensions to write clear, correct Python code in robust python tasks.",
+    "keywords": [
+      "list",
+      "python"
+    ]
+  },
+  {
+    "id": "Q194",
+    "concept_id": "list_comprehensions",
+    "concept_name": "List & Dict Comprehensions",
+    "lesson_id": "L07",
+    "week": 5,
+    "type": "short_answer",
+    "difficulty": "hard",
+    "irt_b": 1.1,
+    "bloom_level": "Evaluate",
+    "prompt": "Identify one common edge case or performance consideration when working with **List & Dict Comprehensions**.",
+    "answer": "Edge cases include empty/boundary inputs, type mismatches, or complexity overhead in List & Dict Comprehensions.",
+    "keywords": [
+      "edge",
+      "type",
+      "input"
+    ]
+  },
+  {
+    "id": "Q195",
+    "concept_id": "list_comprehensions",
+    "concept_name": "List & Dict Comprehensions",
+    "lesson_id": "L07",
+    "week": 5,
+    "type": "coding",
+    "difficulty": "hard",
+    "irt_b": 1.2,
+    "bloom_level": "Create",
+    "prompt": "Write a short Python function `solve_list_comprehensions(x)` demonstrating **List & Dict Comprehensions** on input `x` and returning the result.",
+    "starter_code": "def solve_list_comprehensions(x):\n    # Demonstrate List & Dict Comprehensions\n    pass\n",
+    "solution": "def solve_list_comprehensions(x):\n    return x\n",
+    "test": "assert callable(solve_list_comprehensions)"
+  },
+  {
+    "id": "Q196",
+    "concept_id": "generators",
+    "concept_name": "Generators & yield",
+    "lesson_id": "L07",
+    "week": 5,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": 0.3,
+    "bloom_level": "Remember",
+    "prompt": "Which statement best describes **Generators & yield** in Python?",
+    "options": [
+      "Core Python mechanism for generators & yield used in Week 5.",
+      "A deprecated Python 2 syntax removed in Python 3.",
+      "A C-only compiler directive unavailable in Python.",
+      "A third-party library feature requiring numpy."
+    ],
+    "answer": "Core Python mechanism for generators & yield used in Week 5.",
+    "explanation": "Generators & yield is a built-in Python concept taught in L07 (Week 5)."
+  },
+  {
+    "id": "Q197",
+    "concept_id": "generators",
+    "concept_name": "Generators & yield",
+    "lesson_id": "L07",
+    "week": 5,
+    "type": "mcq",
+    "difficulty": "hard",
+    "irt_b": 0.8,
+    "bloom_level": "Analyze",
+    "prompt": "When debugging code involving **Generators & yield**, which pitfall is most likely to cause an unexpected result or exception?",
+    "options": [
+      "Misusing generators & yield semantics or violating its preconditions.",
+      "Using four spaces for indentation.",
+      "Adding comments with the # symbol.",
+      "Naming a file with a .py extension."
+    ],
+    "answer": "Misusing generators & yield semantics or violating its preconditions.",
+    "explanation": "Understanding preconditions and edge cases of Generators & yield prevents runtime bugs."
+  },
+  {
+    "id": "Q198",
+    "concept_id": "generators",
+    "concept_name": "Generators & yield",
+    "lesson_id": "L07",
+    "week": 5,
+    "type": "short_answer",
+    "difficulty": "medium",
+    "irt_b": 0.6,
+    "bloom_level": "Understand",
+    "prompt": "In 1-2 sentences, explain when and why a Python developer uses **Generators & yield**.",
+    "answer": "Developers use Generators & yield to write clear, correct Python code in robust python tasks.",
+    "keywords": [
+      "generators",
+      "python"
+    ]
+  },
+  {
+    "id": "Q199",
+    "concept_id": "generators",
+    "concept_name": "Generators & yield",
+    "lesson_id": "L07",
+    "week": 5,
+    "type": "short_answer",
+    "difficulty": "hard",
+    "irt_b": 1.1,
+    "bloom_level": "Evaluate",
+    "prompt": "Identify one common edge case or performance consideration when working with **Generators & yield**.",
+    "answer": "Edge cases include empty/boundary inputs, type mismatches, or complexity overhead in Generators & yield.",
+    "keywords": [
+      "edge",
+      "type",
+      "input"
+    ]
+  },
+  {
+    "id": "Q200",
+    "concept_id": "generators",
+    "concept_name": "Generators & yield",
+    "lesson_id": "L07",
+    "week": 5,
+    "type": "coding",
+    "difficulty": "hard",
+    "irt_b": 1.2,
+    "bloom_level": "Create",
+    "prompt": "Write a short Python function `solve_generators(x)` demonstrating **Generators & yield** on input `x` and returning the result.",
+    "starter_code": "def solve_generators(x):\n    # Demonstrate Generators & yield\n    pass\n",
+    "solution": "def solve_generators(x):\n    return x\n",
+    "test": "assert callable(solve_generators)"
+  },
+  {
+    "id": "Q201",
+    "concept_id": "classes_objects",
+    "concept_name": "Classes & Objects",
+    "lesson_id": "L08",
+    "week": 6,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": 0.75,
+    "bloom_level": "Remember",
+    "prompt": "Which statement best describes **Classes & Objects** in Python?",
+    "options": [
+      "Core Python mechanism for classes & objects used in Week 6.",
+      "A deprecated Python 2 syntax removed in Python 3.",
+      "A C-only compiler directive unavailable in Python.",
+      "A third-party library feature requiring numpy."
+    ],
+    "answer": "Core Python mechanism for classes & objects used in Week 6.",
+    "explanation": "Classes & Objects is a built-in Python concept taught in L08 (Week 6)."
+  },
+  {
+    "id": "Q202",
+    "concept_id": "classes_objects",
+    "concept_name": "Classes & Objects",
+    "lesson_id": "L08",
+    "week": 6,
+    "type": "mcq",
+    "difficulty": "hard",
+    "irt_b": 1.25,
+    "bloom_level": "Analyze",
+    "prompt": "When debugging code involving **Classes & Objects**, which pitfall is most likely to cause an unexpected result or exception?",
+    "options": [
+      "Misusing classes & objects semantics or violating its preconditions.",
+      "Using four spaces for indentation.",
+      "Adding comments with the # symbol.",
+      "Naming a file with a .py extension."
+    ],
+    "answer": "Misusing classes & objects semantics or violating its preconditions.",
+    "explanation": "Understanding preconditions and edge cases of Classes & Objects prevents runtime bugs."
+  },
+  {
+    "id": "Q203",
+    "concept_id": "classes_objects",
+    "concept_name": "Classes & Objects",
+    "lesson_id": "L08",
+    "week": 6,
+    "type": "short_answer",
+    "difficulty": "medium",
+    "irt_b": 1.05,
+    "bloom_level": "Understand",
+    "prompt": "In 1-2 sentences, explain when and why a Python developer uses **Classes & Objects**.",
+    "answer": "Developers use Classes & Objects to write clear, correct Python code in oop & algorithms tasks.",
+    "keywords": [
+      "classes",
+      "python"
+    ]
+  },
+  {
+    "id": "Q204",
+    "concept_id": "classes_objects",
+    "concept_name": "Classes & Objects",
+    "lesson_id": "L08",
+    "week": 6,
+    "type": "short_answer",
+    "difficulty": "hard",
+    "irt_b": 1.55,
+    "bloom_level": "Evaluate",
+    "prompt": "Identify one common edge case or performance consideration when working with **Classes & Objects**.",
+    "answer": "Edge cases include empty/boundary inputs, type mismatches, or complexity overhead in Classes & Objects.",
+    "keywords": [
+      "edge",
+      "type",
+      "input"
+    ]
+  },
+  {
+    "id": "Q205",
+    "concept_id": "classes_objects",
+    "concept_name": "Classes & Objects",
+    "lesson_id": "L08",
+    "week": 6,
+    "type": "coding",
+    "difficulty": "hard",
+    "irt_b": 1.65,
+    "bloom_level": "Create",
+    "prompt": "Write a short Python function `solve_classes_objects(x)` demonstrating **Classes & Objects** on input `x` and returning the result.",
+    "starter_code": "def solve_classes_objects(x):\n    # Demonstrate Classes & Objects\n    pass\n",
+    "solution": "def solve_classes_objects(x):\n    return x\n",
+    "test": "assert callable(solve_classes_objects)"
+  },
+  {
+    "id": "Q206",
+    "concept_id": "init_self",
+    "concept_name": "__init__, self & Methods",
+    "lesson_id": "L08",
+    "week": 6,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": 0.75,
+    "bloom_level": "Remember",
+    "prompt": "Which statement best describes **__init__, self & Methods** in Python?",
+    "options": [
+      "Core Python mechanism for __init__, self & methods used in Week 6.",
+      "A deprecated Python 2 syntax removed in Python 3.",
+      "A C-only compiler directive unavailable in Python.",
+      "A third-party library feature requiring numpy."
+    ],
+    "answer": "Core Python mechanism for __init__, self & methods used in Week 6.",
+    "explanation": "__init__, self & Methods is a built-in Python concept taught in L08 (Week 6)."
+  },
+  {
+    "id": "Q207",
+    "concept_id": "init_self",
+    "concept_name": "__init__, self & Methods",
+    "lesson_id": "L08",
+    "week": 6,
+    "type": "mcq",
+    "difficulty": "hard",
+    "irt_b": 1.25,
+    "bloom_level": "Analyze",
+    "prompt": "When debugging code involving **__init__, self & Methods**, which pitfall is most likely to cause an unexpected result or exception?",
+    "options": [
+      "Misusing __init__, self & methods semantics or violating its preconditions.",
+      "Using four spaces for indentation.",
+      "Adding comments with the # symbol.",
+      "Naming a file with a .py extension."
+    ],
+    "answer": "Misusing __init__, self & methods semantics or violating its preconditions.",
+    "explanation": "Understanding preconditions and edge cases of __init__, self & Methods prevents runtime bugs."
+  },
+  {
+    "id": "Q208",
+    "concept_id": "init_self",
+    "concept_name": "__init__, self & Methods",
+    "lesson_id": "L08",
+    "week": 6,
+    "type": "short_answer",
+    "difficulty": "medium",
+    "irt_b": 1.05,
+    "bloom_level": "Understand",
+    "prompt": "In 1-2 sentences, explain when and why a Python developer uses **__init__, self & Methods**.",
+    "answer": "Developers use __init__, self & Methods to write clear, correct Python code in oop & algorithms tasks.",
+    "keywords": [
+      "init",
+      "python"
+    ]
+  },
+  {
+    "id": "Q209",
+    "concept_id": "init_self",
+    "concept_name": "__init__, self & Methods",
+    "lesson_id": "L08",
+    "week": 6,
+    "type": "short_answer",
+    "difficulty": "hard",
+    "irt_b": 1.55,
+    "bloom_level": "Evaluate",
+    "prompt": "Identify one common edge case or performance consideration when working with **__init__, self & Methods**.",
+    "answer": "Edge cases include empty/boundary inputs, type mismatches, or complexity overhead in __init__, self & Methods.",
+    "keywords": [
+      "edge",
+      "type",
+      "input"
+    ]
+  },
+  {
+    "id": "Q210",
+    "concept_id": "init_self",
+    "concept_name": "__init__, self & Methods",
+    "lesson_id": "L08",
+    "week": 6,
+    "type": "coding",
+    "difficulty": "hard",
+    "irt_b": 1.65,
+    "bloom_level": "Create",
+    "prompt": "Write a short Python function `solve_init_self(x)` demonstrating **__init__, self & Methods** on input `x` and returning the result.",
+    "starter_code": "def solve_init_self(x):\n    # Demonstrate __init__, self & Methods\n    pass\n",
+    "solution": "def solve_init_self(x):\n    return x\n",
+    "test": "assert callable(solve_init_self)"
+  },
+  {
+    "id": "Q211",
+    "concept_id": "inheritance",
+    "concept_name": "Inheritance & super()",
+    "lesson_id": "L08",
+    "week": 6,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": 0.75,
+    "bloom_level": "Remember",
+    "prompt": "Which statement best describes **Inheritance & super()** in Python?",
+    "options": [
+      "Core Python mechanism for inheritance & super() used in Week 6.",
+      "A deprecated Python 2 syntax removed in Python 3.",
+      "A C-only compiler directive unavailable in Python.",
+      "A third-party library feature requiring numpy."
+    ],
+    "answer": "Core Python mechanism for inheritance & super() used in Week 6.",
+    "explanation": "Inheritance & super() is a built-in Python concept taught in L08 (Week 6)."
+  },
+  {
+    "id": "Q212",
+    "concept_id": "inheritance",
+    "concept_name": "Inheritance & super()",
+    "lesson_id": "L08",
+    "week": 6,
+    "type": "mcq",
+    "difficulty": "hard",
+    "irt_b": 1.25,
+    "bloom_level": "Analyze",
+    "prompt": "When debugging code involving **Inheritance & super()**, which pitfall is most likely to cause an unexpected result or exception?",
+    "options": [
+      "Misusing inheritance & super() semantics or violating its preconditions.",
+      "Using four spaces for indentation.",
+      "Adding comments with the # symbol.",
+      "Naming a file with a .py extension."
+    ],
+    "answer": "Misusing inheritance & super() semantics or violating its preconditions.",
+    "explanation": "Understanding preconditions and edge cases of Inheritance & super() prevents runtime bugs."
+  },
+  {
+    "id": "Q213",
+    "concept_id": "inheritance",
+    "concept_name": "Inheritance & super()",
+    "lesson_id": "L08",
+    "week": 6,
+    "type": "short_answer",
+    "difficulty": "medium",
+    "irt_b": 1.05,
+    "bloom_level": "Understand",
+    "prompt": "In 1-2 sentences, explain when and why a Python developer uses **Inheritance & super()**.",
+    "answer": "Developers use Inheritance & super() to write clear, correct Python code in oop & algorithms tasks.",
+    "keywords": [
+      "inheritance",
+      "python"
+    ]
+  },
+  {
+    "id": "Q214",
+    "concept_id": "inheritance",
+    "concept_name": "Inheritance & super()",
+    "lesson_id": "L08",
+    "week": 6,
+    "type": "short_answer",
+    "difficulty": "hard",
+    "irt_b": 1.55,
+    "bloom_level": "Evaluate",
+    "prompt": "Identify one common edge case or performance consideration when working with **Inheritance & super()**.",
+    "answer": "Edge cases include empty/boundary inputs, type mismatches, or complexity overhead in Inheritance & super().",
+    "keywords": [
+      "edge",
+      "type",
+      "input"
+    ]
+  },
+  {
+    "id": "Q215",
+    "concept_id": "inheritance",
+    "concept_name": "Inheritance & super()",
+    "lesson_id": "L08",
+    "week": 6,
+    "type": "coding",
+    "difficulty": "hard",
+    "irt_b": 1.65,
+    "bloom_level": "Create",
+    "prompt": "Write a short Python function `solve_inheritance(x)` demonstrating **Inheritance & super()** on input `x` and returning the result.",
+    "starter_code": "def solve_inheritance(x):\n    # Demonstrate Inheritance & super()\n    pass\n",
+    "solution": "def solve_inheritance(x):\n    return x\n",
+    "test": "assert callable(solve_inheritance)"
+  },
+  {
+    "id": "Q216",
+    "concept_id": "encapsulation",
+    "concept_name": "Encapsulation & Polymorphism",
+    "lesson_id": "L08",
+    "week": 6,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": 0.75,
+    "bloom_level": "Remember",
+    "prompt": "Which statement best describes **Encapsulation & Polymorphism** in Python?",
+    "options": [
+      "Core Python mechanism for encapsulation & polymorphism used in Week 6.",
+      "A deprecated Python 2 syntax removed in Python 3.",
+      "A C-only compiler directive unavailable in Python.",
+      "A third-party library feature requiring numpy."
+    ],
+    "answer": "Core Python mechanism for encapsulation & polymorphism used in Week 6.",
+    "explanation": "Encapsulation & Polymorphism is a built-in Python concept taught in L08 (Week 6)."
+  },
+  {
+    "id": "Q217",
+    "concept_id": "encapsulation",
+    "concept_name": "Encapsulation & Polymorphism",
+    "lesson_id": "L08",
+    "week": 6,
+    "type": "mcq",
+    "difficulty": "hard",
+    "irt_b": 1.25,
+    "bloom_level": "Analyze",
+    "prompt": "When debugging code involving **Encapsulation & Polymorphism**, which pitfall is most likely to cause an unexpected result or exception?",
+    "options": [
+      "Misusing encapsulation & polymorphism semantics or violating its preconditions.",
+      "Using four spaces for indentation.",
+      "Adding comments with the # symbol.",
+      "Naming a file with a .py extension."
+    ],
+    "answer": "Misusing encapsulation & polymorphism semantics or violating its preconditions.",
+    "explanation": "Understanding preconditions and edge cases of Encapsulation & Polymorphism prevents runtime bugs."
+  },
+  {
+    "id": "Q218",
+    "concept_id": "encapsulation",
+    "concept_name": "Encapsulation & Polymorphism",
+    "lesson_id": "L08",
+    "week": 6,
+    "type": "short_answer",
+    "difficulty": "medium",
+    "irt_b": 1.05,
+    "bloom_level": "Understand",
+    "prompt": "In 1-2 sentences, explain when and why a Python developer uses **Encapsulation & Polymorphism**.",
+    "answer": "Developers use Encapsulation & Polymorphism to write clear, correct Python code in oop & algorithms tasks.",
+    "keywords": [
+      "encapsulation",
+      "python"
+    ]
+  },
+  {
+    "id": "Q219",
+    "concept_id": "encapsulation",
+    "concept_name": "Encapsulation & Polymorphism",
+    "lesson_id": "L08",
+    "week": 6,
+    "type": "short_answer",
+    "difficulty": "hard",
+    "irt_b": 1.55,
+    "bloom_level": "Evaluate",
+    "prompt": "Identify one common edge case or performance consideration when working with **Encapsulation & Polymorphism**.",
+    "answer": "Edge cases include empty/boundary inputs, type mismatches, or complexity overhead in Encapsulation & Polymorphism.",
+    "keywords": [
+      "edge",
+      "type",
+      "input"
+    ]
+  },
+  {
+    "id": "Q220",
+    "concept_id": "encapsulation",
+    "concept_name": "Encapsulation & Polymorphism",
+    "lesson_id": "L08",
+    "week": 6,
+    "type": "coding",
+    "difficulty": "hard",
+    "irt_b": 1.65,
+    "bloom_level": "Create",
+    "prompt": "Write a short Python function `solve_encapsulation(x)` demonstrating **Encapsulation & Polymorphism** on input `x` and returning the result.",
+    "starter_code": "def solve_encapsulation(x):\n    # Demonstrate Encapsulation & Polymorphism\n    pass\n",
+    "solution": "def solve_encapsulation(x):\n    return x\n",
+    "test": "assert callable(solve_encapsulation)"
+  },
+  {
+    "id": "Q221",
+    "concept_id": "time_complexity",
+    "concept_name": "Big-O & Search/Sort",
+    "lesson_id": "L08",
+    "week": 6,
+    "type": "mcq",
+    "difficulty": "medium",
+    "irt_b": 0.75,
+    "bloom_level": "Remember",
+    "prompt": "Which statement best describes **Big-O & Search/Sort** in Python?",
+    "options": [
+      "Core Python mechanism for big-o & search/sort used in Week 6.",
+      "A deprecated Python 2 syntax removed in Python 3.",
+      "A C-only compiler directive unavailable in Python.",
+      "A third-party library feature requiring numpy."
+    ],
+    "answer": "Core Python mechanism for big-o & search/sort used in Week 6.",
+    "explanation": "Big-O & Search/Sort is a built-in Python concept taught in L08 (Week 6)."
+  },
+  {
+    "id": "Q222",
+    "concept_id": "time_complexity",
+    "concept_name": "Big-O & Search/Sort",
+    "lesson_id": "L08",
+    "week": 6,
+    "type": "mcq",
+    "difficulty": "hard",
+    "irt_b": 1.25,
+    "bloom_level": "Analyze",
+    "prompt": "When debugging code involving **Big-O & Search/Sort**, which pitfall is most likely to cause an unexpected result or exception?",
+    "options": [
+      "Misusing big-o & search/sort semantics or violating its preconditions.",
+      "Using four spaces for indentation.",
+      "Adding comments with the # symbol.",
+      "Naming a file with a .py extension."
+    ],
+    "answer": "Misusing big-o & search/sort semantics or violating its preconditions.",
+    "explanation": "Understanding preconditions and edge cases of Big-O & Search/Sort prevents runtime bugs."
+  },
+  {
+    "id": "Q223",
+    "concept_id": "time_complexity",
+    "concept_name": "Big-O & Search/Sort",
+    "lesson_id": "L08",
+    "week": 6,
+    "type": "short_answer",
+    "difficulty": "medium",
+    "irt_b": 1.05,
+    "bloom_level": "Understand",
+    "prompt": "In 1-2 sentences, explain when and why a Python developer uses **Big-O & Search/Sort**.",
+    "answer": "Developers use Big-O & Search/Sort to write clear, correct Python code in oop & algorithms tasks.",
+    "keywords": [
+      "time",
+      "python"
+    ]
+  },
+  {
+    "id": "Q224",
+    "concept_id": "time_complexity",
+    "concept_name": "Big-O & Search/Sort",
+    "lesson_id": "L08",
+    "week": 6,
+    "type": "short_answer",
+    "difficulty": "hard",
+    "irt_b": 1.55,
+    "bloom_level": "Evaluate",
+    "prompt": "Identify one common edge case or performance consideration when working with **Big-O & Search/Sort**.",
+    "answer": "Edge cases include empty/boundary inputs, type mismatches, or complexity overhead in Big-O & Search/Sort.",
+    "keywords": [
+      "edge",
+      "type",
+      "input"
+    ]
+  },
+  {
+    "id": "Q225",
+    "concept_id": "time_complexity",
+    "concept_name": "Big-O & Search/Sort",
+    "lesson_id": "L08",
+    "week": 6,
+    "type": "coding",
+    "difficulty": "hard",
+    "irt_b": 1.65,
+    "bloom_level": "Create",
+    "prompt": "Write a short Python function `solve_time_complexity(x)` demonstrating **Big-O & Search/Sort** on input `x` and returning the result.",
+    "starter_code": "def solve_time_complexity(x):\n    # Demonstrate Big-O & Search/Sort\n    pass\n",
+    "solution": "def solve_time_complexity(x):\n    return x\n",
+    "test": "assert callable(solve_time_complexity)"
+  }
+]

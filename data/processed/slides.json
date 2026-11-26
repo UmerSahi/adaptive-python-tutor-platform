@@ -1,0 +1,322 @@
+[
+  {
+    "id": "L01_slide_1",
+    "lesson_id": "L01",
+    "source_type": "slide",
+    "source_file": "L01.pptx",
+    "slide_num": 1,
+    "text": "L01: Python Variables, Data Types & Basic I/O | Ilm Academy | Week 1 | Concepts: variables, data_types, type_casting, input_output, string_formatting"
+  },
+  {
+    "id": "L01_slide_2",
+    "lesson_id": "L01",
+    "source_type": "slide",
+    "source_file": "L01.pptx",
+    "slide_num": 2,
+    "text": "Variables & Assignment | A variable binds a name to an object in memory using =. Names use snake_case."
+  },
+  {
+    "id": "L01_slide_3",
+    "lesson_id": "L01",
+    "source_type": "slide",
+    "source_file": "L01.pptx",
+    "slide_num": 3,
+    "text": "Core Data Types | int (42), float (3.14), str ('Ilm'), bool (True/False), and NoneType."
+  },
+  {
+    "id": "L01_slide_4",
+    "lesson_id": "L01",
+    "source_type": "slide",
+    "source_file": "L01.pptx",
+    "slide_num": 4,
+    "text": "Type Casting & Input | input() always returns str. Use int(), float(), str() to convert types safely."
+  },
+  {
+    "id": "L01_slide_5",
+    "lesson_id": "L01",
+    "source_type": "slide",
+    "source_file": "L01.pptx",
+    "slide_num": 5,
+    "text": "F-Strings | Format output cleanly with f'Hello {name}, score: {score:.1f}'."
+  },
+  {
+    "id": "L02_slide_1",
+    "lesson_id": "L02",
+    "source_type": "slide",
+    "source_file": "L02.pptx",
+    "slide_num": 1,
+    "text": "L02: Operators, Conditionals & Boolean Logic | Ilm Academy | Week 1 | Concepts: arithmetic_ops, comparison_ops, boolean_logic, if_elif_else, nested_conditionals"
+  },
+  {
+    "id": "L02_slide_2",
+    "lesson_id": "L02",
+    "source_type": "slide",
+    "source_file": "L02.pptx",
+    "slide_num": 2,
+    "text": "Arithmetic & Modulo | Operators: +, -, *, / (float division), // (floor), % (modulo), ** (power)."
+  },
+  {
+    "id": "L02_slide_3",
+    "lesson_id": "L02",
+    "source_type": "slide",
+    "source_file": "L02.pptx",
+    "slide_num": 3,
+    "text": "Comparison & Boolean Logic | Comparisons (==, !=, <, >) return bool. Combine with and, or, not."
+  },
+  {
+    "id": "L02_slide_4",
+    "lesson_id": "L02",
+    "source_type": "slide",
+    "source_file": "L02.pptx",
+    "slide_num": 4,
+    "text": "If / Elif / Else | Branch execution based on truthy/falsy conditions. Indentation defines blocks."
+  },
+  {
+    "id": "L02_slide_5",
+    "lesson_id": "L02",
+    "source_type": "slide",
+    "source_file": "L02.pptx",
+    "slide_num": 5,
+    "text": "Short-Circuit Evaluation | Python stops evaluating 'and' on the first False, and 'or' on the first True."
+  },
+  {
+    "id": "L03_slide_1",
+    "lesson_id": "L03",
+    "source_type": "slide",
+    "source_file": "L03.pptx",
+    "slide_num": 1,
+    "text": "L03: Loops, Iteration & Loop Control | Ilm Academy | Week 2 | Concepts: while_loops, for_loops, range_function, break_continue, nested_loops"
+  },
+  {
+    "id": "L03_slide_2",
+    "lesson_id": "L03",
+    "source_type": "slide",
+    "source_file": "L03.pptx",
+    "slide_num": 2,
+    "text": "While Loops | Repeat a block while a condition remains True. Always update the loop variable!"
+  },
+  {
+    "id": "L03_slide_3",
+    "lesson_id": "L03",
+    "source_type": "slide",
+    "source_file": "L03.pptx",
+    "slide_num": 3,
+    "text": "For Loops & range() | Iterate over sequences with for item in seq. range(start, stop, step) excludes stop."
+  },
+  {
+    "id": "L03_slide_4",
+    "lesson_id": "L03",
+    "source_type": "slide",
+    "source_file": "L03.pptx",
+    "slide_num": 4,
+    "text": "Break & Continue | break exits the loop immediately; continue skips to the next iteration."
+  },
+  {
+    "id": "L03_slide_5",
+    "lesson_id": "L03",
+    "source_type": "slide",
+    "source_file": "L03.pptx",
+    "slide_num": 5,
+    "text": "Nested Loops | An inner loop runs completely for each iteration of the outer loop. O(n*m) complexity."
+  },
+  {
+    "id": "L04_slide_1",
+    "lesson_id": "L04",
+    "source_type": "slide",
+    "source_file": "L04.pptx",
+    "slide_num": 1,
+    "text": "L04: Lists, Tuples, Indexing & Slicing | Ilm Academy | Week 2 | Concepts: lists, list_indexing_slicing, list_methods, tuples, mutability"
+  },
+  {
+    "id": "L04_slide_2",
+    "lesson_id": "L04",
+    "source_type": "slide",
+    "source_file": "L04.pptx",
+    "slide_num": 2,
+    "text": "Lists & Mutability | Lists are ordered, mutable sequences: nums = [10, 20, 30]."
+  },
+  {
+    "id": "L04_slide_3",
+    "lesson_id": "L04",
+    "source_type": "slide",
+    "source_file": "L04.pptx",
+    "slide_num": 3,
+    "text": "Indexing & Slicing | Zero-based indexing; negative indices count from end. Slice syntax: seq[start:stop:step]."
+  },
+  {
+    "id": "L04_slide_4",
+    "lesson_id": "L04",
+    "source_type": "slide",
+    "source_file": "L04.pptx",
+    "slide_num": 4,
+    "text": "List Methods | append(), extend(), insert(), pop(), remove(), sort(), reverse()."
+  },
+  {
+    "id": "L04_slide_5",
+    "lesson_id": "L04",
+    "source_type": "slide",
+    "source_file": "L04.pptx",
+    "slide_num": 5,
+    "text": "Tuples & Immutability | Tuples (1, 2) are immutable ordered sequences, safe for fixed records and dict keys."
+  },
+  {
+    "id": "L05_slide_1",
+    "lesson_id": "L05",
+    "source_type": "slide",
+    "source_file": "L05.pptx",
+    "slide_num": 1,
+    "text": "L05: Dictionaries, Sets & Hashing | Ilm Academy | Week 3 | Concepts: dictionaries, dict_methods, sets, set_operations, hashing_concepts"
+  },
+  {
+    "id": "L05_slide_2",
+    "lesson_id": "L05",
+    "source_type": "slide",
+    "source_file": "L05.pptx",
+    "slide_num": 2,
+    "text": "Dictionaries | Key-value mappings with O(1) average lookup: student = {'name': 'Ali', 'score': 95}."
+  },
+  {
+    "id": "L05_slide_3",
+    "lesson_id": "L05",
+    "source_type": "slide",
+    "source_file": "L05.pptx",
+    "slide_num": 3,
+    "text": "Safe Lookup & Iteration | Use d.get(key, default) to avoid KeyError. Iterate with .keys(), .values(), .items()."
+  },
+  {
+    "id": "L05_slide_4",
+    "lesson_id": "L05",
+    "source_type": "slide",
+    "source_file": "L05.pptx",
+    "slide_num": 4,
+    "text": "Sets | Unordered collections of unique hashable elements: seen = set()."
+  },
+  {
+    "id": "L05_slide_5",
+    "lesson_id": "L05",
+    "source_type": "slide",
+    "source_file": "L05.pptx",
+    "slide_num": 5,
+    "text": "Set Operations | Union (|), intersection (&), difference (-), symmetric difference (^)."
+  },
+  {
+    "id": "L06_slide_1",
+    "lesson_id": "L06",
+    "source_type": "slide",
+    "source_file": "L06.pptx",
+    "slide_num": 1,
+    "text": "L06: Functions, Scope & Recursion | Ilm Academy | Week 4 | Concepts: functions_def, parameters_defaults, return_values, variable_scope, lambda_functions, recursion"
+  },
+  {
+    "id": "L06_slide_2",
+    "lesson_id": "L06",
+    "source_type": "slide",
+    "source_file": "L06.pptx",
+    "slide_num": 2,
+    "text": "Defining Functions | def greet(name='Student'): encapsulates reusable logic."
+  },
+  {
+    "id": "L06_slide_3",
+    "lesson_id": "L06",
+    "source_type": "slide",
+    "source_file": "L06.pptx",
+    "slide_num": 3,
+    "text": "Return vs Print | return sends a value back to the caller; print only writes to stdout (returns None)."
+  },
+  {
+    "id": "L06_slide_4",
+    "lesson_id": "L06",
+    "source_type": "slide",
+    "source_file": "L06.pptx",
+    "slide_num": 4,
+    "text": "LEGB Scope | Local, Enclosing, Global, Built-in. Avoid mutating global state."
+  },
+  {
+    "id": "L06_slide_5",
+    "lesson_id": "L06",
+    "source_type": "slide",
+    "source_file": "L06.pptx",
+    "slide_num": 5,
+    "text": "Recursion | A function calling itself with a base case and a smaller recursive step."
+  },
+  {
+    "id": "L07_slide_1",
+    "lesson_id": "L07",
+    "source_type": "slide",
+    "source_file": "L07.pptx",
+    "slide_num": 1,
+    "text": "L07: Exceptions, File I/O & Comprehensions | Ilm Academy | Week 5 | Concepts: exceptions_try_except, raising_exceptions, file_io, context_managers, list_comprehensions, generators"
+  },
+  {
+    "id": "L07_slide_2",
+    "lesson_id": "L07",
+    "source_type": "slide",
+    "source_file": "L07.pptx",
+    "slide_num": 2,
+    "text": "Try / Except / Finally | Handle runtime errors gracefully without crashing the program."
+  },
+  {
+    "id": "L07_slide_3",
+    "lesson_id": "L07",
+    "source_type": "slide",
+    "source_file": "L07.pptx",
+    "slide_num": 3,
+    "text": "Context Managers (with) | with open('data.txt', 'r') as f: guarantees the file is closed automatically."
+  },
+  {
+    "id": "L07_slide_4",
+    "lesson_id": "L07",
+    "source_type": "slide",
+    "source_file": "L07.pptx",
+    "slide_num": 4,
+    "text": "Comprehensions | [x**2 for x in range(10) if x % 2 == 0] builds lists concisely."
+  },
+  {
+    "id": "L07_slide_5",
+    "lesson_id": "L07",
+    "source_type": "slide",
+    "source_file": "L07.pptx",
+    "slide_num": 5,
+    "text": "Generators & yield | Generators compute values lazily one at a time, saving memory on large streams."
+  },
+  {
+    "id": "L08_slide_1",
+    "lesson_id": "L08",
+    "source_type": "slide",
+    "source_file": "L08.pptx",
+    "slide_num": 1,
+    "text": "L08: Object-Oriented Programming & Algorithmic Thinking | Ilm Academy | Week 6 | Concepts: classes_objects, init_self, inheritance, encapsulation, polymorphism, time_complexity, searching_sorting"
+  },
+  {
+    "id": "L08_slide_2",
+    "lesson_id": "L08",
+    "source_type": "slide",
+    "source_file": "L08.pptx",
+    "slide_num": 2,
+    "text": "Classes & __init__ | Classes bundle data (attributes) and behavior (methods). self refers to the instance."
+  },
+  {
+    "id": "L08_slide_3",
+    "lesson_id": "L08",
+    "source_type": "slide",
+    "source_file": "L08.pptx",
+    "slide_num": 3,
+    "text": "Inheritance & Polymorphism | Subclasses inherit and override parent methods using super()."
+  },
+  {
+    "id": "L08_slide_4",
+    "lesson_id": "L08",
+    "source_type": "slide",
+    "source_file": "L08.pptx",
+    "slide_num": 4,
+    "text": "Encapsulation | Hide internal state behind clean public methods; use _protected conventions."
+  },
+  {
+    "id": "L08_slide_5",
+    "lesson_id": "L08",
+    "source_type": "slide",
+    "source_file": "L08.pptx",
+    "slide_num": 5,
+    "text": "Big-O & Search/Sort | Linear search O(n) vs Binary search O(log n) on sorted data; Python sort is O(n log n)."
+  }
+]

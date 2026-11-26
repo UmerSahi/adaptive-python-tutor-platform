@@ -1,0 +1,66 @@
+[
+  {
+    "id": "L01_note_1",
+    "lesson_id": "L01",
+    "source_type": "lecture_note",
+    "source_file": "L01.pdf",
+    "page_num": 1,
+    "text": "L01 - Python Variables, Data Types & Basic I/O (Week 1)\nLesson 1 Lecture Notes: Python Foundations.\nVariables in Python are dynamically typed references to objects. Use type(x) to inspect types.\nCommon pitfall: concatenating str and int raises TypeError. Always cast with int() or str().\nF-strings (Python 3.6+) evaluate expressions inside curly braces and support format specifiers."
+  },
+  {
+    "id": "L02_note_1",
+    "lesson_id": "L02",
+    "source_type": "lecture_note",
+    "source_file": "L02.pdf",
+    "page_num": 1,
+    "text": "L02 - Operators, Conditionals & Boolean Logic (Week 1)\nLesson 2 Lecture Notes: Control Flow.\nUse == for value equality and = for assignment. Modulo % is essential for divisibility checks.\nTruthy values: non-zero numbers, non-empty collections. Falsy: 0, '', [], {}, None, False.\nAvoid deep nesting by using elif chains or early returns."
+  },
+  {
+    "id": "L03_note_1",
+    "lesson_id": "L03",
+    "source_type": "lecture_note",
+    "source_file": "L03.pdf",
+    "page_num": 1,
+    "text": "L03 - Loops, Iteration & Loop Control (Week 2)\nLesson 3 Lecture Notes: Iteration.\nInfinite loops happen when the while condition never becomes False.\nUse enumerate(seq) when you need both index and value instead of range(len(seq)).\nNested loops are used for 2D grids, multiplication tables, and pairwise comparisons."
+  },
+  {
+    "id": "L04_note_1",
+    "lesson_id": "L04",
+    "source_type": "lecture_note",
+    "source_file": "L04.pdf",
+    "page_num": 1,
+    "text": "L04 - Lists, Tuples, Indexing & Slicing (Week 2)\nLesson 4 Lecture Notes: Sequences.\nSlicing creates a shallow copy: nums[:] copies the list.\nAliasing pitfall: b = a does NOT copy a list; both variables point to the same object.\nTuples cannot be modified in-place, preventing accidental mutation."
+  },
+  {
+    "id": "L05_note_1",
+    "lesson_id": "L05",
+    "source_type": "lecture_note",
+    "source_file": "L05.pdf",
+    "page_num": 1,
+    "text": "L05 - Dictionaries, Sets & Hashing (Week 3)\nLesson 5 Lecture Notes: Hash-based Structures.\nDictionary keys and set elements must be hashable (immutable types like int, str, tuple).\nUse sets for fast membership testing (x in my_set) in O(1) average time vs O(n) for lists."
+  },
+  {
+    "id": "L06_note_1",
+    "lesson_id": "L06",
+    "source_type": "lecture_note",
+    "source_file": "L06.pdf",
+    "page_num": 1,
+    "text": "L06 - Functions, Scope & Recursion (Week 4)\nLesson 6 Lecture Notes: Functions & Recursion.\nNever use mutable default arguments like def f(items=[]):; use None instead.\nEvery recursive function needs a base case to terminate and a recursive case that progresses toward it"
+  },
+  {
+    "id": "L07_note_1",
+    "lesson_id": "L07",
+    "source_type": "lecture_note",
+    "source_file": "L07.pdf",
+    "page_num": 1,
+    "text": "L07 - Exceptions, File I/O & Comprehensions (Week 5)\nLesson 7 Lecture Notes: Robust Python & Pythonic Idioms.\nCatch specific exceptions (ValueError, FileNotFoundError) rather than bare except:.\nGenerator expressions use parentheses (x*2 for x in data) and yield items on demand."
+  },
+  {
+    "id": "L08_note_1",
+    "lesson_id": "L08",
+    "source_type": "lecture_note",
+    "source_file": "L08.pdf",
+    "page_num": 1,
+    "text": "L08 - Object-Oriented Programming & Algorithmic Thinking (Week 6)\nLesson 8 Lecture Notes: OOP & Complexity.\n__init__ initializes a newly created instance; __repr__ provides a developer-friendly string.\nBinary search requires a sorted sequence and halves the search space each step."
+  }
+]

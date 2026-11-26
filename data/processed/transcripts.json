@@ -1,0 +1,353 @@
+[
+  {
+    "id": "L01_vid_0",
+    "lesson_id": "L01",
+    "source_type": "video_transcript",
+    "source_file": "L01.mp4",
+    "start_sec": 0.0,
+    "end_sec": 6.0,
+    "text": "Welcome to ILM Academy Python Week 1, Lesson 1, Variables and Data Types."
+  },
+  {
+    "id": "L01_vid_1",
+    "lesson_id": "L01",
+    "source_type": "video_transcript",
+    "source_file": "L01.mp4",
+    "start_sec": 6.0,
+    "end_sec": 10.16,
+    "text": "In Python, a variable is a name bound to an object in memory."
+  },
+  {
+    "id": "L01_vid_2",
+    "lesson_id": "L01",
+    "source_type": "video_transcript",
+    "source_file": "L01.mp4",
+    "start_sec": 10.16,
+    "end_sec": 15.76,
+    "text": "The 4 core primitive types are integers, floating point numbers, strings and billions."
+  },
+  {
+    "id": "L01_vid_3",
+    "lesson_id": "L01",
+    "source_type": "video_transcript",
+    "source_file": "L01.mp4",
+    "start_sec": 15.76,
+    "end_sec": 19.96,
+    "text": "Remember that the input function always returns a string, so you must cast it with int or"
+  },
+  {
+    "id": "L01_vid_4",
+    "lesson_id": "L01",
+    "source_type": "video_transcript",
+    "source_file": "L01.mp4",
+    "start_sec": 19.96,
+    "end_sec": 22.0,
+    "text": "float before doing math."
+  },
+  {
+    "id": "L01_vid_5",
+    "lesson_id": "L01",
+    "source_type": "video_transcript",
+    "source_file": "L01.mp4",
+    "start_sec": 22.0,
+    "end_sec": 26.0,
+    "text": "Finally, use F strings for clean and readable string formatting."
+  },
+  {
+    "id": "L02_vid_0",
+    "lesson_id": "L02",
+    "source_type": "video_transcript",
+    "source_file": "L02.mp4",
+    "start_sec": 0.0,
+    "end_sec": 3.7,
+    "text": "Welcome to Lesson 2, Operators and Conditionals."
+  },
+  {
+    "id": "L02_vid_1",
+    "lesson_id": "L02",
+    "source_type": "video_transcript",
+    "source_file": "L02.mp4",
+    "start_sec": 3.7,
+    "end_sec": 8.58,
+    "text": "Python provides floor division with double slash and remainder with the Modulo Operator."
+  },
+  {
+    "id": "L02_vid_2",
+    "lesson_id": "L02",
+    "source_type": "video_transcript",
+    "source_file": "L02.mp4",
+    "start_sec": 8.58,
+    "end_sec": 13.98,
+    "text": "Boolean logic uses the keywords end or end not, with short circuit evaluation."
+  },
+  {
+    "id": "L02_vid_3",
+    "lesson_id": "L02",
+    "source_type": "video_transcript",
+    "source_file": "L02.mp4",
+    "start_sec": 13.98,
+    "end_sec": 19.62,
+    "text": "Use if, illive, and else statements with four space indentation to control program flow."
+  },
+  {
+    "id": "L03_vid_0",
+    "lesson_id": "L03",
+    "source_type": "video_transcript",
+    "source_file": "L03.mp4",
+    "start_sec": 0.0,
+    "end_sec": 3.0,
+    "text": "In lesson 3 we cover loops and iteration."
+  },
+  {
+    "id": "L03_vid_1",
+    "lesson_id": "L03",
+    "source_type": "video_transcript",
+    "source_file": "L03.mp4",
+    "start_sec": 3.0,
+    "end_sec": 7.52,
+    "text": "A while loop repeats as long as a condition is true, so make sure your loop variable updates"
+  },
+  {
+    "id": "L03_vid_2",
+    "lesson_id": "L03",
+    "source_type": "video_transcript",
+    "source_file": "L03.mp4",
+    "start_sec": 7.52,
+    "end_sec": 9.52,
+    "text": "to avoid infinite loops."
+  },
+  {
+    "id": "L03_vid_3",
+    "lesson_id": "L03",
+    "source_type": "video_transcript",
+    "source_file": "L03.mp4",
+    "start_sec": 9.52,
+    "end_sec": 13.92,
+    "text": "A for loop iterates over any sequence, and the range function generates integer sequences"
+  },
+  {
+    "id": "L03_vid_4",
+    "lesson_id": "L03",
+    "source_type": "video_transcript",
+    "source_file": "L03.mp4",
+    "start_sec": 13.92,
+    "end_sec": 16.72,
+    "text": "up to but excluding the stop value."
+  },
+  {
+    "id": "L03_vid_5",
+    "lesson_id": "L03",
+    "source_type": "video_transcript",
+    "source_file": "L03.mp4",
+    "start_sec": 16.72,
+    "end_sec": 19.68,
+    "text": "Use Break to exit early and continue to skip the current iteration."
+  },
+  {
+    "id": "L04_vid_0",
+    "lesson_id": "L04",
+    "source_type": "video_transcript",
+    "source_file": "L04.mp4",
+    "start_sec": 0.0,
+    "end_sec": 3.0,
+    "text": "Lesson 4 introduces lists and tuples."
+  },
+  {
+    "id": "L04_vid_1",
+    "lesson_id": "L04",
+    "source_type": "video_transcript",
+    "source_file": "L04.mp4",
+    "start_sec": 3.0,
+    "end_sec": 8.48,
+    "text": "lists are ordered and mutable, supporting indexing from zero and negative indexing from the end."
+  },
+  {
+    "id": "L04_vid_2",
+    "lesson_id": "L04",
+    "source_type": "video_transcript",
+    "source_file": "L04.mp4",
+    "start_sec": 8.48,
+    "end_sec": 13.88,
+    "text": "Slicing with start, stop, and step-extracts a sub-sequence as a new list."
+  },
+  {
+    "id": "L04_vid_3",
+    "lesson_id": "L04",
+    "source_type": "video_transcript",
+    "source_file": "L04.mp4",
+    "start_sec": 13.88,
+    "end_sec": 18.88,
+    "text": "Tuples are immutable sequences, which makes them ideal for fixed records and dictionary keys."
+  },
+  {
+    "id": "L05_vid_0",
+    "lesson_id": "L05",
+    "source_type": "video_transcript",
+    "source_file": "L05.mp4",
+    "start_sec": 0.0,
+    "end_sec": 4.2,
+    "text": "Welcome to week 3, Lesson 5, Dictionaries and Sets."
+  },
+  {
+    "id": "L05_vid_1",
+    "lesson_id": "L05",
+    "source_type": "video_transcript",
+    "source_file": "L05.mp4",
+    "start_sec": 4.2,
+    "end_sec": 8.4,
+    "text": "Dictionaries store key value pairs with constant time average lookup."
+  },
+  {
+    "id": "L05_vid_2",
+    "lesson_id": "L05",
+    "source_type": "video_transcript",
+    "source_file": "L05.mp4",
+    "start_sec": 8.4,
+    "end_sec": 12.4,
+    "text": "Always use the get method when a key might be missing to avoid a key error."
+  },
+  {
+    "id": "L05_vid_3",
+    "lesson_id": "L05",
+    "source_type": "video_transcript",
+    "source_file": "L05.mp4",
+    "start_sec": 12.4,
+    "end_sec": 18.0,
+    "text": "Set Store Unicashable items and support fast membership testing and mathematical set operations."
+  },
+  {
+    "id": "L06_vid_0",
+    "lesson_id": "L06",
+    "source_type": "video_transcript",
+    "source_file": "L06.mp4",
+    "start_sec": 0.0,
+    "end_sec": 5.44,
+    "text": "In week 4, lesson 6, we study functions, scope and recursion."
+  },
+  {
+    "id": "L06_vid_1",
+    "lesson_id": "L06",
+    "source_type": "video_transcript",
+    "source_file": "L06.mp4",
+    "start_sec": 5.44,
+    "end_sec": 7.72,
+    "text": "Functions promote modularity."
+  },
+  {
+    "id": "L06_vid_2",
+    "lesson_id": "L06",
+    "source_type": "video_transcript",
+    "source_file": "L06.mp4",
+    "start_sec": 7.72,
+    "end_sec": 11.52,
+    "text": "Remember the difference between return and print, a function without a return statement"
+  },
+  {
+    "id": "L06_vid_3",
+    "lesson_id": "L06",
+    "source_type": "video_transcript",
+    "source_file": "L06.mp4",
+    "start_sec": 11.52,
+    "end_sec": 13.28,
+    "text": "returns none."
+  },
+  {
+    "id": "L06_vid_4",
+    "lesson_id": "L06",
+    "source_type": "video_transcript",
+    "source_file": "L06.mp4",
+    "start_sec": 13.28,
+    "end_sec": 17.0,
+    "text": "Python resolves names using the L-E-G-B scope rule."
+  },
+  {
+    "id": "L06_vid_5",
+    "lesson_id": "L06",
+    "source_type": "video_transcript",
+    "source_file": "L06.mp4",
+    "start_sec": 17.0,
+    "end_sec": 21.48,
+    "text": "Recursion solves a problem by breaking it into a base case and a smaller self-similar sub-problem."
+  },
+  {
+    "id": "L07_vid_0",
+    "lesson_id": "L07",
+    "source_type": "video_transcript",
+    "source_file": "L07.mp4",
+    "start_sec": 0.0,
+    "end_sec": 5.06,
+    "text": "Lessons 7 covers exception handling, file IO, and Comprehensions."
+  },
+  {
+    "id": "L07_vid_1",
+    "lesson_id": "L07",
+    "source_type": "video_transcript",
+    "source_file": "L07.mp4",
+    "start_sec": 5.06,
+    "end_sec": 10.36,
+    "text": "Use Tri-and-Except blocks to catch specific errors like value error or file not found error."
+  },
+  {
+    "id": "L07_vid_2",
+    "lesson_id": "L07",
+    "source_type": "video_transcript",
+    "source_file": "L07.mp4",
+    "start_sec": 10.36,
+    "end_sec": 15.54,
+    "text": "Always open files using A with context manager so resources are released safely."
+  },
+  {
+    "id": "L07_vid_3",
+    "lesson_id": "L07",
+    "source_type": "video_transcript",
+    "source_file": "L07.mp4",
+    "start_sec": 15.54,
+    "end_sec": 18.84,
+    "text": "List Comprehensions and Generator expressions offer concise,"
+  },
+  {
+    "id": "L07_vid_4",
+    "lesson_id": "L07",
+    "source_type": "video_transcript",
+    "source_file": "L07.mp4",
+    "start_sec": 18.84,
+    "end_sec": 20.52,
+    "text": "Python-equays to transform data."
+  },
+  {
+    "id": "L08_vid_0",
+    "lesson_id": "L08",
+    "source_type": "video_transcript",
+    "source_file": "L08.mp4",
+    "start_sec": 0.0,
+    "end_sec": 4.4,
+    "text": "Welcome to our final week 6 lesson on object oriented programming and algorithmic thinking."
+  },
+  {
+    "id": "L08_vid_1",
+    "lesson_id": "L08",
+    "source_type": "video_transcript",
+    "source_file": "L08.mp4",
+    "start_sec": 5.2,
+    "end_sec": 9.92,
+    "text": "Classes define blueprints for objects, with thunder in it setting initial attributes on self."
+  },
+  {
+    "id": "L08_vid_2",
+    "lesson_id": "L08",
+    "source_type": "video_transcript",
+    "source_file": "L08.mp4",
+    "start_sec": 10.72,
+    "end_sec": 14.24,
+    "text": "Inheritance lets subclasses reuse and specialize parent behavior."
+  },
+  {
+    "id": "L08_vid_3",
+    "lesson_id": "L08",
+    "source_type": "video_transcript",
+    "source_file": "L08.mp4",
+    "start_sec": 15.04,
+    "end_sec": 20.72,
+    "text": "Finally, analyzing Big O time complexity helps us choose binary search over linear search on sorted data."
+  }
+]
