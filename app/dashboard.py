@@ -5,7 +5,12 @@
 """
 
 import json
+import sys
 from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+if str(BASE_DIR) not in sys.path:
+    sys.path.insert(0, str(BASE_DIR))
 
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -15,7 +20,6 @@ import streamlit as st
 from src.grading.code_grader import grade_submission
 from src.tutor.socratic_tutor import SocraticTutor
 
-BASE_DIR = Path(__file__).resolve().parent.parent
 DATA_DIR = BASE_DIR / "data"
 OUTPUTS_DIR = BASE_DIR / "outputs"
 
