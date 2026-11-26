@@ -1,0 +1,91 @@
+[
+  {
+    "submission_id": "SUB_001",
+    "score_pct": 100.0,
+    "passed_tests": 4,
+    "total_tests": 4,
+    "total_elapsed_ms": 252.24,
+    "efficiency_ok": true,
+    "quality": {
+      "loc": 4,
+      "cyclomatic_complexity": 2,
+      "quality_issues": []
+    },
+    "failed_tests_explained": [],
+    "one_improvement": "Clean solution! Add a concise docstring describing parameters and return value.",
+    "lesson_link": "[Lesson L06 Reference]"
+  },
+  {
+    "submission_id": "SUB_002",
+    "score_pct": 100.0,
+    "passed_tests": 4,
+    "total_tests": 4,
+    "total_elapsed_ms": 197.58,
+    "efficiency_ok": true,
+    "quality": {
+      "loc": 7,
+      "cyclomatic_complexity": 3,
+      "quality_issues": []
+    },
+    "failed_tests_explained": [],
+    "one_improvement": "Clean solution! Add a concise docstring describing parameters and return value.",
+    "lesson_link": "[Lesson L06 Reference]"
+  },
+  {
+    "submission_id": "SUB_003",
+    "score_pct": 75.0,
+    "passed_tests": 3,
+    "total_tests": 4,
+    "total_elapsed_ms": 268.65,
+    "efficiency_ok": true,
+    "quality": {
+      "loc": 4,
+      "cyclomatic_complexity": 2,
+      "quality_issues": []
+    },
+    "failed_tests_explained": [
+      "Visible test `assert factorial(0) == 1` failed (RecursionError: maximum recursion depth exceeded)."
+    ],
+    "one_improvement": "Check your base/boundary condition for edge-case inputs (e.g., 0, empty list, or negative values).",
+    "lesson_link": "[Lesson L06 Reference]"
+  },
+  {
+    "submission_id": "SUB_004",
+    "score_pct": 0.0,
+    "passed_tests": 0,
+    "total_tests": 4,
+    "total_elapsed_ms": 195.55,
+    "efficiency_ok": true,
+    "quality": {
+      "loc": 2,
+      "cyclomatic_complexity": 1,
+      "quality_issues": []
+    },
+    "failed_tests_explained": [
+      "Visible test `assert factorial(0) == 1` failed (RecursionError: maximum recursion depth exceeded).",
+      "Visible test `assert factorial(3) == 6` failed (RecursionError: maximum recursion depth exceeded).",
+      "Hidden edge-case test failed (RecursionError: maximum recursion depth exceeded).",
+      "Hidden edge-case test failed (RecursionError: maximum recursion depth exceeded)."
+    ],
+    "one_improvement": "Check your base/boundary condition for edge-case inputs (e.g., 0, empty list, or negative values).",
+    "lesson_link": "[Lesson L06 Reference]"
+  },
+  {
+    "submission_id": "SUB_005",
+    "score_pct": 75.0,
+    "passed_tests": 3,
+    "total_tests": 4,
+    "total_elapsed_ms": 208.36,
+    "efficiency_ok": true,
+    "quality": {
+      "loc": 2,
+      "cyclomatic_complexity": 3,
+      "quality_issues": []
+    },
+    "failed_tests_explained": [
+      "Hidden edge-case test failed (AssertionError)."
+    ],
+    "one_improvement": "Check your base/boundary condition for edge-case inputs (e.g., 0, empty list, or negative values).",
+    "lesson_link": "[Lesson L06 Reference]"
+  }
+]
