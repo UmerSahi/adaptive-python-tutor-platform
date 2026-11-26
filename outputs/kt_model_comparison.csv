@@ -1,0 +1,5 @@
+Model,AUC,Accuracy,RMSE
+DKT (PyTorch LSTM),0.7376,0.6805,0.4543
+BKT (EM/MLE),0.6595,0.6218,0.479
+PFA (Logistic),0.6587,0.6231,0.4792
+Baseline (Concept Mean),0.6369,0.6087,0.4837

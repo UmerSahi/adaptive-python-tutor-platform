@@ -1,0 +1,176 @@
+{
+  "Ali": {
+    "student": "Ali",
+    "estimated_total_minutes": 88,
+    "urdulish_message": "Shabash Ali! Loops mein aap zabardast ho, ab functions aur return values ko master karne ka waqt hai! Yeh 8-step path sirf 88 minutes mein aapke weak concepts ko strong bana dega \u2014 har step aapke ZPD (60-80% success) mein set kiya gaya hai, bas steady raho!",
+    "path": [
+      {
+        "step": 1,
+        "concept_id": "nested_loops",
+        "concept_name": "Nested Loops",
+        "question_id": "Q072",
+        "question_type": "mcq",
+        "predicted_success": 0.794,
+        "in_zpd": true,
+        "est_minutes": 8
+      },
+      {
+        "step": 2,
+        "concept_id": "functions_def",
+        "concept_name": "Function Definition & Calls",
+        "question_id": "Q136",
+        "question_type": "mcq",
+        "predicted_success": 0.692,
+        "in_zpd": true,
+        "est_minutes": 8
+      },
+      {
+        "step": 3,
+        "concept_id": "type_casting",
+        "concept_name": "Type Casting",
+        "question_id": "Q015",
+        "question_type": "coding",
+        "predicted_success": 0.647,
+        "in_zpd": true,
+        "est_minutes": 18
+      },
+      {
+        "step": 4,
+        "concept_id": "functions_def",
+        "concept_name": "Function Definition & Calls",
+        "question_id": "Q136",
+        "question_type": "mcq",
+        "predicted_success": 0.692,
+        "in_zpd": true,
+        "est_minutes": 8
+      },
+      {
+        "step": 5,
+        "concept_id": "nested_loops",
+        "concept_name": "Nested Loops",
+        "question_id": "Q072",
+        "question_type": "mcq",
+        "predicted_success": 0.794,
+        "in_zpd": true,
+        "est_minutes": 8
+      },
+      {
+        "step": 6,
+        "concept_id": "lists",
+        "concept_name": "Lists Creation & Basics",
+        "question_id": "Q079",
+        "question_type": "short_answer",
+        "predicted_success": 0.72,
+        "in_zpd": true,
+        "est_minutes": 12
+      },
+      {
+        "step": 7,
+        "concept_id": "type_casting",
+        "concept_name": "Type Casting",
+        "question_id": "Q015",
+        "question_type": "coding",
+        "predicted_success": 0.647,
+        "in_zpd": true,
+        "est_minutes": 18
+      },
+      {
+        "step": 8,
+        "concept_id": "functions_def",
+        "concept_name": "Function Definition & Calls",
+        "question_id": "Q136",
+        "question_type": "mcq",
+        "predicted_success": 0.692,
+        "in_zpd": true,
+        "est_minutes": 8
+      }
+    ]
+  },
+  "Sara": {
+    "student": "Sara",
+    "estimated_total_minutes": 106,
+    "urdulish_message": "Shabash Sara! Aapki speed bohat achi hai, bas thora slow ho kar careful check karo taake silly slips na hon! Yeh 8-step path sirf 106 minutes mein aapke weak concepts ko strong bana dega \u2014 har step aapke ZPD (60-80% success) mein set kiya gaya hai, bas steady raho!",
+    "path": [
+      {
+        "step": 1,
+        "concept_id": "type_casting",
+        "concept_name": "Type Casting",
+        "question_id": "Q013",
+        "question_type": "short_answer",
+        "predicted_success": 0.734,
+        "in_zpd": true,
+        "est_minutes": 12
+      },
+      {
+        "step": 2,
+        "concept_id": "comparison_ops",
+        "concept_name": "Comparison Operators",
+        "question_id": "Q035",
+        "question_type": "coding",
+        "predicted_success": 0.734,
+        "in_zpd": true,
+        "est_minutes": 18
+      },
+      {
+        "step": 3,
+        "concept_id": "range_function",
+        "concept_name": "range() Function",
+        "question_id": "Q057",
+        "question_type": "mcq",
+        "predicted_success": 0.72,
+        "in_zpd": true,
+        "est_minutes": 8
+      },
+      {
+        "step": 4,
+        "concept_id": "type_casting",
+        "concept_name": "Type Casting",
+        "question_id": "Q013",
+        "question_type": "short_answer",
+        "predicted_success": 0.734,
+        "in_zpd": true,
+        "est_minutes": 12
+      },
+      {
+        "step": 5,
+        "concept_id": "variables",
+        "concept_name": "Variables & Assignment",
+        "question_id": "Q003",
+        "question_type": "short_answer",
+        "predicted_success": 0.783,
+        "in_zpd": true,
+        "est_minutes": 12
+      },
+      {
+        "step": 6,
+        "concept_id": "comparison_ops",
+        "concept_name": "Comparison Operators",
+        "question_id": "Q035",
+        "question_type": "coding",
+        "predicted_success": 0.734,
+        "in_zpd": true,
+        "est_minutes": 18
+      },
+      {
+        "step": 7,
+        "concept_id": "boolean_logic",
+        "concept_name": "Boolean Logic (and/or/not)",
+        "question_id": "Q040",
+        "question_type": "coding",
+        "predicted_success": 0.734,
+        "in_zpd": true,
+        "est_minutes": 18
+      },
+      {
+        "step": 8,
+        "concept_id": "range_function",
+        "concept_name": "range() Function",
+        "question_id": "Q057",
+        "question_type": "mcq",
+        "predicted_success": 0.72,
+        "in_zpd": true,
+        "est_minutes": 8
+      }
+    ]
+  }
+}
