@@ -143,7 +143,7 @@ cells = [
         "    .head(10)\n"
         ")\n\n"
         "fig, ax = plt.subplots(figsize=(10, 5))\n"
-        "sns.barplot(data=hardest, x='accuracy', y='concept_id', palette='Reds_r', ax=ax)\n"
+        "sns.barplot(data=hardest, x='accuracy', y='concept_id', hue='concept_id', palette='Reds_r', legend=False, ax=ax)\n"
         "ax.set_xlim(0, 0.85)\n"
         "ax.set_title('Top 10 Hardest Python Concepts (Lowest Accuracy)', fontsize=14, fontweight='bold')\n"
         "ax.set_xlabel('Accuracy')\n"
