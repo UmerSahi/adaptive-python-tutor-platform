@@ -144,11 +144,11 @@ class _SeqDataset(Dataset):
 
 
 class DKTModel(nn.Module):
-    def __init__(self, num_concepts: int, hidden_dim: int = 64):
+    def __init__(self, num_concepts: int, hidden_dim: int = 96):
         super().__init__()
         self.num_concepts = num_concepts
-        self.emb = nn.Embedding(num_concepts * 2 + 1, 32, padding_idx=0)
-        self.lstm = nn.LSTM(32, hidden_dim, batch_first=True)
+        self.emb = nn.Embedding(num_concepts * 2 + 1, 48, padding_idx=0)
+        self.lstm = nn.LSTM(48, hidden_dim, batch_first=True)
         self.fc = nn.Linear(hidden_dim, num_concepts)
 
     def forward(self, x):
@@ -156,29 +156,56 @@ class DKTModel(nn.Module):
         return torch.sigmoid(self.fc(h))
 
 
+class SAKTModel(nn.Module):
+    """Self-Attentive Knowledge Tracing (Transformer causal self-attention)."""
+
+    def __init__(self, num_concepts: int, d_model: int = 64, nhead: int = 4, max_len: int = 200):
+        super().__init__()
+        self.inter_emb = nn.Embedding(num_concepts * 2 + 1, d_model, padding_idx=0)
+        self.concept_emb = nn.Embedding(num_concepts, d_model)
+        self.pos_emb = nn.Embedding(max_len, d_model)
+        self.attn = nn.MultiheadAttention(d_model, nhead, dropout=0.1, batch_first=True)
+        self.norm = nn.LayerNorm(d_model)
+        self.ffn = nn.Sequential(
+            nn.Linear(d_model, d_model * 2),
+            nn.ReLU(),
+            nn.Linear(d_model * 2, 1),
+        )
+
+    def forward(self, x_inter, x_concept):
+        B, L = x_inter.shape
+        pos = torch.arange(L, device=x_inter.device).unsqueeze(0).expand(B, L)
+        k_v = self.inter_emb(x_inter) + self.pos_emb(pos)
+        q = self.concept_emb(x_concept) + self.pos_emb(pos)
+        causal_mask = torch.triu(torch.ones(L, L, device=x_inter.device), diagonal=1).bool()
+        attn_out, _ = self.attn(q, k_v, k_v, attn_mask=causal_mask)
+        h = self.norm(q + attn_out)
+        return torch.sigmoid(self.ffn(h)).squeeze(-1)
+
+
+def _build_kt_seqs(df: pd.DataFrame, c_to_idx: dict[str, int], n_c: int):
+    seqs = []
+    for _, grp in df.sort_values(["student_id", "week", "attempt_num"]).groupby("student_id"):
+        c_ids = [c_to_idx[c] for c in grp["concept_id"]]
+        corr = grp["correct"].tolist()
+        idxs = grp.index.tolist()
+        in_tokens = [0] + [c_ids[t] + 1 + (n_c if corr[t] == 1 else 0) for t in range(len(c_ids) - 1)]
+        seqs.append((in_tokens, c_ids, corr, idxs))
+    return seqs
+
+
 def fit_and_predict_dkt(
-    train_df: pd.DataFrame, test_df: pd.DataFrame, epochs: int = 6, seed: int = 42
+    train_df: pd.DataFrame, test_df: pd.DataFrame, epochs: int = 10, seed: int = 42
 ) -> np.ndarray:
     torch.manual_seed(seed)
     concepts = sorted(train_df["concept_id"].unique())
     c_to_idx = {c: i for i, c in enumerate(concepts)}
     n_c = len(concepts)
 
-    def build_seqs(df: pd.DataFrame):
-        seqs = []
-        for _, grp in df.sort_values(["student_id", "week", "attempt_num"]).groupby("student_id"):
-            c_ids = [c_to_idx[c] for c in grp["concept_id"]]
-            corr = grp["correct"].tolist()
-            idxs = grp.index.tolist()
-            # Input token at t uses interaction at t-1 (0 = start token)
-            in_tokens = [0] + [c_ids[t] + 1 + (n_c if corr[t] == 1 else 0) for t in range(len(c_ids) - 1)]
-            seqs.append((in_tokens, c_ids, corr, idxs))
-        return seqs
+    train_seqs = _build_kt_seqs(train_df, c_to_idx, n_c)
+    test_seqs = _build_kt_seqs(test_df, c_to_idx, n_c)
 
-    train_seqs = build_seqs(train_df)
-    test_seqs = build_seqs(test_df)
-
-    model = DKTModel(n_c, hidden_dim=64)
+    model = DKTModel(n_c, hidden_dim=96)
     opt = torch.optim.Adam(model.parameters(), lr=3e-3)
     bce = nn.BCELoss()
 
@@ -218,6 +245,58 @@ def fit_and_predict_dkt(
     return np.array([pred_map[i] for i in test_df.index])
 
 
+def fit_and_predict_sakt(
+    train_df: pd.DataFrame, test_df: pd.DataFrame, epochs: int = 10, seed: int = 42
+) -> np.ndarray:
+    torch.manual_seed(seed)
+    concepts = sorted(train_df["concept_id"].unique())
+    c_to_idx = {c: i for i, c in enumerate(concepts)}
+    n_c = len(concepts)
+
+    train_seqs = _build_kt_seqs(train_df, c_to_idx, n_c)
+    test_seqs = _build_kt_seqs(test_df, c_to_idx, n_c)
+    max_seq_len = max(max(len(s[0]) for s in train_seqs), max(len(s[0]) for s in test_seqs)) + 5
+
+    model = SAKTModel(n_c, d_model=64, nhead=4, max_len=max_seq_len)
+    opt = torch.optim.Adam(model.parameters(), lr=2.5e-3)
+    bce = nn.BCELoss()
+
+    model.train()
+    for _ in range(epochs):
+        np.random.shuffle(train_seqs)
+        for i in range(0, len(train_seqs), 32):
+            batch = train_seqs[i : i + 32]
+            max_len = max(len(s[0]) for s in batch)
+            x_inter = torch.zeros((len(batch), max_len), dtype=torch.long)
+            x_conc = torch.zeros((len(batch), max_len), dtype=torch.long)
+            y_v = torch.zeros((len(batch), max_len), dtype=torch.float32)
+            mask = torch.zeros((len(batch), max_len), dtype=torch.bool)
+            for b, (inp, cid, cor, _) in enumerate(batch):
+                L = len(inp)
+                x_inter[b, :L] = torch.tensor(inp, dtype=torch.long)
+                x_conc[b, :L] = torch.tensor(cid, dtype=torch.long)
+                y_v[b, :L] = torch.tensor(cor, dtype=torch.float32)
+                mask[b, :L] = True
+
+            pred_c = model(x_inter, x_conc)
+            loss = bce(pred_c[mask], y_v[mask])
+            opt.zero_grad()
+            loss.backward()
+            opt.step()
+
+    model.eval()
+    pred_map = {}
+    with torch.no_grad():
+        for inp, cid, _, idxs in test_seqs:
+            xi = torch.tensor([inp], dtype=torch.long)
+            xc = torch.tensor([cid], dtype=torch.long)
+            out = model(xi, xc)[0]
+            for t, orig_idx in enumerate(idxs):
+                pred_map[orig_idx] = float(out[t].item())
+
+    return np.array([pred_map[i] for i in test_df.index])
+
+
 def run_kt_comparison() -> pd.DataFrame:
     df = pd.read_csv(DATA_DIR / "learner_interactions.csv")
     train_df, test_df = split_by_student(df, test_size=0.2, seed=42)
@@ -228,6 +307,7 @@ def run_kt_comparison() -> pd.DataFrame:
         "BKT (EM/MLE)": fit_and_predict_bkt(train_df, test_df),
         "PFA (Logistic)": fit_and_predict_pfa(train_df, test_df),
         "DKT (PyTorch LSTM)": fit_and_predict_dkt(train_df, test_df),
+        "SAKT (Transformer)": fit_and_predict_sakt(train_df, test_df),
     }
 
     rows = []

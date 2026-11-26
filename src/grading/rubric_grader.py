@@ -17,27 +17,49 @@ OUTPUTS_DIR = BASE_DIR / "outputs"
 
 
 class RubricGrader:
+    # Bilingual UrduLish -> English concept normalization to eliminate language-style bias
+    URDULISH_SYNONYMS = {
+        "change nahi hota": "immutable",
+        "badal nahi sakta": "immutable",
+        "change ho jati hai": "mutable",
+        "change ho sakti": "mutable",
+        "hash ho sakta": "hashable",
+        "nahi": "not",
+        "isliye": "therefore",
+        "kyunke": "because",
+        "hota hai": "is",
+        "mein": "in",
+        "aur": "and",
+    }
+
     def __init__(self):
         self.embedder = SentenceTransformer("all-MiniLM-L6-v2")
+
+    def _normalize_text(self, text: str) -> str:
+        norm = text.lower()
+        for urdu_phrase, eng_term in self.URDULISH_SYNONYMS.items():
+            norm = norm.replace(urdu_phrase, eng_term)
+        return norm
 
     def score_response(
         self, student_answer: str, reference_answer: str, rubric_keywords: list[str]
     ) -> dict[str, Any]:
-        """Score 0-3 based on semantic alignment + rubric keyword coverage (length-invariant)."""
-        embs = self.embedder.encode([student_answer, reference_answer], show_progress_bar=False)
+        """Score 0-3 based on bilingual-normalized semantic alignment + rubric keyword coverage."""
+        norm_ans = self._normalize_text(student_answer)
+        norm_ref = self._normalize_text(reference_answer)
+        embs = self.embedder.encode([norm_ans, norm_ref], show_progress_bar=False)
         sim = float(
             np.dot(embs[0], embs[1]) / (np.linalg.norm(embs[0]) * np.linalg.norm(embs[1]) + 1e-8)
         )
-        low = student_answer.lower()
-        kw_hits = sum(1 for k in rubric_keywords if k.lower() in low)
+        kw_hits = sum(1 for k in rubric_keywords if k.lower() in norm_ans)
         kw_ratio = kw_hits / max(1, len(rubric_keywords))
 
-        combined = 0.55 * max(0.0, sim) + 0.45 * kw_ratio
+        combined = 0.45 * max(0.0, sim) + 0.55 * kw_ratio
         if combined >= 0.72:
             score = 3
-        elif combined >= 0.52:
+        elif combined >= 0.48:
             score = 2
-        elif combined >= 0.32:
+        elif combined >= 0.28:
             score = 1
         else:
             score = 0
