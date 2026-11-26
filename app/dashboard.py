@@ -8,6 +8,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 if str(BASE_DIR) not in sys.path:
     sys.path.insert(0, str(BASE_DIR))
 
+import httpx
 import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
@@ -15,6 +16,8 @@ import streamlit as st
 
 from src.grading.code_grader import grade_submission
 from src.tutor.socratic_tutor import SocraticTutor
+
+API_BASE = "http://127.0.0.1:8000"
 
 DATA_DIR = BASE_DIR / "data"
 OUTPUTS_DIR = BASE_DIR / "outputs"
@@ -298,7 +301,17 @@ else:
 
         q_text = st.text_input("Ask your Python question:", key="tutor_q")
         if st.button("Ask Socratic Tutor", type="primary"):
-            res = get_tutor().respond(q_text, mastery_score=m_val, hint_stage=stage, language=lang)
+            try:
+                r = httpx.post(
+                    f"{API_BASE}/tutor/ask",
+                    headers={"X-API-Key": "student-demo-key"},
+                    json={"message": q_text, "mastery_score": m_val, "hint_stage": stage, "language": lang},
+                    timeout=10.0,
+                )
+                r.raise_for_status()
+                res = r.json()
+            except Exception:
+                res = get_tutor().respond(q_text, mastery_score=m_val, hint_stage=stage, language=lang)
             if res["jailbreak_blocked"]:
                 st.warning("🛡️ Jailbreak / direct-solution request blocked — redirecting Socratic style:")
             st.info(res["response"])
@@ -321,11 +334,22 @@ else:
 
         code_input = st.text_area("Write `factorial(n)`:", key="code_box", height=130)
         if st.button("Run & Grade in Sandbox", type="primary"):
-            res = grade_submission(
-                code_input,
-                visible_tests=["assert factorial(0) == 1", "assert factorial(3) == 6"],
-                hidden_tests=["assert factorial(5) == 120"],
-            )
+            payload = {
+                "code": code_input,
+                "visible_tests": ["assert factorial(0) == 1", "assert factorial(3) == 6"],
+                "hidden_tests": ["assert factorial(5) == 120"],
+            }
+            try:
+                r = httpx.post(
+                    f"{API_BASE}/grade/submit",
+                    headers={"X-API-Key": "student-demo-key"},
+                    json=payload,
+                    timeout=10.0,
+                )
+                r.raise_for_status()
+                res = r.json()
+            except Exception:
+                res = grade_submission(**payload)
             if res["score_pct"] == 100.0:
                 st.success(f"Score: {res['score_pct']}% ({res['passed_tests']}/{res['total_tests']} tests) | {res['total_elapsed_ms']} ms")
             else:

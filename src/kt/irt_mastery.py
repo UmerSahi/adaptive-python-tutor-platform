@@ -51,8 +51,8 @@ def fit_irt(df: pd.DataFrame, two_pl: bool = True, epochs: int = 250, lr: float 
         a = torch.exp(a_raw).clamp(0.05, 4.0) if two_pl else torch.ones_like(b[q_idx])
         a_sel = a[q_idx] if two_pl else 1.0
         logits = a_sel * (theta[s_idx] - b[q_idx])
-        # Mild L2 prior for identifiability
-        reg = 0.005 * (theta.pow(2).mean() + b.pow(2).mean())
+        # L2 priors on theta, b, and log-discrimination a_raw for psychometric identifiability
+        reg = 0.01 * (theta.pow(2).mean() + b.pow(2).mean()) + (0.04 * a_raw.pow(2).mean() if two_pl else 0.0)
         loss = bce(logits, y) + reg
         loss.backward()
         opt.step()
@@ -86,8 +86,8 @@ def run_irt_and_mastery():
         q1_df[["question_id", "irt_b"]].rename(columns={"irt_b": "irt_1pl_b"}),
         on="question_id",
     )
-    # Flag bad questions: low discrimination (< 0.45) or extreme difficulty (|b| > 2.2)
-    q_merged["is_bad"] = (q_merged["irt_a"] < 0.45) | (q_merged["irt_b"].abs() > 2.2)
+    # Flag weak/extreme questions: low discrimination (< 0.70) or extreme difficulty (|b| > 1.8)
+    q_merged["is_bad"] = (q_merged["irt_a"] < 0.70) | (q_merged["irt_b"].abs() > 1.8)
     bad_q = q_merged[q_merged["is_bad"]].sort_values("irt_a")
 
     OUTPUTS_DIR.mkdir(parents=True, exist_ok=True)

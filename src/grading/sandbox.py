@@ -20,11 +20,18 @@ BLOCKED_MODULES = {
     "os", "sys", "subprocess", "socket", "urllib", "requests", "http",
     "shutil", "pathlib", "ctypes", "multiprocessing", "threading", "pty", "resource",
 }
-BLOCKED_BUILTINS = {"eval", "exec", "compile", "open", "__import__", "breakpoint", "input"}
+BLOCKED_BUILTINS = {
+    "eval", "exec", "compile", "open", "__import__", "breakpoint", "input",
+    "getattr", "setattr", "delattr", "globals", "locals", "vars", "dir",
+}
+BLOCKED_DUNDER_ATTRS = {
+    "__subclasses__", "__globals__", "__builtins__", "__import__",
+    "__loader__", "__code__", "__class__", "__bases__", "__mro__",
+}
 
 
 def check_ast_security(code: str) -> tuple[bool, str]:
-    """Statically inspect Python AST for disallowed imports or dangerous calls."""
+    """Statically inspect Python AST for disallowed imports, builtins, or dunder reflection escapes."""
     try:
         tree = ast.parse(code)
     except SyntaxError as exc:
@@ -43,6 +50,10 @@ def check_ast_security(code: str) -> tuple[bool, str]:
         elif isinstance(node, ast.Call) and isinstance(node.func, ast.Name):
             if node.func.id in BLOCKED_BUILTINS:
                 return False, f"Blocked builtin call: '{node.func.id}()' is not permitted in sandbox."
+        elif isinstance(node, ast.Attribute) and node.attr in BLOCKED_DUNDER_ATTRS:
+            return False, f"Blocked reflection attribute: '{node.attr}' is not permitted in sandbox."
+        elif isinstance(node, ast.Name) and node.id in BLOCKED_DUNDER_ATTRS:
+            return False, f"Blocked reflection name: '{node.id}' is not permitted in sandbox."
     return True, "OK"
 
 
@@ -111,6 +122,8 @@ def run_attack_suite() -> list[dict[str, Any]]:
         ("Network Exfiltration", "import socket\ns = socket.socket()\ns.connect(('1.1.1.1', 80))"),
         ("File System Write", "open('pwned.txt', 'w').write('hacked')"),
         ("Dynamic Import Evasion", "__import__('os').system('whoami')"),
+        ("Dunder Reflection Escape", "().__class__.__bases__[0].__subclasses__()"),
+        ("Builtins Getattr Bypass", "getattr(__builtins__, 'open')('secret.txt')"),
     ]
 
     results = []
